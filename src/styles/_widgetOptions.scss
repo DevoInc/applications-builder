@@ -1,0 +1,218 @@
+.lt-vapp-widget-options > span {
+  font-size: 20px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.lt-vapp-widget-options > span:hover,
+.lt-vapp-widget-options > span.hasMenuOpen {
+  cursor: pointer;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.lt-vapp-widget-options > span:not(:last-of-type) {
+  margin-right: 6px;
+}
+
+.lt-vapp-widget-options > span.lt-vapp-widget-collapser {
+  display: inline-block;
+}
+
+
+.lt-vapp.expanded-widget-menu .lt-vapp-widget-options {
+  position: static;
+}
+
+.lt-vapp.expanded-widget-menu .lt-vapp-widget-options span > ul    {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  margin-top: 8px;
+position: relative;
+left: -10px;
+}
+
+.lt-vapp.expanded-widget-menu .lt-vapp-widget-options span > ul > li   {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2px 10px;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.lt-vapp.expanded-widget-menu .lt-vapp-widget-options span  > ul > li:hover  {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.lt-vapp.expanded-widget-menu .lt-vapp-widget-options span  > ul > li:not(:last-child) {
+  border-right: 1px solid;
+}
+
+.lt-vapp.expanded-widget-menu .lt-vapp-widget-options > span.lt-vapp-widget-menu-launcher:before   {
+  display: none;
+}
+
+.lt-vapp.expanded-widget-menu .lt-vapp-widget-options span  > ul > li i   {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.lt-vapp.expanded-widget-menu .lt-vapp-widget-options span  > ul > li span   {
+  font-size: 14px;
+  display: none;
+}
+
+.lt-vapp.expanded-widget-menu .lt-vapp-widget-options span > ul > li .lticon-zoom_expand_maximize_window ,
+.lt-vapp.expanded-widget-menu .lt-vapp-widget-options span > ul > li .lticon-search_find_zoom {
+font-size: 18px;
+}
+
+/* Widgets: Options Menu visible */
+
+.lt-vapp.hide-descriptions .lt-vapp-widget-header > p  {
+  display: none;
+}
+
+
+/* Widgets: Options Menu collapsed  */
+
+.lt-vapp:not(.expanded-widget-menu) .lt-vapp-widget-options {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 10px 0 0;
+}
+
+.lt-vapp:not(.expanded-widget-menu) .lt-vapp-widget-options span  > ul {
+  visibility: hidden;
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  z-index: 2;
+  width: 200px;
+  margin: 0;
+  border-bottom: 1px solid;
+  font-weight: normal;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate(9999px);
+  -ms-transform: translate(9999px);
+  transform: translate(9999px);
+  -webkit-transition: top .2s, opacity .2s;
+  transition: top .2s, opacity .2s;
+}
+
+
+
+
+.lt-vapp:not(.expanded-widget-menu) .lt-vapp-widget-options span.open  > ul:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0px;
+  top: 10px;
+  right: 0px;
+  bottom: 10px;
+}
+
+.lt-vapp:not(.expanded-widget-menu) .lt-vapp-widget-options span.openup  > ul:before {
+content: "";
+position: absolute;
+height: 3px;
+left: 0px;
+top: auto;
+right: 0px;
+bottom: 0px;
+}
+
+.lt-vapp:not(.expanded-widget-menu) .lt-vapp-widget-options span.openup  > ul:after {
+content: "";
+position: absolute;
+right: 12px;
+top: calc(100% - 5px);
+filter: alpha(opacity=0);
+width: 15px;
+height: 15px;
+margin-left: -10px;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+-webkit-transition: opacity .2s;
+transition: opacity .2s;
+z-index: -1;
+}
+
+.lt-vapp:not(.expanded-widget-menu) .lt-vapp-widget-options span  > ul:after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 3px;
+  filter: alpha(opacity=0);
+  width: 15px;
+  height: 15px;
+  margin-left: -10px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  z-index: -1;
+}
+
+.lt-vapp:not(.expanded-widget-menu) .lt-vapp-widget-options span > ul > li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 14px;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  word-wrap: normal;
+  line-height: normal;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.lt-vapp:not(.expanded-widget-menu) .lt-vapp-widget-options span > ul > li:hover {
+  cursor: pointer;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.lt-vapp:not(.expanded-widget-menu) .lt-vapp-widget-options span > ul > li:first-child {
+  margin-top: 13px;
+}
+
+.lt-vapp:not(.expanded-widget-menu) .lt-vapp-widget-options span > ul > li i {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.lt-vapp:not(.expanded-widget-menu) .lt-vapp-widget-options span > ul > li span {
+  font-size: 14px;
+  display: inline-block;
+}
+
+.lt-vapp:not(.expanded-widget-menu) .lt-vapp-tabs-widget header
+.lt-vapp-widget-options {
+  padding-top: 20px;
+}

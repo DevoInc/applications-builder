@@ -1,0 +1,440 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devo Applications Builder widgets/pewPewMap.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Devo Applications Builder</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a>
+                
+                <div class="dropdown is-hoverable is-right">
+                    <a class="dropdown-trigger link">
+                        Tutorials
+                        <i class="fas fa-chevron-down fa-xs"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                        
+                            <a class="dropdown-item" href="tutorial-basics.html">
+                                Getting started
+                            </a>
+                        
+                            <a class="dropdown-item" href="tutorial-configurations.html">
+                                Advanced
+                            </a>
+                        
+                            <a class="dropdown-item" href="tutorial-widgets.html">
+                                Widgets
+                            </a>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/SoftwareBrothers/admin-bro"
+                        >
+                            Github
+                        </a>
+                    
+                        <a
+                            class="link user-link "
+                            href="https://admin-bro-example-app.herokuapp.com/admin"
+                        >
+                            Example Application
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Classes</h3><ul><li><a href="App.html">App</a></li><li><a href="I18n.html">I18n</a></li><li><a href="Section.html">Section</a></li><li><a href="Settings.html">Settings</a></li><li><a href="Tab.html">Tab</a></li><li><a href="TabsBar.html">TabsBar</a></li></ul></div><div class="category"><h2>Data</h2><h3>Classes</h3><ul><li><a href="DataNode.html">DataNode</a></li><li><a href="DataTree.html">DataTree</a></li><li><a href="Dependencies.html">Dependencies</a></li><li><a href="Requests.html">Requests</a></li></ul></div><div class="category"><h2>Fields</h2><h3>Classes</h3><ul><li><a href="BaseField.html">BaseField</a></li><li><a href="Button.html">Button</a></li><li><a href="CheckBoxField.html">CheckBoxField</a></li><li><a href="ChoicePickerField.html">ChoicePickerField</a></li><li><a href="DateTimePickerField.html">DateTimePickerField</a></li><li><a href="DateTimePickerRangeField.html">DateTimePickerRangeField</a></li><li><a href="DateTimePickerRangeFieldPresets.html">DateTimePickerRangeFieldPresets</a></li><li><a href="InputField.html">InputField</a></li><li><a href="Select2Field.html">Select2Field</a></li><li><a href="SelectField.html">SelectField</a></li></ul><h3>Global</h3><ul><li><a href="global.html#matchElement">matchElement</a></li></ul></div><div class="category"><h2>Libs</h2><h3>Modules</h3><ul><li><a href="module-alerts.html">alerts</a></li><li><a href="module-D3Bullet.html">D3Bullet</a></li><li><a href="module-dom.html">dom</a></li><li><a href="module-downloads.html">downloads</a></li><li><a href="module-events.html">events</a></li><li><a href="module-user.html">user</a></li><li><a href="module-zoomChart.html">zoomChart</a></li></ul><h3>Classes</h3><ul><li><a href="ScreenShot.html">ScreenShot</a></li></ul><h3>Global</h3><ul><li><a href="global.html#takeElementScreenShot">takeElementScreenShot</a></li></ul></div><div class="category"><h2>Utils</h2><h3>Modules / Bootstrap</h3><ul><li><a href="module-bootstrap.html">bootstrap</a></li></ul><h3>Modules / Global</h3><ul><li><a href="module-casting.html">casting</a></li><li><a href="module-dateRange.html">dateRange</a></li><li><a href="module-dates.html">dates</a></li><li><a href="module-intervals.html">intervals</a></li><li><a href="module-objects.html">objects</a></li><li><a href="module-order.html">order</a></li><li><a href="module-Query%2520Utils.html">Query Utils</a></li><li><a href="module-scroll.html">scroll</a></li><li><a href="module-units.html">units</a></li></ul><h3>Modules / Helpers</h3><ul><li><a href="module-Helper%2520Highcharts.html">Helper Highcharts</a></li><li><a href="module-Helper%2520Renderers.html">Helper Renderers</a></li></ul><h3>Classes / Bootstrap</h3><ul><li><a href="FullScreenShotBtn.html">FullScreenShotBtn</a></li><li><a href="TvBtn.html">TvBtn</a></li></ul><h3>Classes / Helpers</h3><ul><li><a href="Monitoring.html">Monitoring</a></li></ul></div><div class="category"><h2>Widgets</h2><h3>Modules</h3><ul><li><a href="module-AnimatedHeatmap.html">AnimatedHeatmap</a></li><li><a href="module-Area.html">Area</a></li><li><a href="module-AvailabilityTimeline.html">AvailabilityTimeline</a></li><li><a href="module-Bichord.html">Bichord</a></li><li><a href="module-Bubbles.html">Bubbles</a></li><li><a href="module-Bullet.html">Bullet</a></li><li><a href="module-CircleWorldMap.html">CircleWorldMap</a></li><li><a href="module-Column.html">Column</a></li><li><a href="module-Empty.html">Empty</a></li><li><a href="module-Funnel.html">Funnel</a></li><li><a href="module-Gauge.html">Gauge</a></li><li><a href="module-GoogleColormap.html">GoogleColormap</a></li><li><a href="module-GoogleHeatmap.html">GoogleHeatmap</a></li><li><a href="module-Graph.html">Graph</a></li><li><a href="module-HeatCalendar.html">HeatCalendar</a></li><li><a href="module-Histogram.html">Histogram</a></li><li><a href="module-Lines.html">Lines</a></li><li><a href="module-Monitoring.html">Monitoring</a></li><li><a href="module-PewPewMap.html">PewPewMap</a></li><li><a href="module-Pie.html">Pie</a></li><li><a href="module-PieLayered.html">PieLayered</a></li><li><a href="module-Punchcard.html">Punchcard</a></li><li><a href="module-RAG.html">RAG</a></li><li><a href="module-Sankey.html">Sankey</a></li><li><a href="module-Series.html">Series</a></li><li><a href="module-StackedBars.html">StackedBars</a></li><li><a href="module-Table.html">Table</a></li><li><a href="module-TimeHeatmap.html">TimeHeatmap</a></li><li><a href="module-Tree.html">Tree</a></li><li><a href="module-Voronoi.html">Voronoi</a></li></ul><h3>Modules / Mixins</h3><ul><li><a href="module-base.html">base</a></li><li><a href="module-collapser.html">collapser</a></li><li><a href="module-dataSearch.html">dataSearch</a></li><li><a href="module-download.html">download</a></li><li><a href="module-info.html">info</a></li><li><a href="module-lifeCycle.html">lifeCycle</a></li><li><a href="module-listeners.html">listeners</a></li><li><a href="module-loading.html">loading</a></li><li><a href="module-menu.html">menu</a></li><li><a href="module-screenshot.html">screenshot</a></li><li><a href="module-showQuery.html">showQuery</a></li><li><a href="module-zoom.html">zoom</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>widgets/pewPewMap.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import processStructure from '@devo/applications-data-library/structures/pewPewMap';
+import widgetFactory from '@devo/applications-builder/widgetFactory';
+import dependencies from '../data/dependencies';
+
+const PewPewMapWidget = dependencies.require('widgets').PewPewMapWidget;
+
+/**
+ * Colloquially known as Pew Pew map, this chart tracks live attacks going
+ * from one location to another over a world map, depicted as arrows whose
+ * colors and widths are defined by the values in the specified fields.
+ * @category Widgets
+ * @module PewPewMap
+ * @see [base](module-base.html)
+ * @see [collapser](module-collapser.html)
+ * @see [dataSearch](module-dataSearch.html)
+ * @see [download](module-download.html)
+ * @see [info](module-info.html)
+ * @see [lifeCycle](module-lifeCycle.html)
+ * @see [listeners](module-listeners.html)
+ * @see [loading](module-loading.html)
+ * @see [menu](module-menu.html)
+ * @see [screenshot](module-screenshot.html)
+ * @see [zoom](module-zoom.html)
+ * @tutorial widgets-pew-pew-map
+ */
+function mixin(self) {
+  return {
+    /**
+     * Set the origin and destination coordinates.
+     * @param {Object} coordinates
+     * @param {Object} coordinates.from
+     * @param {string} coordinates.from.lat - Latitude origin.
+     * @param {string} coordinates.from.lon - Longitude origin.
+     * @param {Object} coordinates.to
+     * @param {string} coordinates.to.lat - Destination latitude.
+     * @param {string} coordinates.to.lon - Deestination longitude.
+     * @instance
+     */
+    setKeys(coordinates) {
+      self.settings.latLonKeys = coordinates;
+    },
+
+    /**
+     * Set the labels text.
+     * @param {Object} labels
+     * @param {string} labels.from - Text label.
+     * @param {string} labels.to - Text label.
+     * @instance
+     */
+    setLabelsKeys(labels) {
+      self.settings.labels = labels;
+    },
+
+    /**
+     * Set color key.
+     * @param {string} val - Color.
+     * @instance
+     */
+    setColorKey(val) {
+      self.settings.colorKey = val;
+    },
+
+    /**
+     * Set the column value to show.
+     * @param {string} val - Column name.
+     * @instance
+     */
+    setValue(val) {
+      self.settings.valueToShow = val;
+    },
+
+    /**
+     * Set gradient color number.
+     * @param {number} gradient - Gradient number.
+     * @instance
+     */
+    setGradient(gradient) {
+      self.settings.gradient = gradient;
+    },
+
+    /**
+     * Set an array of colors used for gradients.
+     * @param {string[]} gradients Array of arrays of colors
+     * @instance
+     */
+    setGradients(gradients) {
+      self.settings.gradients = gradients;
+    },
+
+    /**
+     * Wether to use gradient.
+     * @param {boolean} val - Use gradient.
+     * @instance
+     */
+    setUseGradient(val) {
+      self.settings.useGradient = val;
+    },
+
+    /**
+     * Set visibility of arrows.
+     * @param {boolean} val - Visibility of arrows.
+     * @instance
+     */
+    setVisible(val) {
+      self.settings.visible = val;
+    },
+
+    /**
+     * Set arrows animation.
+     * @param {boolean} val - Animation of arrows.
+     * @instance
+     */
+    setPlay(val) {
+      self.settings.play = val;
+    },
+
+    /**
+     * Set use of custom style-
+     * @param {boolean} val - Custom style.
+     * @instance
+     */
+    setCustomStyle(val) {
+      self.settings.customStyle = val;
+    },
+
+    /**
+     * Set descending sorting.
+     * @param {boolean} val - Sort descending.
+     * @instance
+     */
+    setSortDescending(val) {
+      self.settings.sortDescending = val;
+    },
+
+    /**
+     * Set default color.
+     * @param {string} color - Default color
+     * @instance
+     */
+    setDefaultColor(color) {
+      self.settings.defaultColor = color;
+    },
+
+    /**
+     * Set wether to fit map zoom when rendered.
+     * @param {boolean} val - Fit to bounds.
+     * @instance
+     */
+    setFitToBounds(val) {
+      self.settings.fitToBounds = val;
+    },
+
+    /**
+     * Apply an operation to the data.
+     *
+     * The following values are supported:
+     * - &lt;b>none&lt;/b>
+     * - &lt;b>arctag&lt;/b>
+     * - &lt;b>log&lt;/b>
+     * @param {string} operation - Operation name.
+     * @instance
+     */
+    setDataOperation(operation) {
+      self.settings.dataOperation = operation;
+    },
+
+    /**
+     * Do not apply the data.
+     * @param {boolean} val - Skip limit data.
+     * @instance
+     */
+    setSkipLimit(val) {
+      self.settings.skipLimit = val;
+    },
+
+    /**
+     * Set the limit of elements.
+     * @param {number} limit - Limit number.
+     * @instance
+     */
+    setElementsLimit(limit) {
+      self.settings.elementsLimit = limit;
+    },
+
+    /**
+     * Apply a style layer to the map.
+     *
+     * The following values are supported:
+     * - &lt;b>hybrid&lt;/b>
+     * - &lt;b>roadmap&lt;/b>
+     * - &lt;b>satellite&lt;/b>
+     * - &lt;b>terrain&lt;/b>
+     * @param {string} val - Layer name.
+     * @instance
+     */
+    setType(val) {
+      self.settings.googleMutantOptions = { type: val };
+    },
+
+    // Common
+    // -------------------------------------------------------------------------
+
+    /**
+     * Resize
+     * @ignore
+     */
+    resize() {
+      // This widget resize itself
+    },
+
+    /**
+     * Resize
+     * @ignore
+     */
+    showLoading() {
+      self.graphic.childNodes.forEach((node) => {
+        node.hidden = true;
+      });
+      let spinner = document.createElement('div');
+      spinner.className = 'lt-vapp-widget-loading';
+      self.graphic.appendChild(spinner);
+    },
+
+    /**
+     * Resize
+     * @ignore
+     */
+    hideLoading() {
+      self.graphic.querySelector('.lt-vapp-widget-loading').remove();
+      self.graphic.childNodes.forEach((node) => {
+        node.hidden = false;
+      });
+    },
+
+    // Life Cycle
+    // -------------------------------------------------------------------------
+
+    /**
+     * Render function
+     * @param {object} orig - Data for process
+     * @ignore
+     */
+    render(orig) {
+      if (!self.el) return; // If not have element not render
+      let cfg = Object.assign({}, self.settings);
+      let data = processStructure(
+        orig,
+        cfg.latLonKeys,
+        cfg.valueToShow,
+        cfg.labels,
+        cfg.colorKey
+      );
+
+      if (data) {
+        let aux;
+        if (self.widget) aux = self.widget.map;
+        self.widget = new PewPewMapWidget(cfg);
+        self.widget.setData(data);
+        if (aux) self.widget.map = aux;
+        self.widget.display({ force: true, data: true });
+      } else {
+        this.debugError({
+          msg: 'NO DATA',
+          console: {
+            method: 'error',
+            msg: 'No data arrive to render function',
+          },
+        });
+      }
+    },
+  };
+}
+
+export default widgetFactory(mixin);
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.5</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+</body>
+</html>

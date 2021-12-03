@@ -1,0 +1,5555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devo Applications Builder Voronoi</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Devo Applications Builder</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a>
+                
+                <div class="dropdown is-hoverable is-right">
+                    <a class="dropdown-trigger link">
+                        Tutorials
+                        <i class="fas fa-chevron-down fa-xs"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                        
+                            <a class="dropdown-item" href="tutorial-basics.html">
+                                Getting started
+                            </a>
+                        
+                            <a class="dropdown-item" href="tutorial-configurations.html">
+                                Advanced
+                            </a>
+                        
+                            <a class="dropdown-item" href="tutorial-widgets.html">
+                                Widgets
+                            </a>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/SoftwareBrothers/admin-bro"
+                        >
+                            Github
+                        </a>
+                    
+                        <a
+                            class="link user-link "
+                            href="https://admin-bro-example-app.herokuapp.com/admin"
+                        >
+                            Example Application
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Classes</h3><ul><li><a href="App.html">App</a></li><li><a href="I18n.html">I18n</a></li><li><a href="Section.html">Section</a></li><li><a href="Settings.html">Settings</a></li><li><a href="Tab.html">Tab</a></li><li><a href="TabsBar.html">TabsBar</a></li></ul></div><div class="category"><h2>Data</h2><h3>Classes</h3><ul><li><a href="DataNode.html">DataNode</a></li><li><a href="DataTree.html">DataTree</a></li><li><a href="Dependencies.html">Dependencies</a></li><li><a href="Requests.html">Requests</a></li></ul></div><div class="category"><h2>Fields</h2><h3>Classes</h3><ul><li><a href="BaseField.html">BaseField</a></li><li><a href="Button.html">Button</a></li><li><a href="CheckBoxField.html">CheckBoxField</a></li><li><a href="ChoicePickerField.html">ChoicePickerField</a></li><li><a href="DateTimePickerField.html">DateTimePickerField</a></li><li><a href="DateTimePickerRangeField.html">DateTimePickerRangeField</a></li><li><a href="DateTimePickerRangeFieldPresets.html">DateTimePickerRangeFieldPresets</a></li><li><a href="InputField.html">InputField</a></li><li><a href="Select2Field.html">Select2Field</a></li><li><a href="SelectField.html">SelectField</a></li></ul><h3>Global</h3><ul><li><a href="global.html#matchElement">matchElement</a></li></ul></div><div class="category"><h2>Libs</h2><h3>Modules</h3><ul><li><a href="module-alerts.html">alerts</a></li><li><a href="module-D3Bullet.html">D3Bullet</a></li><li><a href="module-dom.html">dom</a></li><li><a href="module-downloads.html">downloads</a></li><li><a href="module-events.html">events</a></li><li><a href="module-user.html">user</a></li><li><a href="module-zoomChart.html">zoomChart</a></li></ul><h3>Classes</h3><ul><li><a href="ScreenShot.html">ScreenShot</a></li></ul><h3>Global</h3><ul><li><a href="global.html#takeElementScreenShot">takeElementScreenShot</a></li></ul></div><div class="category"><h2>Utils</h2><h3>Modules / Bootstrap</h3><ul><li><a href="module-bootstrap.html">bootstrap</a></li></ul><h3>Modules / Global</h3><ul><li><a href="module-casting.html">casting</a></li><li><a href="module-dateRange.html">dateRange</a></li><li><a href="module-dates.html">dates</a></li><li><a href="module-intervals.html">intervals</a></li><li><a href="module-objects.html">objects</a></li><li><a href="module-order.html">order</a></li><li><a href="module-Query%2520Utils.html">Query Utils</a></li><li><a href="module-scroll.html">scroll</a></li><li><a href="module-units.html">units</a></li></ul><h3>Modules / Helpers</h3><ul><li><a href="module-Helper%2520Highcharts.html">Helper Highcharts</a></li><li><a href="module-Helper%2520Renderers.html">Helper Renderers</a></li></ul><h3>Classes / Bootstrap</h3><ul><li><a href="FullScreenShotBtn.html">FullScreenShotBtn</a></li><li><a href="TvBtn.html">TvBtn</a></li></ul><h3>Classes / Helpers</h3><ul><li><a href="Monitoring.html">Monitoring</a></li></ul></div><div class="category"><h2>Widgets</h2><h3>Modules</h3><ul><li><a href="module-AnimatedHeatmap.html">AnimatedHeatmap</a></li><li><a href="module-Area.html">Area</a></li><li><a href="module-AvailabilityTimeline.html">AvailabilityTimeline</a></li><li><a href="module-Bichord.html">Bichord</a></li><li><a href="module-Bubbles.html">Bubbles</a></li><li><a href="module-Bullet.html">Bullet</a></li><li><a href="module-CircleWorldMap.html">CircleWorldMap</a></li><li><a href="module-Column.html">Column</a></li><li><a href="module-Empty.html">Empty</a></li><li><a href="module-Funnel.html">Funnel</a></li><li><a href="module-Gauge.html">Gauge</a></li><li><a href="module-GoogleColormap.html">GoogleColormap</a></li><li><a href="module-GoogleHeatmap.html">GoogleHeatmap</a></li><li><a href="module-Graph.html">Graph</a></li><li><a href="module-HeatCalendar.html">HeatCalendar</a></li><li><a href="module-Histogram.html">Histogram</a></li><li><a href="module-Lines.html">Lines</a></li><li><a href="module-Monitoring.html">Monitoring</a></li><li><a href="module-PewPewMap.html">PewPewMap</a></li><li><a href="module-Pie.html">Pie</a></li><li><a href="module-PieLayered.html">PieLayered</a></li><li><a href="module-Punchcard.html">Punchcard</a></li><li><a href="module-RAG.html">RAG</a></li><li><a href="module-Sankey.html">Sankey</a></li><li><a href="module-Series.html">Series</a></li><li><a href="module-StackedBars.html">StackedBars</a></li><li><a href="module-Table.html">Table</a></li><li><a href="module-TimeHeatmap.html">TimeHeatmap</a></li><li><a href="module-Tree.html">Tree</a></li><li><a href="module-Voronoi.html">Voronoi</a></li></ul><h3>Modules / Mixins</h3><ul><li><a href="module-base.html">base</a></li><li><a href="module-collapser.html">collapser</a></li><li><a href="module-dataSearch.html">dataSearch</a></li><li><a href="module-download.html">download</a></li><li><a href="module-info.html">info</a></li><li><a href="module-lifeCycle.html">lifeCycle</a></li><li><a href="module-listeners.html">listeners</a></li><li><a href="module-loading.html">loading</a></li><li><a href="module-menu.html">menu</a></li><li><a href="module-screenshot.html">screenshot</a></li><li><a href="module-showQuery.html">showQuery</a></li><li><a href="module-zoom.html">zoom</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Module</p>
+                    <h1>Voronoi</h1>
+                </header>
+                
+
+
+
+
+<section>
+
+<header>
+    
+        
+            
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description"><p>This widget represents grouped data as variables, displayed as
+a tessellation of polygons whose proportions depend on the number of
+events represented. These polygons are subdivided into smaller polygons
+and constitute a hierarchical structure with as many levels as those
+into which the data is divided (there is a legend above the chart
+explaining that hierarchy).</p>
+<p>This widget is based on
+<a href="https://get.carrotsearch.com/foamtree/demo/api/index.html#quick-start">FoamTree</a>
+library.</p></div>
+        
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    <dt class="tag-tutorial">Tutorials:</dt>
+    <dd class="tag-tutorial">
+        <ul>
+            <li><a href="tutorial-widgets-voronoi.html">Voronoi</a></li>
+        </ul>
+    </dd>
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><p><a href="module-base.html">base</a></p></li>
+        
+            <li><p><a href="module-collapser.html">collapser</a></p></li>
+        
+            <li><p><a href="module-dataSearch.html">dataSearch</a></p></li>
+        
+            <li><p><a href="module-download.html">download</a></p></li>
+        
+            <li><p><a href="module-info.html">info</a></p></li>
+        
+            <li><p><a href="module-lifeCycle.html">lifeCycle</a></p></li>
+        
+            <li><p><a href="module-listeners.html">listeners</a></p></li>
+        
+            <li><p><a href="module-loading.html">loading</a></p></li>
+        
+            <li><p><a href="module-menu.html">menu</a></p></li>
+        
+            <li><p><a href="module-screenshot.html">screenshot</a></p></li>
+        
+            <li><p><a href="module-zoom.html">zoom</a></p></li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line10">line 10</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    </div>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class='vertical-section'>
+            <h1>Methods</h1>
+            <div class="members">
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="on">
+        <a class="href-link" href="#on">#</a>
+        
+        <span class="code-name">
+            
+                on<span class="signature">(str, func)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Attach an event handler function for one event to the widget.</p>
+<p>The list of events allowed is:</p>
+<ul>
+<li><b>displayHelp</b></li>
+<li><b>voroSearchChange</b></li>
+<li><b>onKeyUp</b></li>
+<li><b>onGroupSelectionChanged</b></li>
+<li><b>onGroupClick</b></li>
+<li><b>onGroupDoubleClick</b></li>
+<li><b>onGroupHover</b></li>
+<li><b>onModelChanging</b></li>
+<li><b>onRolloutComplete</b></li>
+<li><b>onRedraw</b></li>
+<li><b>onModelChanged</b></li>
+<li><b>onRolloutStart</b></li>
+<li><b>onRolloutComplete</b></li>
+<li><b>onRelaxationStep</b></li>
+<li><b>onRedraw</b></li>
+<li><b>onViewReset</b></li>
+<li><b>onGroupSelectionChanging</b></li>
+<li><b>onGroupExposureChanging</b></li>
+<li><b>onGroupExposureChanged</b></li>
+<li><b>onGroupOpenOrCloseChanging</b></li>
+<li><b>onGroupOpenOrCloseChanged</b></li>
+<li><b>onGroupHold</b></li>
+<li><b>onGroupMouseMove</b></li>
+<li><b>onGroupMouseWheel</b></li>
+<li><b>onGroupMouseDown</b></li>
+<li><b>onGroupMouseUp</b></li>
+<li><b>onGroupDragStart</b></li>
+<li><b>onGroupDrag</b></li>
+<li><b>onGroupDragEnd</b></li>
+<li><b>onGroupTransformStart</b></li>
+<li><b>onGroupTransform</b></li>
+<li><b>onGroupTransformEnd</b></li>
+</ul>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>str</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Name of the event to listen.</p></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>func</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">function</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Function to execute when the event is triggered.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line440">line 440</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setAnimation">
+        <a class="href-link" href="#setAnimation">#</a>
+        
+        <span class="code-name">
+            
+                setAnimation<span class="signature">(enabled)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Display animation effects.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>enabled</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">boolean</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Indicates if it's enabled.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line112">line 112</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setAttributionLogo">
+        <a class="href-link" href="#setAttributionLogo">#</a>
+        
+        <span class="code-name">
+            
+                setAttributionLogo<span class="signature">(path)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>The image to display in the attribution group.
+The image can be specified as a relative or absolute
+HTTP URL or a data URI.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>path</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Path or url of an image.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line123">line 123</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setColorScale">
+        <a class="href-link" href="#setColorScale">#</a>
+        
+        <span class="code-name">
+            
+                setColorScale<span class="signature">(colorScale)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the key color for gradient:</p>
+<p>The following values are supported:</p>
+<ul>
+<li><b>Default</b></li>
+<li><b>Artic</b></li>
+<li><b>Boreal</b></li>
+<li><b>Bruise</b></li>
+<li><b>Sunset</b></li>
+<li><b>Antartic</b></li>
+<li><b>Sky Burst</b></li>
+<li><b>Rioja Lightning</b></li>
+<li><b>Kamehameha</b></li>
+<li><b>Alien</b></li>
+<li><b>Rainbow</b></li>
+</ul>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>colorScale</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">String</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Color scale name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line235">line 235</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setColorScaleRelativeTo">
+        <a class="href-link" href="#setColorScaleRelativeTo">#</a>
+        
+        <span class="code-name">
+            
+                setColorScaleRelativeTo<span class="signature">(relation)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>When color scale is enabled, select how color should be calculated.
+It can be according to all nodes, by siblings or by all elements within
+the same depth.</p>
+<p>The following values are supported:</p>
+<ul>
+<li><b>all</b>: All nodes.</li>
+<li><b>siblings</b>: Siblings nodes.</li>
+<li><b>level</b>: Per level.</li>
+</ul>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>relation</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Scale type.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>'all'</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line213">line 213</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setColorSelection">
+        <a class="href-link" href="#setColorSelection">#</a>
+        
+        <span class="code-name">
+            
+                setColorSelection<span class="signature">(index<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Index for the dataLabels value that it's used to calculate the
+node color when color scale is enabled.</p>
+<p>It is related to the setting <i>setDataLabels</i>.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+            <th>Default</th>
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>index</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          0
+      
+      </td>
+  
+
+  <td class="description last"><p>Index number of datalabel.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li>setEnableColorScale</li>
+        
+            <li>setDataLabels</li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line382">line 382</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setCustomProperty">
+        <a class="href-link" href="#setCustomProperty">#</a>
+        
+        <span class="code-name">
+            
+                setCustomProperty<span class="signature">(key, val)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom property to the widget.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>key</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Key to set, using dot notation.</p></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>val</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">*</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Value to set</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line451">line 451</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setDarkenFlatParents">
+        <a class="href-link" href="#setDarkenFlatParents">#</a>
+        
+        <span class="code-name">
+            
+                setDarkenFlatParents<span class="signature">(bool<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the darken flat parents.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+            <th>Default</th>
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>bool</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">boolean</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          true
+      
+      </td>
+  
+
+  <td class="description last"><p>Enable darken flat parents.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line350">line 350</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setDarkenFlatParentsColor">
+        <a class="href-link" href="#setDarkenFlatParentsColor">#</a>
+        
+        <span class="code-name">
+            
+                setDarkenFlatParentsColor<span class="signature">(arr<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the darken flat parents colors when it's enabled.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+            <th>Default</th>
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>arr</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Array.&lt;string></span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          ['#595959', '#080808']
+      
+      </td>
+  
+
+  <td class="description last"><p>Array of colors.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line359">line 359</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setDarkenFlatParentsHoveredColor">
+        <a class="href-link" href="#setDarkenFlatParentsHoveredColor">#</a>
+        
+        <span class="code-name">
+            
+                setDarkenFlatParentsHoveredColor<span class="signature">(color<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the hover effect color when use darken flat parents is enabled.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+            <th>Default</th>
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>color</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          '#797878'
+      
+      </td>
+  
+
+  <td class="description last"><p>Color for the hover effect.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line368">line 368</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setDataLabels">
+        <a class="href-link" href="#setDataLabels">#</a>
+        
+        <span class="code-name">
+            
+                setDataLabels<span class="signature">(dataLabels)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the name of the values.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>dataLabels</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Array.&lt;string></span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Array of labels.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>['count']</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line257">line 257</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setEnableColorScale">
+        <a class="href-link" href="#setEnableColorScale">#</a>
+        
+        <span class="code-name">
+            
+                setEnableColorScale<span class="signature">(bool<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set enabled color scale selector.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+            <th>Default</th>
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>bool</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">boolean</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          true
+      
+      </td>
+  
+
+  <td class="description last"><p>Enable color scale.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line314">line 314</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setEnableDetailView">
+        <a class="href-link" href="#setEnableDetailView">#</a>
+        
+        <span class="code-name">
+            
+                setEnableDetailView<span class="signature">(bool<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Enable detailed view for comparations.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+            <th>Default</th>
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>bool</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">boolean</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          true
+      
+      </td>
+  
+
+  <td class="description last"><p>Enable detailed view.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line305">line 305</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setEnablePartitioning">
+        <a class="href-link" href="#setEnablePartitioning">#</a>
+        
+        <span class="code-name">
+            
+                setEnablePartitioning<span class="signature">(bool<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Enable the partitioning functionality.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+            <th>Default</th>
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>bool</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">boolean</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          true
+      
+      </td>
+  
+
+  <td class="description last"><p>Enable partitioning</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line332">line 332</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setEnableSizeSelect">
+        <a class="href-link" href="#setEnableSizeSelect">#</a>
+        
+        <span class="code-name">
+            
+                setEnableSizeSelect<span class="signature">(bool<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Enable the size selector.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+            <th>Default</th>
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>bool</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">boolean</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          true
+      
+      </td>
+  
+
+  <td class="description last"><p>Enable size selector.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line323">line 323</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setExposeCurrentNode">
+        <a class="href-link" href="#setExposeCurrentNode">#</a>
+        
+        <span class="code-name">
+            
+                setExposeCurrentNode<span class="signature">(exposeCurrentNode)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the exposed groups.</p>
+<p>For more info vistit
+<a href="https://get.carrotsearch.com/foamtree/demo/api/index.html#expose">this info</a>.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>exposeCurrentNode</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Array.&lt;string></span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Array of groups to expose.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line247">line 247</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setFlatSignals">
+        <a class="href-link" href="#setFlatSignals">#</a>
+        
+        <span class="code-name">
+            
+                setFlatSignals<span class="signature">(bool)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Determines how FoamTree will display nested groups.
+When it's set true, produces a flattened view of the hierarchy.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>bool</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">boolean</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Boolean value.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line296">line 296</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setKeys">
+        <a class="href-link" href="#setKeys">#</a>
+        
+        <span class="code-name">
+            
+                setKeys<span class="signature">(keys)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the keys to display.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>keys</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Array.&lt;string></span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Array of keys.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line266">line 266</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setKeysOrder">
+        <a class="href-link" href="#setKeysOrder">#</a>
+        
+        <span class="code-name">
+            
+                setKeysOrder<span class="signature">(keysOrder)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the order of keys.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>keysOrder</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Array.&lt;string></span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Array of keys ordered.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line275">line 275</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setLayout">
+        <a class="href-link" href="#setLayout">#</a>
+        
+        <span class="code-name">
+            
+                setLayout<span class="signature">(layout)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Determines the general type of layout to generate.
+Depending on this option, FoamTree will produce polygon-based
+organic-looking visualization or the traditional rectangular
+tree map.</p>
+<p>The following values are supported:</p>
+<ul>
+<li><strong>relaxed</strong>: produces polygonal organic-looking
+arrangements based on Voronoi diagrams.</li>
+<li><strong>ordered</strong>: produces the traditional rectangular
+treemap using the strip algorithm.</li>
+<li><strong>squarified</strong>: produces the traditional treemap
+using the squarified algorithm.</li>
+</ul>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>layout</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Layout type.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line61">line 61</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setLegendPercentage">
+        <a class="href-link" href="#setLegendPercentage">#</a>
+        
+        <span class="code-name">
+            
+                setLegendPercentage<span class="signature">(enabled)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Enable legend percentage display.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>enabled</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">boolean</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Indicates if it's enabled.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line103">line 103</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setLegendVal">
+        <a class="href-link" href="#setLegendVal">#</a>
+        
+        <span class="code-name">
+            
+                setLegendVal<span class="signature">(enabled)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Enable legend display.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>enabled</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">boolean</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Indicates if it's enabled.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line94">line 94</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setMaxItems">
+        <a class="href-link" href="#setMaxItems">#</a>
+        
+        <span class="code-name">
+            
+                setMaxItems<span class="signature">(num<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set maximum total nodes.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+            <th>Default</th>
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>num</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          1000
+      
+      </td>
+  
+
+  <td class="description last"><p>Number of nodes to show.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line196">line 196</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setMaxLevelItems">
+        <a class="href-link" href="#setMaxLevelItems">#</a>
+        
+        <span class="code-name">
+            
+                setMaxLevelItems<span class="signature">(num<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set maximum total nodes per level.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+            <th>Default</th>
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>num</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          1000
+      
+      </td>
+  
+
+  <td class="description last"><p>Number of nodes to show.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line187">line 187</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setOperation">
+        <a class="href-link" href="#setOperation">#</a>
+        
+        <span class="code-name">
+            
+                setOperation<span class="signature">(operation)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the operation used to scale data.</p>
+<p>The following values are supported:</p>
+<ul>
+<li><b>none</b>: No operation.</li>
+<li><b>log</b>: Logarithmic operation.</li>
+<li><b>atan</b>: Arctangent operation.</li>
+<li><b>pow.75</b>: Power 0.75 operation.</li>
+<li><b>pow.33</b>: Power 0.33 operation.</li>
+<li><b>pow.25</b>: Power 0.25 operation.</li>
+<li><b>sqrt</b>: Square root operation.</li>
+</ul>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>operation</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Operation name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>'none'</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line155">line 155</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setPartitioningBorder">
+        <a class="href-link" href="#setPartitioningBorder">#</a>
+        
+        <span class="code-name">
+            
+                setPartitioningBorder<span class="signature">(num<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the border width on partitioning.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+            <th>Default</th>
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>num</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          2
+      
+      </td>
+  
+
+  <td class="description last"><p>Number of width border.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line341">line 341</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setRelaxationInitializer">
+        <a class="href-link" href="#setRelaxationInitializer">#</a>
+        
+        <span class="code-name">
+            
+                setRelaxationInitializer<span class="signature">(relaxation<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Determines the initial layout of groups' polygons.</p>
+<p>The following values are supported:</p>
+<ul>
+<li><strong>fisheye</strong>: puts large groups in the center of the
+visualization area and the smaller groups towards the corners.</li>
+<li><strong>blackhole</strong>: puts small groups in the center of the
+visualization and the larger groups towards the corners.</li>
+<li><strong>ordered</strong>: lays out the groups in a left-to-right
+lines, in the order the groups were specified in the data object.</li>
+<li><strong>squarified</strong>: puts large groups close to the top-left
+corner of the visualization and the small groups close to the
+bottom-right corner.</li>
+<li><strong>random</strong>: puts groups at random positions.</li>
+</ul>
+<p><i>Note</i>: Applicable only when <i>setLayout</i> is set to <i>relaxed</i>.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+            <th>Default</th>
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>relaxation</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          'fisheye'
+      
+      </td>
+  
+
+  <td class="description last"><p>Layout relaxation.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line84">line 84</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setScrollZoom">
+        <a class="href-link" href="#setScrollZoom">#</a>
+        
+        <span class="code-name">
+            
+                setScrollZoom<span class="signature">(enable)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set scroll or zoom to enabled.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>enable</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">boolean</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Indicates if it's enabled.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>false</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line178">line 178</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setShowZero">
+        <a class="href-link" href="#setShowZero">#</a>
+        
+        <span class="code-name">
+            
+                setShowZero<span class="signature">(showzero)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set groups whose weight is zero as visible.</p>
+<p>For more info vistit
+<a href="https://get.carrotsearch.com/foamtree/demo/api/index.html#showZeroWeightGroups">this info</a>.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>showzero</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">boolean</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Indicates if it's enabled.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line136">line 136</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setSizeSelection">
+        <a class="href-link" href="#setSizeSelection">#</a>
+        
+        <span class="code-name">
+            
+                setSizeSelection<span class="signature">(index<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the index for the dataLabels value that it's used to calculate
+the node size.</p>
+<p>It's related to the setting <i>setDataLabels</i>.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+            <th>Default</th>
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>index</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Number</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          0
+      
+      </td>
+  
+
+  <td class="description last"><p>Index number of datalabel.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li>setEnableSizeSelect</li>
+        
+            <li>setDataLabels</li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line396">line 396</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setValue">
+        <a class="href-link" href="#setValue">#</a>
+        
+        <span class="code-name">
+            
+                setValue<span class="signature">(value)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the value to display.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>value</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Object</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"></td>
+</tr>
+
+  
+  
+    
+<tr class="deep-level-1">
+  
+      <td class="name"><code>value</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Value to show.</p></td>
+</tr>
+
+  
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line286">line 286</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    
+        <pre class="prettyprint"><code>{ value: 'count'}</code></pre>
+    
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setValueFormat">
+        <a class="href-link" href="#setValueFormat">#</a>
+        
+        <span class="code-name">
+            
+                setValueFormat<span class="signature">(valueFormat)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the data representation.</p>
+<p>The following values are supported:</p>
+<ul>
+<li><b>['toBytes']</b>: Byte representation.</li>
+<li><b>['secondsToHMS']</b>: Time representation</li>
+</ul>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>valueFormat</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Array.&lt;string></span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Array with the string name of the format.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_voronoi.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_voronoi.js.html">widgets/voronoi.js</a>, <a href="widgets_voronoi.js.html#line168">line 168</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+            </div>
+        </div>
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.5</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+</body>
+</html>

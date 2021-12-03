@@ -1,0 +1,201 @@
+/*
+
+  DataTables 1.10.x plugin styles
+
+*/
+
+.lt-vapp {
+
+  table.dataTable th {
+    position: relative;
+    padding: 5px 20px 5px 10px;
+    background-image: none;
+  }
+
+  table.dataTable th:focus {
+    outline: none;
+  }
+
+  .dataTables_scrollHead table.dataTable th[class*="sorting"]:before {
+    font-family: 'lt-iconfont';
+    speak: none;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: 50%;
+    right: 1px;
+    margin-top: -9px;
+    content: "\ea7b";
+  }
+
+  .dataTables_scrollHead table.dataTable th.sorting_asc:before {
+    content: "\eaf1";
+  }
+
+  .dataTables_scrollHead table.dataTable th.sorting_desc:before {
+    content: "\ea78";
+  }
+
+  // Highlight
+
+  tbody tr:hover {
+    background-color: #FFFF44;
+  }
+
+  /* Pagination */
+
+  .dataTables_paginate > a.paginate_button.previous {
+    margin-left: 5px;
+  }
+
+  .dataTables_paginate > a.paginate_button.next {
+    margin-right: 5px;
+  }
+
+  .dataTables_paginate > a:before,
+  .dataTables_paginate > a:after {
+    font-family: 'lt-iconfont';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+  }
+
+  .dataTables_paginate > a[class*="previous"]:before  {
+    content: "\ea79";
+    left: 0;
+    padding-right: 2px;
+  }
+
+  .dataTables_paginate > a[class*="next"]:after  {
+    content: "\ea7a";
+    padding-left: 2px;
+    right: 0;
+    top: 1px;
+  }
+
+  .dataTables_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: auto;
+
+    // Length, Filter, Info & Pagination
+
+    .dataTables_length, .dataTables_filter {
+      margin-bottom: 5px;
+      width: auto;
+      float: none;
+      text-align: inherit;
+    }
+
+    .dataTables_info {
+      width: auto;
+      float: none;
+    }
+
+    .dataTables_length,
+    .dataTables_info {
+      flex: 1 1 auto;
+    }
+
+    label {
+      select, input {
+        margin-left: 3px;
+      }
+
+      select {
+        margin-right: 3px;
+        padding: 1px 28px 1px 10px;
+        font-size: 12px;
+      }
+
+      input {
+        box-sizing: border-box;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 0;
+        border-color: #DCDCDC;
+        padding: 1px 5px;
+        font-size: 14px;
+        line-height: 18px;
+        outline: none;
+      }
+    }
+
+    // Pagination
+
+    .paginate_button {
+      margin: 0 4px;
+    }
+
+    .paginate_button.current {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    // Scrolling
+
+    .dataTables_scroll {
+      width: 100%;
+    }
+
+    // Table Headings
+
+    table.dataTable thead th {
+        position: relative;
+        background-image: none !important;
+    }
+
+    table.dataTable thead th.sorting:after,
+    table.dataTable thead th.sorting_asc:after,
+    table.dataTable thead th.sorting_desc:after {
+        position: absolute;
+        top: 12px;
+        right: 8px;
+        display: block;
+        font-family: 'lt-iconfont';
+    }
+
+  }
+
+  // Datatable cells where text shouldn't wrap
+  td.nowrap-cell {
+    white-space: nowrap;
+  }
+
+  td.ellipsis-cell {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  td.flexible-ellipsis-cell {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 9999px; /* Extend the cell as much as possible */
+    max-width: 0; /* Avoid resizing beyond table width */
+  }
+
+  table.dataTable tbody td {
+    vertical-align: top;
+  }
+
+
+}
+
+// For highlighted texts
+.highlighted-cell-text {
+  font-weight: bold;
+}

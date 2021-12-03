@@ -1,0 +1,518 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devo Applications Builder widgets/helpers/exportDataSeries.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Devo Applications Builder</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a>
+                
+                <div class="dropdown is-hoverable is-right">
+                    <a class="dropdown-trigger link">
+                        Tutorials
+                        <i class="fas fa-chevron-down fa-xs"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                        
+                            <a class="dropdown-item" href="tutorial-basics.html">
+                                Getting started
+                            </a>
+                        
+                            <a class="dropdown-item" href="tutorial-configurations.html">
+                                Advanced
+                            </a>
+                        
+                            <a class="dropdown-item" href="tutorial-widgets.html">
+                                Widgets
+                            </a>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/SoftwareBrothers/admin-bro"
+                        >
+                            Github
+                        </a>
+                    
+                        <a
+                            class="link user-link "
+                            href="https://admin-bro-example-app.herokuapp.com/admin"
+                        >
+                            Example Application
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Classes</h3><ul><li><a href="App.html">App</a></li><li><a href="I18n.html">I18n</a></li><li><a href="Section.html">Section</a></li><li><a href="Settings.html">Settings</a></li><li><a href="Tab.html">Tab</a></li><li><a href="TabsBar.html">TabsBar</a></li></ul></div><div class="category"><h2>Data</h2><h3>Classes</h3><ul><li><a href="DataNode.html">DataNode</a></li><li><a href="DataTree.html">DataTree</a></li><li><a href="Dependencies.html">Dependencies</a></li><li><a href="Requests.html">Requests</a></li></ul></div><div class="category"><h2>Fields</h2><h3>Classes</h3><ul><li><a href="BaseField.html">BaseField</a></li><li><a href="Button.html">Button</a></li><li><a href="CheckBoxField.html">CheckBoxField</a></li><li><a href="ChoicePickerField.html">ChoicePickerField</a></li><li><a href="DateTimePickerField.html">DateTimePickerField</a></li><li><a href="DateTimePickerRangeField.html">DateTimePickerRangeField</a></li><li><a href="DateTimePickerRangeFieldPresets.html">DateTimePickerRangeFieldPresets</a></li><li><a href="InputField.html">InputField</a></li><li><a href="Select2Field.html">Select2Field</a></li><li><a href="SelectField.html">SelectField</a></li></ul><h3>Global</h3><ul><li><a href="global.html#matchElement">matchElement</a></li></ul></div><div class="category"><h2>Libs</h2><h3>Modules</h3><ul><li><a href="module-alerts.html">alerts</a></li><li><a href="module-D3Bullet.html">D3Bullet</a></li><li><a href="module-dom.html">dom</a></li><li><a href="module-downloads.html">downloads</a></li><li><a href="module-events.html">events</a></li><li><a href="module-user.html">user</a></li><li><a href="module-zoomChart.html">zoomChart</a></li></ul><h3>Classes</h3><ul><li><a href="ScreenShot.html">ScreenShot</a></li></ul><h3>Global</h3><ul><li><a href="global.html#takeElementScreenShot">takeElementScreenShot</a></li></ul></div><div class="category"><h2>Utils</h2><h3>Modules / Bootstrap</h3><ul><li><a href="module-bootstrap.html">bootstrap</a></li></ul><h3>Modules / Global</h3><ul><li><a href="module-casting.html">casting</a></li><li><a href="module-dateRange.html">dateRange</a></li><li><a href="module-dates.html">dates</a></li><li><a href="module-intervals.html">intervals</a></li><li><a href="module-objects.html">objects</a></li><li><a href="module-order.html">order</a></li><li><a href="module-Query%2520Utils.html">Query Utils</a></li><li><a href="module-scroll.html">scroll</a></li><li><a href="module-units.html">units</a></li></ul><h3>Modules / Helpers</h3><ul><li><a href="module-Helper%2520Highcharts.html">Helper Highcharts</a></li><li><a href="module-Helper%2520Renderers.html">Helper Renderers</a></li></ul><h3>Classes / Bootstrap</h3><ul><li><a href="FullScreenShotBtn.html">FullScreenShotBtn</a></li><li><a href="TvBtn.html">TvBtn</a></li></ul><h3>Classes / Helpers</h3><ul><li><a href="Monitoring.html">Monitoring</a></li></ul></div><div class="category"><h2>Widgets</h2><h3>Modules</h3><ul><li><a href="module-AnimatedHeatmap.html">AnimatedHeatmap</a></li><li><a href="module-Area.html">Area</a></li><li><a href="module-AvailabilityTimeline.html">AvailabilityTimeline</a></li><li><a href="module-Bichord.html">Bichord</a></li><li><a href="module-Bubbles.html">Bubbles</a></li><li><a href="module-Bullet.html">Bullet</a></li><li><a href="module-CircleWorldMap.html">CircleWorldMap</a></li><li><a href="module-Column.html">Column</a></li><li><a href="module-Empty.html">Empty</a></li><li><a href="module-Funnel.html">Funnel</a></li><li><a href="module-Gauge.html">Gauge</a></li><li><a href="module-GoogleColormap.html">GoogleColormap</a></li><li><a href="module-GoogleHeatmap.html">GoogleHeatmap</a></li><li><a href="module-Graph.html">Graph</a></li><li><a href="module-HeatCalendar.html">HeatCalendar</a></li><li><a href="module-Histogram.html">Histogram</a></li><li><a href="module-Lines.html">Lines</a></li><li><a href="module-Monitoring.html">Monitoring</a></li><li><a href="module-PewPewMap.html">PewPewMap</a></li><li><a href="module-Pie.html">Pie</a></li><li><a href="module-PieLayered.html">PieLayered</a></li><li><a href="module-Punchcard.html">Punchcard</a></li><li><a href="module-RAG.html">RAG</a></li><li><a href="module-Sankey.html">Sankey</a></li><li><a href="module-Series.html">Series</a></li><li><a href="module-StackedBars.html">StackedBars</a></li><li><a href="module-Table.html">Table</a></li><li><a href="module-TimeHeatmap.html">TimeHeatmap</a></li><li><a href="module-Tree.html">Tree</a></li><li><a href="module-Voronoi.html">Voronoi</a></li></ul><h3>Modules / Mixins</h3><ul><li><a href="module-base.html">base</a></li><li><a href="module-collapser.html">collapser</a></li><li><a href="module-dataSearch.html">dataSearch</a></li><li><a href="module-download.html">download</a></li><li><a href="module-info.html">info</a></li><li><a href="module-lifeCycle.html">lifeCycle</a></li><li><a href="module-listeners.html">listeners</a></li><li><a href="module-loading.html">loading</a></li><li><a href="module-menu.html">menu</a></li><li><a href="module-screenshot.html">screenshot</a></li><li><a href="module-showQuery.html">showQuery</a></li><li><a href="module-zoom.html">zoom</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>widgets/helpers/exportDataSeries.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>export default {
+  'highcharts': () => {
+     
+    /**
+     * Mofified by LT to avoid buttons on the graphics and use ours.
+     *
+     * A Highcharts plugin for exporting data from a rendered chart as CSV, XLS or HTML table
+     *
+     * Author:   Torstein Honsi
+     * Licence:  MIT
+     * Version:  1.4.1
+     */
+    /*global Highcharts, window, document, Blob */
+    (function (factory) {
+        factory(Highcharts);
+    })(function (Highcharts) {
+      'use strict';
+      var each = Highcharts.each,
+          pick = Highcharts.pick,
+          downloadAttrSupported =
+            document.createElement('a').download !== undefined;
+
+      Highcharts.setOptions({
+          lang: {
+              downloadCSV: 'Download CSV',
+              downloadXLS: 'Download XLS',
+              viewData: 'View data table'
+          }
+      });
+
+      /**
+       * Get the data rows as a two dimensional array
+       */
+      Highcharts.Chart.prototype.getDataRows = function () {
+          var options = (this.options.exporting || {}).csv || {},
+              xAxis = this.xAxis[0],
+              rows = {},
+              rowArr = [],
+              dataRows,
+              names = [],
+              i,
+              x,
+              xTitle = xAxis.options.title &amp;&amp; xAxis.options.title.text,
+
+              // Options
+              dateFormat = options.dateFormat || '%Y-%m-%d %H:%M:%S',
+              columnHeaderFormatter = options.columnHeaderFormatter ||
+                function (series, key, keyLength) {
+                  return series.name + (keyLength > 1 ? ' ('+ key + ')' : '');
+              };
+
+          // Loop the series and index values
+          i = 0;
+          each(this.series, function (series) {
+              var keys = series.options.keys,
+                  pointArrayMap = keys || series.pointArrayMap || ['y'],
+                  valueCount = pointArrayMap.length,
+                  requireSorting = series.requireSorting,
+                  categoryMap = {},
+                  j;
+
+              // Map the categories for value axes
+              each(pointArrayMap, function (prop) {
+                  categoryMap[prop] = (series[prop + 'Axis'] &amp;&amp;
+                    series[prop + 'Axis'].categories) || [];
+              });
+
+              if (series.options.includeInCSVExport !== false &amp;&amp;
+                series.visible !== false) { // #55
+                  j = 0;
+                  while (j &lt; valueCount) {
+                      names.push(columnHeaderFormatter(series,
+                        pointArrayMap[j], pointArrayMap.length));
+                      j = j + 1;
+                  }
+
+                  each(series.points, function (point, pIdx) {
+                      var key = requireSorting ? point.x : pIdx,
+                          prop,
+                          val;
+
+                      j = 0;
+
+                      if (!rows[key]) {
+                          rows[key] = [];
+                      }
+                      rows[key].x = point.x;
+
+                      // Pies, funnels etc. use point name in X row
+                      if (!series.xAxis) {
+                          rows[key].name = point.name;
+                      }
+
+                      while (j &lt; valueCount) {
+                          prop = pointArrayMap[j]; // y, z etc
+                          val = point[prop];
+                          rows[key][i + j] = pick(categoryMap[prop][val], val); // Pick a Y axis category if present
+                          j = j + 1;
+                      }
+
+                  });
+                  i = i + j;
+              }
+          });
+
+          // Make a sortable array
+          for (x in rows) {
+              if (rows.hasOwnProperty(x)) {
+                  rowArr.push(rows[x]);
+              }
+          }
+          // Sort it by X values
+          rowArr.sort(function (a, b) {
+              return a.x - b.x;
+          });
+
+          // Add header row
+          if (!xTitle) {
+              xTitle = xAxis.isDatetimeAxis ? 'DateTime' : 'Category';
+          }
+          dataRows = [[xTitle].concat(names)];
+
+          // Transform the rows to CSV
+          each(rowArr, function (row) {
+
+              var category = row.name;
+              if (!category) {
+                  if (xAxis.isDatetimeAxis) {
+                      category = Highcharts.dateFormat(dateFormat, row.x);
+                  } else if (xAxis.categories) {
+                      category = pick(xAxis.names[row.x],
+                        xAxis.categories[row.x], row.x);
+                  } else {
+                      category = row.x;
+                  }
+              }
+
+              // Add the X/date/category
+              row.unshift(category);
+              dataRows.push(row);
+          });
+
+          return dataRows;
+      };
+
+      /**
+       * Get a CSV string
+       */
+    
+      Highcharts.Chart.prototype.getCSV = function (useLocalDecimalPoint) {
+          var csv = '',
+              rows = this.getDataRows(),
+              options = (this.options.exporting || {}).csv || {},
+              itemDelimiter = options.itemDelimiter || ',', // use ';' for direct import to Excel
+              lineDelimiter = options.lineDelimiter || '\n'; // '\n' isn't working with the js csv data extraction
+
+          // Transform the rows to CSV
+          each(rows, function (row, i) {
+              var val = '',
+                  j = row.length,
+                  n = useLocalDecimalPoint ? (1.1).toLocaleString()[1] : '.';
+              while (j--) {
+                  val = row[j];
+                  if (typeof val === 'string') {
+                      val = '"' + val + '"';
+                  }
+                  if (typeof val === 'number') {
+                      if (n === ',') {
+                          val = val.toString().replace('.', ',');
+                      }
+                  }
+                  row[j] = val;
+              }
+              // Add the values
+              csv += row.join(itemDelimiter);
+
+              // Add the line delimiter
+              if (i &lt; rows.length - 1) {
+                  csv += lineDelimiter;
+              }
+          });
+          return csv;
+      };
+
+      /**
+       * Build a HTML table with the data
+       */
+      Highcharts.Chart.prototype.getTable = function (useLocalDecimalPoint) {
+          var html = '&lt;table>',
+              rows = this.getDataRows();
+
+          // Transform the rows to HTML
+          each(rows, function (row, i) {
+              var tag = i ? 'td' : 'th',
+                  val,
+                  j,
+                  n = useLocalDecimalPoint ? (1.1).toLocaleString()[1] : '.';
+
+              html += '&lt;tr>';
+              for (j = 0; j &lt; row.length; j = j + 1) {
+                  val = row[j];
+                  // Add the cell
+                  if (typeof val === 'number') {
+                      val = val.toString();
+                      if (n === ',') {
+                          val = val.replace('.', n);
+                      }
+                      html += '&lt;' + tag + ' class="number">' + val +
+                        '&lt;/' + tag + '>';
+
+                  } else {
+                      html += '&lt;' + tag + '>' + (val === undefined ? '' : val) +
+                        '&lt;/' + tag + '>';
+                  }
+              }
+
+              html += '&lt;/tr>';
+          });
+          html += '&lt;/table>';
+          return html;
+      };
+
+      function getContent(chart, href, extension, content, MIME) {
+          var a,
+              blobObject,
+              name,
+              options = (chart.options.exporting || {}).csv || {},
+              url = options.url ||
+                'http://www.highcharts.com/studies/csv-export/download.php';
+
+          if (chart.options.exporting.filename) {
+              name = chart.options.exporting.filename;
+          } else if (chart.title) {
+              name = chart.title.textStr.replace(/ /g, '-').toLowerCase();
+          } else {
+              name = 'chart';
+          }
+
+          // MS specific. Check this first because of bug with Edge (#76)
+          if (window.Blob &amp;&amp; window.navigator.msSaveOrOpenBlob) {
+              // Falls to msSaveOrOpenBlob if download attribute is not supported
+              blobObject = new Blob([content]);
+              window.navigator.msSaveOrOpenBlob(blobObject, name + '.' +
+                extension);
+
+          // Download attribute supported
+          } else if (downloadAttrSupported) {
+              a = document.createElement('a');
+              a.href = href;
+              a.target = '_blank';
+              a.download = name + '.' + extension;
+              document.body.appendChild(a);
+              a.click();
+              a.remove();
+
+          } else {
+              // Fall back to server side handling
+              Highcharts.post(url, {
+                  data: content,
+                  type: MIME,
+                  extension: extension
+              });
+          }
+      }
+
+      /**
+       * Call this on click of 'Download CSV' button
+       */
+      Highcharts.Chart.prototype.downloadCSV = function () {
+          var csv = this.getCSV(true);
+          getContent(
+              this,
+              'data:text/csv,' + csv.replace(/\n/g, '%0A'),
+              'csv',
+              csv,
+              'text/csv'
+          );
+      };
+
+      /**
+       * Call this on click of 'Download XLS' button
+       */
+      Highcharts.Chart.prototype.downloadXLS = function () {
+          var uri = 'data:application/vnd.ms-excel;base64,',
+              template = `&lt;html
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+&lt;head>&lt;!--[if gte mso 9]>&lt;xml>&lt;x:ExcelWorkbook>
+&lt;x:ExcelWorksheets>&lt;x:ExcelWorksheet>
+&lt;x:Name>Ark1&lt;/x:Name>&lt;x:WorksheetOptions>
+&lt;x:DisplayGridlines/>&lt;/x:WorksheetOptions>
+&lt;/x:ExcelWorksheet>&lt;/x:ExcelWorksheets>
+&lt;/x:ExcelWorkbook>&lt;/xml>&lt;![endif]-->
+&lt;style>td{border:none;font-family: Calibri, sans-serif;}
+.number{mso-number-format:"0.00";}&lt;/style>
+&lt;meta name=ProgId content=Excel.Sheet>
+                  &lt;/head>&lt;body>
+                  ${this.getTable(true)}
+                  &lt;/body>&lt;/html>`,
+              base64 = function (s) {
+                  return window.btoa(unescape(encodeURIComponent(s))); // #50
+              };
+          getContent(
+              this,
+              uri + base64(template),
+              'xls',
+              template,
+              'application/vnd.ms-excel'
+          );
+      };
+
+      /**
+       * View the data in a table below the chart
+       */
+      Highcharts.Chart.prototype.viewData = function () {
+          if (!this.insertedTable) {
+              var div = document.createElement('div');
+              div.className = 'highcharts-data-table';
+              // Insert after the chart container
+              this.renderTo.parentNode.insertBefore(div,
+                this.renderTo.nextSibling);
+              div.innerHTML = this.getTable();
+              this.insertedTable = true;
+          }
+      };
+
+
+      // Add "Download CSV" to the exporting menu. Use download attribute if supported, else
+      // run a simple PHP script that returns a file. The source code for the PHP script can be viewed at
+      // https://raw.github.com/highslide-software/highcharts.com/master/studies/csv-export/csv.php
+
+      // Commented for avoid this buttons on the widget and use ours
+
+      // if (Highcharts.getOptions().exporting) {
+      //     Highcharts.getOptions().exporting.buttons.contextButton.menuItems.push({
+      //         textKey: 'downloadCSV',
+      //         onclick: function () { this.downloadCSV(); }
+      //     }, {
+      //         textKey: 'downloadXLS',
+      //         onclick: function () { this.downloadXLS(); }
+      //     }, {
+      //         textKey: 'viewData',
+      //         onclick: function () { this.viewData(); }
+      //     });
+      // }
+
+    });
+
+  }
+
+};
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.5</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+</body>
+</html>

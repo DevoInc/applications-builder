@@ -1,0 +1,45 @@
+.lt-vapp {
+
+  .lt-date-time-picker-range-field {
+    display:inline-block;
+    margin: 0;
+    padding: 0;
+
+    .lt-date-time-picker-field:last-child {
+      margin-left:10px;
+    }
+
+    // Highlight effect
+    @-webkit-keyframes highlight-fade {
+      0% { color: rgb(162, 182, 42); }
+      100% { color: #666666; }
+    }
+    @-moz-keyframes highlight-fade {
+      0% { color: rgb(162, 182, 42); }
+      100% { color: #666666; }
+    }
+    @-ms-keyframes highlight-fade {
+      0% { color: rgb(162, 182, 42); }
+      100% { color: #666666; }
+    }
+    @keyframes highlight-fade {
+      0% { color: rgb(162, 182, 42); }
+      100% { color: #666666; }
+    }
+    .highlight {
+      -webkit-animation: highlight-fade 3s ease-out;
+      -moz-animation: highlight-fade 3s ease-out;
+      -o-animation: highlight-fade 3s ease-out;
+      animation: highlight-fade 3s ease-out;
+    }
+  }
+
+  .lt-vapp-config {
+
+    .lt-date-time-picker-range-field {
+      display: flex;
+    }
+
+  }
+
+}

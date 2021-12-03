@@ -1,0 +1,31 @@
+.lt-lx-aw-availability .viewport .lt-screenshot-frame {
+  background-color: white !important; 
+}
+.lt-lx-aw-availability .g_axisVisavail title {
+  color: black !important; 
+}
+
+.tooltipVisavail{
+  position:absolute;
+  text-align:left;
+  -moz-osx-font-smoothing:grayscale;
+  font-size:10px;
+  padding-left:0;
+  width:auto;
+  border:0;
+  border-left:thin solid black!important;
+  pointer-events:none;
+  line-height:12px;padding-top:0;
+  display:block;
+  z-index:999;
+  color:black !important;
+  font-weight:bolder
+}
+
+.ytitleVisavail{
+  dominant-baseline:middle;
+  -moz-osx-font-smoothing:grayscale;
+  font-size:12px;
+  fill:black !important;
+  text-overflow: ellipsis;
+}

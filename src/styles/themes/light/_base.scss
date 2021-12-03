@@ -1,0 +1,480 @@
+.lt-vapp.theme-light  {
+    background-color: #f5f5f5;
+}
+
+.theme-light {
+
+  .ns-default {
+    background-color: white;
+    color: #6b6b6b;
+
+    .ns-box-inner {
+      h2 {
+        background-color: #A2B43D;
+        color: white;
+      }
+
+      ul li label {
+        color: black;
+      }
+    }
+
+    .ns-close::before, .ns-close::after,
+    .ns-close:hover::before, .ns-close:hover::after {
+      background: white;
+    }
+  }
+
+  .lt-vapp-overlay {
+    background-color: rgba(0, 0, 0, .4);
+  }
+
+  .lt-vapp-header {
+    background-image: url("https://static.logtrust.com/static/appsVerticales/themes/theme_light/img/header_theme_light.jpg");
+  }
+
+  .lt-vapp-header.xsmall {
+    .lt-vapp-logtrust-powered {
+      color: #fff;
+    }
+  }
+
+  .lt-vapp-menu {
+    background-color: #fff;
+    -webkit-box-shadow: 0 5px 0 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 5px 0 0 rgba(0,0,0,.1);
+    box-shadow: 0 4px 0 0 rgba(0,0,0,.1);
+  }
+
+  .lt-vapp-company_logo {
+    background-image: url("https://static.logtrust.com/static/appsVerticales/themes/common/default_logo_header.jpg");
+  }
+
+  .lt-vapp-logtrust-powered   {
+      color: #fff;
+      background-color: rgba(0,0,0,.2);
+  }
+}
+
+
+
+
+.theme-light .lt-vapp-logtrust-powered figcaption {
+    color: #656565;
+}
+
+.theme-light .lt-vapp-details {
+    background: rgba(220, 220, 218, 0.41);
+    border-top: 1px solid rgba(40, 40, 40, 0.10);
+}
+
+.theme-light .lt-vapp-details.fixed-menu   {
+    background: #DDDDDD;
+}
+
+.theme-light .lt-vapp-widget-graphic.with-filter .lt-widget-header   {
+    border-bottom: 1px solid #DDDDDD;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.theme-light .lt-vapp-widget-graphic .widgetError {
+  background-image: url('https://static.logtrust.com/static/appsVerticales/img/no_data_widget.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.theme-light .lt-vapp-widget-graphic .widgetError.invalid span:first-child  {
+  color: #ff5353 !important;
+}
+
+.theme-light .lt-vapp-menu-main > li.scroll-menu-open,
+.theme-light .lt-vapp-menu-main > li:hover {
+    color: #a2b62a;
+}
+
+.theme-light .lt-vapp-menu-main > li.active:not(.scroll-menu-open) {
+    color: #a2b62a;
+    box-shadow: 0 4px 0 0 rgb(162, 182, 42);
+}
+
+.theme-light .lt-vapp-menu-main > li.active.scroll-menu-open    {
+    background-color: #282828;
+}
+
+.theme-light .lt-vapp-menu-main > li.active.hasMenu:after {
+    background: #282828;
+    color: #fff;
+}
+
+.theme-light .lt-vapp-menu-main .lt-vapp-menu-item-name > span {
+    font-weight: 700;
+}
+
+.theme-light .lt-vapp-menu-scroll {
+    background-color: #282828;
+    color: #fff;
+}
+
+.theme-light .lt-vapp-menu-scroll-titles {
+    border-color: #848484;
+}
+
+.theme-light .lt-vapp-menu-scroll-titles span {
+    color: #848484;
+}
+
+.theme-light .lt-vapp-menu-scroll li {
+    font-weight: 700;
+}
+
+.theme-light .lt-vapp-menu-scroll li:hover   {
+    background-color: #363636;
+}
+
+.theme-light .lt-vapp-menu-scroll li:hover:before,
+.theme-light .lt-vapp-menu-scroll li.active:after {
+    background-color: #a2b62a;
+}
+
+.theme-light .lt-vapp-menu-preferences li:hover {
+    background-color: #F4F4F2;
+}
+
+.theme-light .lt-vapp-menu-preferences li {
+    border-color: #DCDCDA;
+}
+
+.theme-light .lt-vapp-menu-preferences li.lt-vapp-options-button.active span   {
+    background-color: #282828;
+    color: #fff;
+}
+
+.theme-light .lt-vapp-config {
+    background-color: #fff;
+}
+
+.theme-light .lt-vapp-config > p {
+    background-color: #EAEAE8;
+}
+
+.theme-light .lt-vapp-config > h4 i {
+    color: #5A5A5A;
+}
+
+.theme-light .lt-vapp-config > h4 span {
+    color: #5A5A5A;
+}
+
+.theme-light .lt-vapp-config > p i {
+    background-color: #fff;
+}
+
+.theme-light .lt-vapp-config > p span {
+    color: #666;
+}
+
+.theme-light .lt-form .lt-form-column-wrapper.tv-mode {
+    border-top: 1px solid  #d9dadc;
+    border-bottom: 1px solid  #d9dadc;
+}
+
+.theme-light .lt-vapp-section-title  {
+    background-color: #fff;
+}
+
+.theme-light .lt-vapp-section-title > span:first-of-type  {
+    font-weight: 700;
+}
+
+.theme-light .lt-vapp-section .lt-vapp-widget-header {
+    background-color: #fff;
+    border-color: #dddddd;
+}
+
+.theme-light .lt-vapp-widget-header h3 {
+    font-weight: 700;
+    color: #282828;
+}
+
+.theme-light .lt-vapp-widget-header h2 {
+    font-weight: 700;
+    color: #282828;
+}
+
+.theme-light .lt-vapp-widget-header p {
+    color: #5A5A5A;
+}
+
+.theme-light .lt-vapp-widget-options > span {
+    color: #282828;
+}
+
+.theme-light .lt-vapp-widget-options > span:hover,
+.theme-light .lt-vapp-section-title > span.lt-vapp-section-collapser:hover,
+.theme-light .lt-vapp-widget-options > span.hasMenuOpen {
+    color: #a2b62a;
+}
+
+.theme-light .lt-vapp-widget-filter  {
+    background-color: rgb(214, 214, 214);
+}
+
+.theme-light .lt-vapp-widget-graphic {
+    background-color: #fff;
+}
+
+.theme-light .lt-vapp-highlight-item {
+    background-color: #fff;
+}
+
+.theme-light .lt-vapp-highlight-icon {
+    background-color: #282828;
+    color: #fff;
+}
+
+.theme-light .lt-vapp-highlight-title h5,
+.theme-light .lt-vapp-highlight-data {
+    font-weight: 900;
+}
+
+.theme-light .lt-vapp-highlight-data span.lt-vapp-highlight-data-unit {
+    font-weight: 700;
+}
+
+/* Section titles: with border */
+
+.lt-vapp:not(.compact).theme-light .lt-vapp-section-title.bordered {
+    border-color: #282828;
+}
+
+/* Custom Background  */
+
+.lt-vapp:not(.compact).theme-light .lt-vapp-section.custom-background   {
+    background-image: url("https://static.logtrust.com/static/appsVerticales/themes/theme_light/img/custom-back_light.jpg");
+    background-size: 65% !important;
+}
+
+.lt-vapp:not(.compact).theme-light .lt-vapp-section.custom-background .lt-vapp-widget-header,
+.lt-vapp:not(.compact).theme-light .lt-vapp-section.custom-background .lt-vapp-section-title    {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.lt-vapp:not(.compact).theme-light .lt-vapp-section.custom-background  .lt-vapp-widget-graphic  {
+    background-color: rgba(255, 255, 255, 0.70);
+}
+
+.lt-vapp:not(.compact).theme-light .lt-vapp-section.custom-background .lt-vapp-widget-header h3,
+.lt-vapp:not(.compact).theme-light .lt-vapp-section.custom-background .lt-vapp-widget-options > span:not(:hover):not(.hasMenuOpen),
+.lt-vapp:not(.compact).theme-light .lt-vapp-section.custom-background .lt-vapp-section-title {
+    color: #282828;
+}
+
+.lt-vapp:not(.compact).theme-light.bordered .lt-vapp-section.custom-background .lt-vapp-section-title    {
+    background: none;
+}
+
+.lt-vapp:not(.compact).theme-light .lt-vapp-section.custom-background .lt-vapp-widget-header p {
+    color: #888888;
+}
+
+/* Widgets: Options Menu visible */
+
+.theme-light.expanded-widget-menu .lt-vapp-widget-options span > ul > li:not(:last-child) {
+    border-color: #d8d8d8;
+}
+
+.theme-light.expanded-widget-menu .lt-vapp-widget-options span > ul > li    {
+    color: #282828;
+}
+
+.theme-light.expanded-widget-menu .lt-vapp-widget-options span > ul > li:hover  {
+    background-color: rgba(0,0,0, 0.07);
+}
+
+.theme-light.expanded-widget-menu .lt-vapp-section.custom-background .lt-vapp-widget-options span > ul > li:not(:last-child) {
+    border-color: #fff;
+}
+
+.theme-light.expanded-widget-menu .lt-vapp-section.custom-background .lt-vapp-widget-options span > ul > li    {
+    color: #fff;
+}
+
+.theme-light.expanded-widget-menu .lt-vapp-section.custom-background .lt-vapp-widget-options span > ul > li:hover  {
+    background-color: rgba(255,255,255, 0.07);
+}
+
+/* Widgets: Options Menu collapsed */
+
+.theme-light:not(.expanded-widget-menu) .lt-vapp-widget-options span > ul {
+    border-color: #d6d6d6;
+    box-shadow: 0px 3px 4px -2px #e0e0e0;
+}
+
+.theme-light:not(.expanded-widget-menu) .lt-vapp-widget-options span > ul:before {
+    background-color: #bcd366;
+}
+
+.theme-light:not(.expanded-widget-menu) .lt-vapp-widget-options span > ul:after {
+    background-color: #bcd366;
+}
+
+.theme-light:not(.expanded-widget-menu) .lt-vapp-widget-options span > ul > li {
+    background-color: #f3f4f5;
+    border-color: #d6d6d6;
+    color: #666;
+}
+
+.theme-light:not(.expanded-widget-menu) .lt-vapp-widget-options span > ul > li:hover {
+    background-color: #d6d6d6;
+    color: #7b7b7b;
+}
+
+/* Highlights module  */
+
+.theme-light .lt-vapp-highlight-title {
+    background-color: #d4d4d4;
+    color: #fff;
+}
+
+.theme-light .lt-vapp-highlight-data  span.lt-vapp-highlight-data-value {
+    color: #282828;
+}
+
+.theme-light .lt-vapp-highlight-data span.lt-vapp-highlight-data-unit {
+    color: #A0A0A0;
+}
+
+.theme-light .lt-vapp-highlight-details  {
+    background-color: #282828;
+}
+
+.theme-light .lt-vapp-highlight-details:hover  {
+    color: #a2b62a;
+}
+
+.theme-light .lt-vapp-highlight-data:nth-child(even) {
+  background: #f5f5f5;
+}
+
+.theme-light .lt-vapp-highlight-header {
+  background: #fff;
+  color: #282828;
+}
+
+  /* Compact view  */
+
+.lt-vapp.compact.theme-light  {
+    background: #f4f4f4;
+}
+
+.lt-vapp.compact.theme-light .lt-vapp-section,
+.lt-vapp.compact.theme-light .lt-vapp-widget,
+.lt-vapp.compact.theme-light .lt-vapp-section-title,
+.lt-vapp.compact.theme-light .lt-vapp-highlight,
+.lt-vapp.compact.theme-light .lt-vapp-highlight-item  {
+    border-color: #DCDCDA;
+}
+
+.lt-vapp.compact.theme-light .lt-vapp-widget {
+    background-color: #fff;
+}
+
+.lt-vapp.compact.theme-light .lt-vapp-highlight-title,
+.lt-vapp.compact.theme-light .lt-vapp-highlight-details {
+    background-color: rgb(243, 244, 245);
+    color: #282828;
+}
+
+/*  Tables  */
+
+.theme-light table  {
+    color: #888888;
+}
+
+.theme-light table th  {
+    font-weight: 700;
+    background-color: #D4D4D4;
+    border-right-color: rgba(164,164,164,0.3);
+    color: #797979;
+}
+
+.theme-light table tbody tr:nth-child(odd)  {
+    background-color: transparent;
+}
+
+.theme-light table tbody tr:nth-child(2n) {
+    background-color: #F5F5F5;
+}
+
+.theme-light table tbody tr:hover {
+    background-color: rgba(162, 182, 42, .40);
+}
+
+/* TABS */
+
+/*  Tabs Component  */
+
+
+.theme-light .lt-vapp-tabs-widget header {
+  background-color: #dddddd;
+}
+
+.theme-light .lt-vapp-tabs-navigation {
+  border-bottom: none;
+}
+
+.theme-light .lt-vapp-tabs-navigation li.active  {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.theme-light .lt-vapp-tabs-navigation li.active:before {
+  background: #fff;
+}
+
+
+.theme-light .lt-vapp-tabs-navigation li.active,
+.theme-light .lt-vapp-tabs-navigation li:not(.active):hover {
+  background: #fff;
+  color: #282828;
+}
+
+.theme-light .lt-vapp-tabs-content-wrapper {
+  background: #fff;
+}
+
+.theme-light .lt-vapp-tabs-filter  {
+  background: #ccf4f9;
+}
+
+/*  TV Mode Header  */
+
+.theme-light .lt-vapp-tv-header {
+  background-color: #fff;
+  color: #282828;
+}
+
+.theme-light .lt-vapp-tv-header .timeDetail span:nth-child(2),
+.theme-light .lt-vapp-tv-header .timeDetail span:nth-child(4) {
+  color: #282828;
+}
+
+.theme-light .lt-vapp-tv-close {
+  background: #282828;
+  color: #fff;
+}
+
+.theme-light .lt-vapp-tv-header .timeDetail {
+  color: #696969;
+}
+
+// Widget Footer
+
+.lt-vapp.theme-light {
+  .lt-vapp-widget-footer {
+    background: #FFFFFF;
+    border-top: 1px solid #DCDCDC;
+  }
+}

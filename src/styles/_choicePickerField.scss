@@ -1,0 +1,9 @@
+.lt-choice-picker-field {
+  display:inline-block;
+
+  label {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

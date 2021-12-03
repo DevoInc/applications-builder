@@ -1,0 +1,333 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devo Applications Builder fields/DateTimePickerField.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Devo Applications Builder</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a>
+                
+                <div class="dropdown is-hoverable is-right">
+                    <a class="dropdown-trigger link">
+                        Tutorials
+                        <i class="fas fa-chevron-down fa-xs"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                        
+                            <a class="dropdown-item" href="tutorial-basics.html">
+                                Getting started
+                            </a>
+                        
+                            <a class="dropdown-item" href="tutorial-configurations.html">
+                                Advanced
+                            </a>
+                        
+                            <a class="dropdown-item" href="tutorial-widgets.html">
+                                Widgets
+                            </a>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/SoftwareBrothers/admin-bro"
+                        >
+                            Github
+                        </a>
+                    
+                        <a
+                            class="link user-link "
+                            href="https://admin-bro-example-app.herokuapp.com/admin"
+                        >
+                            Example Application
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Classes</h3><ul><li><a href="App.html">App</a></li><li><a href="I18n.html">I18n</a></li><li><a href="Section.html">Section</a></li><li><a href="Settings.html">Settings</a></li><li><a href="Tab.html">Tab</a></li><li><a href="TabsBar.html">TabsBar</a></li></ul></div><div class="category"><h2>Data</h2><h3>Classes</h3><ul><li><a href="DataNode.html">DataNode</a></li><li><a href="DataTree.html">DataTree</a></li><li><a href="Dependencies.html">Dependencies</a></li><li><a href="Requests.html">Requests</a></li></ul></div><div class="category"><h2>Fields</h2><h3>Classes</h3><ul><li><a href="BaseField.html">BaseField</a></li><li><a href="Button.html">Button</a></li><li><a href="CheckBoxField.html">CheckBoxField</a></li><li><a href="ChoicePickerField.html">ChoicePickerField</a></li><li><a href="DateTimePickerField.html">DateTimePickerField</a></li><li><a href="DateTimePickerRangeField.html">DateTimePickerRangeField</a></li><li><a href="DateTimePickerRangeFieldPresets.html">DateTimePickerRangeFieldPresets</a></li><li><a href="InputField.html">InputField</a></li><li><a href="Select2Field.html">Select2Field</a></li><li><a href="SelectField.html">SelectField</a></li></ul><h3>Global</h3><ul><li><a href="global.html#matchElement">matchElement</a></li></ul></div><div class="category"><h2>Libs</h2><h3>Modules</h3><ul><li><a href="module-alerts.html">alerts</a></li><li><a href="module-D3Bullet.html">D3Bullet</a></li><li><a href="module-dom.html">dom</a></li><li><a href="module-downloads.html">downloads</a></li><li><a href="module-events.html">events</a></li><li><a href="module-user.html">user</a></li><li><a href="module-zoomChart.html">zoomChart</a></li></ul><h3>Classes</h3><ul><li><a href="ScreenShot.html">ScreenShot</a></li></ul><h3>Global</h3><ul><li><a href="global.html#takeElementScreenShot">takeElementScreenShot</a></li></ul></div><div class="category"><h2>Utils</h2><h3>Modules / Bootstrap</h3><ul><li><a href="module-bootstrap.html">bootstrap</a></li></ul><h3>Modules / Global</h3><ul><li><a href="module-casting.html">casting</a></li><li><a href="module-dateRange.html">dateRange</a></li><li><a href="module-dates.html">dates</a></li><li><a href="module-intervals.html">intervals</a></li><li><a href="module-objects.html">objects</a></li><li><a href="module-order.html">order</a></li><li><a href="module-Query%2520Utils.html">Query Utils</a></li><li><a href="module-scroll.html">scroll</a></li><li><a href="module-units.html">units</a></li></ul><h3>Modules / Helpers</h3><ul><li><a href="module-Helper%2520Highcharts.html">Helper Highcharts</a></li><li><a href="module-Helper%2520Renderers.html">Helper Renderers</a></li></ul><h3>Classes / Bootstrap</h3><ul><li><a href="FullScreenShotBtn.html">FullScreenShotBtn</a></li><li><a href="TvBtn.html">TvBtn</a></li></ul><h3>Classes / Helpers</h3><ul><li><a href="Monitoring.html">Monitoring</a></li></ul></div><div class="category"><h2>Widgets</h2><h3>Modules</h3><ul><li><a href="module-AnimatedHeatmap.html">AnimatedHeatmap</a></li><li><a href="module-Area.html">Area</a></li><li><a href="module-AvailabilityTimeline.html">AvailabilityTimeline</a></li><li><a href="module-Bichord.html">Bichord</a></li><li><a href="module-Bubbles.html">Bubbles</a></li><li><a href="module-Bullet.html">Bullet</a></li><li><a href="module-CircleWorldMap.html">CircleWorldMap</a></li><li><a href="module-Column.html">Column</a></li><li><a href="module-Empty.html">Empty</a></li><li><a href="module-Funnel.html">Funnel</a></li><li><a href="module-Gauge.html">Gauge</a></li><li><a href="module-GoogleColormap.html">GoogleColormap</a></li><li><a href="module-GoogleHeatmap.html">GoogleHeatmap</a></li><li><a href="module-Graph.html">Graph</a></li><li><a href="module-HeatCalendar.html">HeatCalendar</a></li><li><a href="module-Histogram.html">Histogram</a></li><li><a href="module-Lines.html">Lines</a></li><li><a href="module-Monitoring.html">Monitoring</a></li><li><a href="module-PewPewMap.html">PewPewMap</a></li><li><a href="module-Pie.html">Pie</a></li><li><a href="module-PieLayered.html">PieLayered</a></li><li><a href="module-Punchcard.html">Punchcard</a></li><li><a href="module-RAG.html">RAG</a></li><li><a href="module-Sankey.html">Sankey</a></li><li><a href="module-Series.html">Series</a></li><li><a href="module-StackedBars.html">StackedBars</a></li><li><a href="module-Table.html">Table</a></li><li><a href="module-TimeHeatmap.html">TimeHeatmap</a></li><li><a href="module-Tree.html">Tree</a></li><li><a href="module-Voronoi.html">Voronoi</a></li></ul><h3>Modules / Mixins</h3><ul><li><a href="module-base.html">base</a></li><li><a href="module-collapser.html">collapser</a></li><li><a href="module-dataSearch.html">dataSearch</a></li><li><a href="module-download.html">download</a></li><li><a href="module-info.html">info</a></li><li><a href="module-lifeCycle.html">lifeCycle</a></li><li><a href="module-listeners.html">listeners</a></li><li><a href="module-loading.html">loading</a></li><li><a href="module-menu.html">menu</a></li><li><a href="module-screenshot.html">screenshot</a></li><li><a href="module-showQuery.html">showQuery</a></li><li><a href="module-zoom.html">zoom</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>fields/DateTimePickerField.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import BaseField from './BaseField';
+import { i18n } from '@devo/applications-builder/i18n';
+import user from '@devo/applications-builder/libs/user';
+import locales from '@devo/applications-builder/fields/DateTimePickerFieldLocales.json';
+
+/**
+ *
+ * @param {Object} props - Properties object
+ * @param {DataNode} [dataNode=null] - DataNode to write
+ *
+ * @category Fields
+ * @class
+ * Simple widget to select a datetime from a picker options.
+ * @extends BaseField
+ */
+class DateTimePickerField extends BaseField {
+  constructor(props) {
+    props = Object.assign(
+      {
+        timepicker: false,
+        showTime: false,
+        default: Date.now(),
+        lang: getLang(),
+        sibilings: [null, null], // Sibilings DateTimePickers [previous, next]
+        locale: JSON.parse(JSON.stringify(locales['en'])),
+        firstOpen: false,
+      },
+      props
+    );
+    super(props);
+    if (!this.el) return undefined;
+    return this;
+  }
+
+  /**
+   * Get formated value for date time picker.
+   * @return {string} Formated date.
+   */
+  getDTPFormat(full = true) {
+    let format = 'YYYY/MM/DD';
+    if (full) format += ' HH:mm';
+    return getMomentWithTZ(this.value).format(format);
+  }
+
+  /**
+   * Get formated value for input text.
+   * @return {string} Formated date.
+   */
+  getInputFormat() {
+    return getMomentWithTZ(this.value).format(this.locale.format);
+  }
+
+  /**
+   * Set default value.
+   */
+  setDefault() {
+    if (this.default != null) {
+      this.value = this.default;
+    }
+  }
+
+  /**
+   * Event on close,
+   * @param {moment} date - Date in moment object.
+   */
+  onClose(date) {
+    this.setValue(moment(date).tz(user.getTimezone()).valueOf());
+    if (this.onChange) this.onChange(this.value);
+  }
+
+  // Override addListener.
+  addListeners() {}
+
+  /**
+   * Set the date to the input box.
+   */
+  setDOM() {
+    this.container.innerHTML = this.getInputFormat();
+  }
+
+  /**
+   * Build the DateTimePicker elements.
+   */
+  buildDOM() {
+    // Get the locales
+    this.locale = getLocales(this.lang, this.timepicker || this.showTime);
+
+    let cleanId = this.getCleanId();
+    this.el.classList.add('selectWrapper');
+    this.el.innerHTML = `&lt;input type="hidden" value="" />
+      &lt;div class="dropArrowDown">
+        &lt;span class="LtAppIcon-arrow_down">&lt;/span>
+      &lt;/div>
+      &lt;span class="${cleanId}_container">&lt;/span>`;
+
+    this.input = this.el.querySelector('input');
+    this.container = this.el.querySelector(`.${cleanId}_container`);
+
+    // Initialize the component
+    let self = this;
+    this.component = $(this.el).datetimepicker({
+      lang: this.lang,
+      lazyInit: false,
+      ownerDocument: this.vapp,
+      contentWindow: this.vapp,
+      dayOfWeekStart: this.locale.weekStart,
+      onClose: (date) => {
+        let tz = user.getTimezone();
+        let fmtDate = moment(date).format('YYYY/MM/DD HH:mm');
+        let newDate = moment.tz(fmtDate, 'YYYY/MM/DD HH:mm', tz).toDate();
+        this.onClose(newDate);
+      },
+      timepicker: this.timepicker,
+      closeOnDateSelect: false,
+      closeOnTimeSelect: false,
+      value: this.getDTPFormat(),
+      onShow: this.onShow
+        ? this.onShow
+        : function () {
+            this.setOptions({
+              value: self.getDTPFormat(),
+              minDate: self.sibilings[0]
+                ? self.sibilings[0].getDTPFormat(false)
+                : false,
+              maxDate: self.sibilings[1]
+                ? self.sibilings[1].getDTPFormat(false)
+                : getMomentWithTZ().format('YYYY/MM/DD'),
+            });
+          },
+    });
+  }
+
+  // Highlight whenever the value is set programatically
+  setValue(value) {
+    super.setValue(value);
+    this.highlight();
+  }
+
+  /**
+   * Highlight the input.
+   */
+  highlight() {
+    $(this.el).removeClass('highlight');
+    setTimeout(() => {
+      $(this.el).addClass('highlight');
+    }, 0);
+  }
+}
+
+export default DateTimePickerField;
+
+// Helpers
+// -----------------------------------------------------------------------------
+
+function getLang() {
+  return i18n &amp;&amp; i18n.getRegionCode() ? i18n.getRegionCode() : 'en';
+}
+
+function getLocales(lang, full = true) {
+  let l = JSON.parse(JSON.stringify(locales[lang]));
+  if (!full) l.format = l.formatDate;
+  return l;
+}
+
+function getMomentWithTZ(ts = null) {
+  return moment(ts).tz(user.getTimezone());
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.5</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+</body>
+</html>

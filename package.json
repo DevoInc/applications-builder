@@ -1,0 +1,72 @@
+{
+  "name": "@devo/applications-builder",
+  "version": "1.0.0",
+  "description": "Devo Applications Builder",
+  "author": "Devo desa@devo.com",
+  "license": "UNLICENSED",
+  "private": false,
+  "homepage": "https://www.devo.com",
+  "engines": {
+    "node": "*",
+    "npm": "*"
+  },
+  "bugs": {
+    "url": "",
+    "email": "desa@devo.com"
+  },
+  "scripts": {
+    "build": "cp -f package.json ./src/ && sed -i '/\"build\"/d' ./src/package.json && sed -i '/\"scripts\"/,/},/d' ./src/package.json && sed -i '/\"devDependencies\"/,/},/d' ./src/package.json",
+    "publish": "npm run build && cd src && npm publish && cd ..",
+    "prepare": "npm run selflink",
+    "test": "jest --coverage --config './jest.config.js'",
+    "test-watch": " node_modules/.bin/jest",
+    "selflink": "cd node_modules && ln -snf ../../src @devo/applications-builder",
+    "eslint": "./node_modules/.bin/eslint src/**/*.js",
+    "eslint-test": "./node_modules/.bin/eslint test/**/*.js",
+    "jsdoc": "node_modules/.bin/jsdoc -c jsdoc.conf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.devo.internal/vapps/vappulea"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/register": "^7.10.5",
+    "async": "^3.2.0",
+    "babel-7-jest": "^21.3.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-node-modules": "^0.0.1",
+    "better-docs": "^2.3.2",
+    "crypto-js": "^3.3.0",
+    "css-element-queries": "^0.4.0",
+    "d3": "^4.12.2",
+    "eslint": "^3.0.0",
+    "generate-changelog": "^1.4.0",
+    "iconv-lite": "^0.4.24",
+    "install": "^0.12.2",
+    "jest": "^23.6.0",
+    "jquery": "^3.5.1",
+    "jsdoc": "^3.6.5",
+    "lodash": "^4.17.19",
+    "regenerator-runtime": "^0.12.1",
+    "sinon": "^3.3.0"
+  },
+  "contributors": [
+    "Desarrollo Devo desa@devo.com"
+  ],
+  "dependencies": {
+    "html2canvas": "^1.0.0-rc.5",
+    "inherits": "^2.0.3",
+    "moment": "^2.27.0",
+    "uuid": "^3.4.0"
+  },
+  "keywords": [
+    "widgets"
+  ]
+}
