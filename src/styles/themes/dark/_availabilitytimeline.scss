@@ -1,0 +1,35 @@
+.theme-dark {
+
+  .lt-lx-aw-availability .viewport .lt-screenshot-frame {
+    background-color: #242424 !important; 
+    color: white !important; 
+  }
+  .lt-vapp-widget-graphic svg text {
+    fill: white !important;
+  }
+
+  .tooltipVisavail{
+    position:absolute;
+    text-align:left;
+    -moz-osx-font-smoothing:grayscale;
+    font-size:10px;
+    padding-left:0;
+    width:auto;
+    border:0;
+    border-left:thin solid #fff !important;
+    pointer-events:none;
+    line-height:12px;padding-top:0;
+    display:block;
+    z-index:999;
+    color:white !important;
+    font-weight:bolder
+  }
+  
+  .ytitleVisavail{
+    dominant-baseline:middle;
+    -moz-osx-font-smoothing:grayscale;
+    font-size:12px;
+    fill:white !important;
+    text-overflow: ellipsis;
+  }
+}

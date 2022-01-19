@@ -1,0 +1,17 @@
+In this section you will find advanced information for the realization and customization of applications.
+
+- [Initial configuration](tutorial-configurations-init.html)
+- [Requests](tutorial-configurations-requests.html)
+- [Translations](tutorial-configurations-translations.html)
+- [Template](tutorial-configurations-template.html)
+- [Widget actions](tutorial-configurations-actions.html)
+- [Fields](tutorial-configurations-fields.html)
+  - [Input text](tutorial-configurations-fields-input.html)
+  - [Button](tutorial-configurations-fields-button.html)
+  - [Checkbox](tutorial-configurations-fields-checkbox.html)
+  - [Select](tutorial-configurations-fields-select.html)
+  - [Choice picker](tutorial-configurations-fields-choice-picker.html)
+  - [Datetime picker](tutorial-configurations-fields-datetime.html)
+  - [Datetime range picker](tutorial-configurations-fields-datetime-range.html)
+  - [Datetime range picker presets](tutorial-configurations-fields-datetime-presets.html)
+- [Icons](tutorial-configurations-icons.html)

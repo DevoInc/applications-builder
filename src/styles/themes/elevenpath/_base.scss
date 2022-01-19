@@ -1,0 +1,621 @@
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Palette Colors */
+$primary-color: #003246;
+$secondary-color: #33bad1;
+$background-color: #eaeff2;
+$modules-color: #fff;
+$green-highlight: #07a06a;
+$red-highlight: #fa4b4b;
+$orange-highlight: #e28e31;
+$text-color: #646464;
+
+.lt-vapp.theme-elevenpaths {
+  background-color: $background-color;
+  font-family: telefonicaRegular;
+
+  .lt-vapp-details {
+    display: none;
+  }
+
+  .lt-vapp-menu, .lt-vapp-widget {
+    background-color: $modules-color;
+  }
+
+  .lt-vapp-menu {
+    justify-content: flex-start;
+    margin: 0 20px;
+    width: calc(100% - 40px);
+
+    .lt-vapp-menu-main {
+      width: auto;
+      flex-grow: 0;
+      padding: 0;
+
+      .lt-vapp-menu-item-name {
+        color: $secondary-color;
+        font-weight: bold;
+      }
+
+      li.active {
+        .lt-vapp-menu-item-name {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .lt-vapp-menu-main:not(:first-child) {
+
+      .lt-vapp-menu-item-name {
+        padding-left: 0;
+      }
+    }
+  }
+  .lt-vapp-section-title {
+    font-size: 32px;
+    color: $primary-color;
+    padding-left: 0;
+
+    i {
+      font-size: 32px;
+    }
+  }
+  .lt-vapp-rich-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: 100%;
+    background: $modules-color;
+    padding: 25px 20px;
+    color: $primary-color;
+    margin-bottom: 20px;
+
+    > * {
+      flex: 1 1 50%;
+
+      span {
+        color: $secondary-color;
+      }
+    }
+    .lt-vapp-rich-title-main {
+      font-size: 35px;
+      letter-spacing: .3px;
+      margin-bottom: 20px;
+    }
+    .lt-vapp-rich-title-secondary {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 30px;
+      letter-spacing: .3px;
+
+      span {
+        display: inline-flex;
+        width: 30px;
+        height: 30px;
+        background: $red-highlight;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0 8px;
+      }
+    }
+
+    .lt-vapp-rich-title-time-info {
+      font-size: 17px;
+      display: flex;
+      align-items: center;
+
+      span:nth-child(2) {
+        margin-left: 10px;
+        margin-right: 4px;
+      }
+    }
+
+    .lt-vapp-rich-title-aside {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 17px;
+
+      li {
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+
+        span {
+          font-size: 20px;
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+
+  .lt-vapp-widget-header-small {
+    font-family: telefonicaLight;
+    font-size: 21px;
+    margin-left: 5px;
+  }
+
+  select, input {
+    font-family: telefonicaRegular;
+    font-size: 16px;
+    border-radius: 3px;
+    color: $text-color;
+    padding: 10px 28px 10px 14px;
+
+    &:focus {
+      border-color: $primary-color;
+    }
+  }
+
+  .lt-vapp-highlight-item {
+    background: $modules-color;
+
+    .lt-vapp-highlight-one-data {
+      padding: 25px;
+      color: #003246;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      h3 {
+        font-family: telefonicaLight;
+        font-size: 60px;
+        color: $green-highlight;
+        margin-bottom: 20px;
+
+        &.blue {
+          color: $primary-color
+        }
+        &.red {
+          color: $red-highlight;
+          & + p {
+            font-family: telefonicaBold;
+            color: $red-highlight;
+          }
+        }
+        &.orange {
+          color: $orange-highlight;
+          & + p {
+            font-family: telefonicaBold;
+            color: $orange-highlight;
+          }
+        }
+
+      }
+      p {
+        font-size: 22px;
+        text-align: center;
+
+        strong {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .lt-vapp-highlight-several-data {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 25px;
+      width: 100%;
+      font-size: 22px;
+      color: $secondary-color;
+
+      &.expandable ul {
+        position: relative;
+        padding-left: 45px;
+        line-height: 40px;
+        margin-top: 15px;
+
+        &:before {
+          @extend .material-icons;
+          position: absolute;
+          top: 4px;
+          left: 4px;
+          font-size: 32px !important;
+          content: "keyboard_arrow_down";
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+        }
+
+        strong {
+          margin-right: 5px;
+        }
+
+        span {
+          min-width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          color: #fff;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 15px;
+          font-family: telefonicaBold;
+          margin-left: 5px;
+          background-color: $orange-highlight;
+        }
+      }
+
+      h3 {
+        font-family: telefonicaLight;
+        font-weight: bold;
+        font-size: 35px;
+        margin-bottom: 10px;
+        color: $primary-color;
+        display: flex;
+        align-items: center;
+
+        i {
+          font-size: 35px;
+          margin-right: 10px;
+        }
+      }
+
+      ul {
+        margin-bottom: 20px;
+      }
+
+      a {
+        display: flex;
+        align-items: flex-end;
+        color: $secondary-color;
+      }
+    }
+
+  }
+  .lt-vapp-highlight-item.sm-2 {
+    width: 19%;
+  }
+
+  .lt-vapp-widget-header {
+    margin: 0 20px;
+    padding: 10px 0px 10px 0px;
+    border-color: #95989a;
+
+    h3 {
+      text-transform: initial;
+      font-size: 24px;
+      color: $primary-color;
+    }
+  }
+
+  table {
+    font-size: 17px;
+    margin-bottom: 25px;
+
+    thead {
+      th {
+        color: #646464;
+        font-family: telefonicaBold;
+        text-transform: capitalize;
+        border: none;
+      }
+    }
+
+    tr {
+      padding: 5px 0;
+      border-bottom: 1px solid #e6e6e6;
+
+      td {
+        padding: 10px 12px;
+      }
+    }
+    tr.even {
+      background: #f6f7f9;
+    }
+  }
+
+  .dataTables_pagination_wrapper {
+    display: flex;
+    align-items: center;
+
+    select {
+      color: $primary-color
+    }
+  }
+
+  .dataTables_info, .dataTables_length, .dataTables_paginate {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 0;
+  }
+
+  .dataTables_length {
+    flex-grow: 1;
+    margin-left: 25px;
+  }
+
+  .dataTables_info, .dataTables_paginate a,
+  .dataTables_paginate span {
+    color: $primary-color;
+    font-size: 18px;
+  }
+
+  .dataTables_paginate > a.previous {
+    @extend .material-icons;
+    margin-right: 15px;
+  }
+  .dataTables_paginate > a.next {
+    @extend .material-icons;
+    margin-left: 15px;
+  }
+  .dataTables_paginate span a {
+    margin: 0 2px;
+
+    &:not(.current){
+      color: $secondary-color;
+    }
+  }
+
+  .lt-vapp-configuration-module {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+
+    > li {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 24%;
+      max-width: 24%;
+      margin-bottom: 20px;
+
+      label {
+        margin-bottom: 6px;
+        color: $primary-color;
+        font-size: 16px;
+      }
+
+      &.multiple {
+        flex-direction: row;
+        justify-content: space-between;
+        > div {
+          display: flex;
+          flex-direction: column;
+          flex: 1 1 auto;
+          max-width: 47.5%;
+        }
+      }
+
+      &.multiple-inline {
+        flex-direction: row;
+        flex-grow: 1;
+        max-width: 49.3%;
+
+        ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          width: 100%;
+
+          label {
+            margin-left: 3px;
+          }
+        }
+      }
+
+      &.full-width {
+        min-width: 100%;
+        max-width: 100%;
+        display: block;
+        text-align: right;
+        margin-top: 10px;
+        margin-bottom: 40px;
+
+        button {
+          display: inline-flex;
+          align-items: center;
+          justify-content: space-between;
+          font-family: telefonicaLight !important;
+          font-size: 18px;
+          font-weight: bold;
+          text-transform: capitalize;
+          border: none;
+          background: #74b481;
+          border-radius: 4px;
+          padding: 5px 10px;
+          background: -moz-linear-gradient(top, #74b481 0%, #4da071 100%);
+          background: -webkit-linear-gradient(top, #74b481 0%,#4da071 100%);
+          background: linear-gradient(to bottom, #74b481 0%,#4da071 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74b481', endColorstr='#4da071',GradientType=0 );
+          &:hover {
+            color: #fff;
+          }
+          i {
+           margin-left: 100px;
+          }
+        }
+      }
+    }
+  }
+
+  .lt-vapp-numeric-selector-wrapper {
+    position: relative;
+  }
+
+  .lt-vapp-numeric-selector {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 25px 0;
+    padding-right: 35px;
+
+    li {
+      font-size: 17px;
+      flex: 1 1 55px;
+      background: $background-color;
+      color: $primary-color;
+      margin-right: 1px;
+      margin-bottom: 2px;
+      padding: 4px 0;
+      text-align: center;
+      max-width: 55px;
+
+      &.red {
+        background-color: $red-highlight;
+        color: #fff;
+      }
+      &.orange {
+        background-color: $orange-highlight;
+        color: #fff;
+      }
+    }
+
+    & + i {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 30px;
+      cursor: pointer;
+      color: $primary-color
+    }
+  }
+
+  footer.lt-vapp-bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 20px;
+    color: $primary-color;
+    font-size: 18px;
+
+    &:before, &:after {
+      content: "";
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 135px;
+      height: 50px;
+    }
+
+    &:before {
+      background-image: url('https://static.logtrust.com/reseller/telefonica/img/lg-footer-left.svg');
+
+    }
+
+    &:after {
+      content: "";
+      background-image: url('https://static.logtrust.com/reseller/telefonica/img/lg-footer-right.svg');
+    }
+  }
+
+  .file-resume {
+    padding: 25px;
+    justify-content: center;
+
+    .lt-vapp-highlight-col {
+      width: 40%;
+    }
+
+    h3 {
+      font-family: telefonicaLight;
+      font-weight: bold;
+      font-size: 35px;
+      margin-bottom: 25px;
+      color: $primary-color;
+      display: flex;
+      align-items: center;
+
+      i {
+        font-size: 35px;
+        margin-right: 10px;
+
+        &.pdf-icon {
+          width: 30px;
+          height: 30px;
+          background-size: contain;
+          background-image: url('https://static.logtrust.com/reseller/telefonica/img/pdf_icon.png');
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    .lt-vapp-file-resume-time,
+    .lt-vapp-file-resume-status {
+      padding-left: 45px;
+
+      li {
+        display: flex;
+        align-items: center;
+        color: $primary-color;
+        font-size: 17px;
+        line-height: 35px;
+      }
+    }
+
+    .lt-vapp-file-resume-time {
+
+      li {
+
+        span {
+          color: $secondary-color;
+
+          &:nth-child(2), &:nth-child(3) {
+            margin-left: 10px;
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+
+    .lt-vapp-file-resume-status {
+      display: flex;
+      flex-wrap: wrap;
+
+      li:nth-child(odd) {
+        width: 25%;
+      }
+
+      li:nth-child(even) {
+        width: 75%;
+      }
+
+      i {
+
+        font-size: 30px;
+        margin-right: 6px;
+
+        &.red {
+          color: $red-highlight;
+        }
+
+        &.green {
+          color: $green-highlight
+        }
+      }
+    }
+  }
+}

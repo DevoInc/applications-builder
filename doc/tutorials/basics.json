@@ -1,0 +1,29 @@
+{
+  "title": "Getting started",
+  "children": {
+    "basic-requirements": {
+      "title": "Requirements"
+    },
+    "basic-installing": {
+      "title": "Installation"
+    },
+    "basic-overview": {
+      "title": "Overview"
+    },
+    "basic-first-app": {
+      "title": "First application"
+    },
+    "basic-add-tabs": {
+      "title": " - Adding tabs"
+    },
+    "basic-add-sections": {
+      "title": " - Adding sections"
+    },
+    "basic-add-widgets": {
+      "title": " - Adding widgets"
+    },
+    "basic-directory-structure": {
+      "title": "Directory structure"
+    }
+  }
+}

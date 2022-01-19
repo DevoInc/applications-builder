@@ -1,0 +1,26 @@
+.theme-dark {
+
+  .dataTables_paginate > a   {
+    color: #fff;
+    transition: all .7s;
+  }
+
+  .dataTables_paginate > a:hover   {
+    opacity: .7;
+  }
+
+  .dataTables_wrapper label input {
+    background-color: #fff;
+    border-color: #d9dadc;
+    color: #282828;
+
+    .paginate_button {
+      color: #7b7b7b;
+    }
+
+    .paginate_button.current {
+      color: #fff;
+    }
+  }
+
+}

@@ -1,0 +1,14 @@
+{
+  "en": {
+    "format": "YYYY/MM/DD HH:mm",
+    "formatDate": "YYYY/MM/DD",
+    "formatTime": "HH:mm",
+    "weekStart": 0
+  },
+  "es": {
+    "format": "DD/MM/YYYY HH:mm",
+    "formatDate": "DD/MM/YYYY",
+    "formatTime": "HH:mm",
+    "weekStart": 1
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "title": "Advanced",
+  "children": {
+    "configurations-init": {
+      "title": "Initial configuration"
+    },
+    "configurations-requests": {
+      "title": "Requests"
+    },
+    "configurations-translations": {
+      "title": "Translations"
+    },
+    "configurations-template": {
+      "title": "Template"
+    },
+    "configurations-actions": {
+      "title": "Widget actions"
+    },
+    "configurations-fields": {
+      "title": "Fields"
+    },
+    "configurations-fields-input": {
+      "title": " - Input text"
+    },
+    "configurations-fields-button": {
+      "title": " - Button"
+    },
+    "configurations-fields-checkbox": {
+      "title": " - Checkbox"
+    },
+    "configurations-fields-select": {
+      "title": " - Select"
+    },
+    "configurations-fields-choice-picker": {
+      "title": " - Choice picker"
+    },
+    "configurations-fields-datetime": {
+      "title": " - Datetime picker"
+    },
+    "configurations-fields-datetime-range": {
+      "title": " - Datetime range picker"
+    },
+    "configurations-fields-datetime-presets": {
+      "title": " - Datetime range picker presets"
+    },
+    "configurations-icons": {
+      "title": "Icons"
+    }
+  }
+}

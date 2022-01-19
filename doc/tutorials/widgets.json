@@ -1,0 +1,92 @@
+{
+  "title": "Widgets",
+  "children": {
+    "widgets-animated-heatmap": {
+      "title": "Animated Heatmap"
+    },
+    "widgets-area": {
+      "title": "Area"
+    },
+    "widgets-availability-timeline": {
+      "title": "Availability Timeline"
+    },
+    "widgets-bichord": {
+      "title": "Bichord"
+    },
+    "widgets-bubbles": {
+      "title": "Bubbles"
+    },
+    "widgets-bullet": {
+      "title": "Bullet"
+    },
+    "widgets-circle-world-map": {
+      "title": "Circle World Map"
+    },
+    "widgets-column": {
+      "title": "Column"
+    },
+    "widgets-empty": {
+      "title": "Empty"
+    },
+    "widgets-funnel": {
+      "title": "Funnel"
+    },
+    "widgets-gauge": {
+      "title": "Gauge"
+    },
+    "widgets-google-colormap": {
+      "title": "Google Colormap"
+    },
+    "widgets-google-heatmap": {
+      "title": "Google Heatmap"
+    },
+    "widgets-graph": {
+      "title": "Graph"
+    },
+    "widgets-heat-calendar": {
+      "title": "Heat Calendar"
+    },
+    "widgets-histogram": {
+      "title": "Histogram"
+    },
+    "widgets-lines": {
+      "title": "Lines"
+    },
+    "widgets-monitoring": {
+      "title": "Monitoring"
+    },
+    "widgets-pew-pew-map": {
+      "title": "Pew Pew Map"
+    },
+    "widgets-pie": {
+      "title": "Pie"
+    },
+    "widgets-pie-layered": {
+      "title": "Pie Layered"
+    },
+    "widgets-punchcard": {
+      "title": "Punchcard"
+    },
+    "widgets-rag": {
+      "title": "RAG"
+    },
+    "widgets-sankey": {
+      "title": "Sankey"
+    },
+    "widgets-stacked-bars": {
+      "title": "Stacked Bars"
+    },
+    "widgets-table": {
+      "title": "Table"
+    },
+    "widgets-time-head-map": {
+      "title": "Time Heatmap"
+    },
+    "widgets-tree": {
+      "title": "Tree"
+    },
+    "widgets-voronoi": {
+      "title": "Voronoi"
+    }
+  }
+}

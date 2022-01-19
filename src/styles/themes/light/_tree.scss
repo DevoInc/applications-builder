@@ -1,0 +1,22 @@
+.theme-light {
+
+	.lt-lx-aw-sankey {
+		.node {
+			text {
+				fill: #000000 !important;
+			}
+		}
+		// .node:last-child circle {
+		// 	fill: #dddddd !important;
+		// }
+
+		.float-button-group {
+			button {
+				background-color: #dddddd;
+				border: 2px solid #ccc;
+				color: #000;
+			}
+		}
+	}
+
+}

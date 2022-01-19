@@ -1,0 +1,29 @@
+.lt-vapp {
+
+  .lt-date-time-picker-field {
+    display:inline-block;
+
+    .selectWrapper {
+      overflow: inherit
+    }
+
+    input[type="button"]:not(.grey):not(:hover),
+    button:not(.grey):not(:hover),
+    .button:not(.grey):not(:hover) {
+      background-color: transparent !important;
+    }
+
+    .xdsoft_datetimepicker .xdsoft_calendar th {
+      color: white;
+    }
+  }
+  
+}
+
+// Ensure that the xdsoft datetimepicker has enough width for the hour and minute selector (the timepicker),
+// otherwise if it is instantiated with datepicker=true it won't work correctly.
+// TODO: This can either be enabled here for a generic fix or give a big enough width to the component
+// TODO: in application specific CSS or even programmatically with js. disabled for now.
+//.xdsoft_datetimepicker {
+//  width: 450px !important;
+//}
