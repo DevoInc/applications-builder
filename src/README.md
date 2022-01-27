@@ -10,7 +10,7 @@ doesn't meet the required needs, the idea is to use this library to solve the is
 
 The documentation is structured in the following way:
 
-- You can read the official documentation at [main documentation web](https://github.com/DevoInc/applications-builder)
+- You can read the official documentation at [main documentation web](https://devoinc.github.io/applications-builder)
 - You can read the `src/README.md` file and go through the code to see how it
   works. All classes and methods are self-documented.
 - In the [doc](./doc/index.md) folder there are more examples and documentation.
@@ -63,7 +63,8 @@ npm run test
 
 ## Documentation
 
-To generate the documentation in a local directory, run:
+To generate the documentation which is available in https://devoinc.github.io/applications-builder 
+in a local directory, run:
 
 ```
 npm run jsdoc
