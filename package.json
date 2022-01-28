@@ -1,6 +1,6 @@
 {
   "name": "@devo/applications-builder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Devo Applications Builder",
   "author": "Devo desa@devo.com",
   "license": "UNLICENSED",
@@ -65,7 +65,7 @@
     "inherits": "^2.0.3",
     "moment": "^2.27.0",
     "uuid": "^3.4.0",
-    "@devo/applications-data-library": "^1.0.0"
+    "@devo/applications-data-library": "^1.0.1"
   },
   "keywords": [
     "widgets"
