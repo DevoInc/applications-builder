@@ -20,8 +20,10 @@ export default (self) => {
      */
     addListener(evt, func) {
       if (!self.listeners[evt]) self.listeners[evt] = [];
-      self.el.listeners[evt].push(func);
-      this.addEventListener(evt, func);
+      self.listeners[evt].push(func);
+      // self.el.listeners[evt].push(func);
+      // this.addEventListener(evt, func);
+      window.addEventListener(evt, func);
     },
 
     /**
@@ -31,7 +33,8 @@ export default (self) => {
      * @instance
      */
     removeListenerByIndex(evt, index) {
-      self.el.removeEventListener(evt, self.listeners[evt][index]);
+      // self.el.removeEventListener(evt, self.listeners[evt][index]);
+      window.removeEventListener(evt, self.listeners[evt][index]);
       self.listeners[evt].splice(index, 1);
     },
 

@@ -14,19 +14,20 @@ which we will edit below.
   ```
 
 A new foder, called `my-first-app`, has been created in the current directory.
-By default, applications use a default template located in this 
+By default, applications use a default template located in this
 [repository](https://github.com/DevoInc/applications-builder-template).
 
-> You can use a custom template to create your applications. 
-To use yor custom template use `--template` flag.
+> You can use a custom template to create your applications.
+> To use yor custom template use `--template` flag.
 
 To see this application running you need to compile it, log into your Devo
 domain and use the
 [Devo Runner](https://chrome.google.com/webstore/detail/devo-runner/apjjdfhcegcemhdhaeadkddbjhgfplmo).
 
 - Compile the application.
+
   ```bash
-  dap-cli build dev
+  dab-cli build dev
   ```
 
   If every was ok, you should see something like the following image:

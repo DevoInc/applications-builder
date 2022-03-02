@@ -1,6 +1,6 @@
 {
   "name": "@devo/applications-builder",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Devo Applications Builder",
   "author": "Devo desa@devo.com",
   "license": "UNLICENSED",
@@ -15,7 +15,7 @@
     "email": "desa@devo.com"
   },
   "scripts": {
-    "build": "cp -f package.json ./src/ && sed -i '/\"build\"/d' ./src/package.json && sed -i '/\"scripts\"/,/},/d' ./src/package.json && sed -i '/\"devDependencies\"/,/},/d' ./src/package.json",
+    "build": "cat package.json | sed '/\"build\"/d' | sed  '/\"scripts\"/,/},/d' | sed '/\"devDependencies\"/,/},/d' > ./src/package.json",
     "publish": "npm run build && cd src && npm publish  --access public && cd ..",
     "prepare": "npm run selflink",
     "test": "jest --coverage --config './jest.config.js'",
@@ -43,7 +43,6 @@
     "babel-jest": "^23.6.0",
     "babel-node-modules": "^0.0.1",
     "better-docs": "^2.3.2",
-    "crypto-js": "^3.3.0",
     "css-element-queries": "^0.4.0",
     "d3": "^4.12.2",
     "eslint": "^3.0.0",
@@ -61,11 +60,11 @@
     "Desarrollo Devo desa@devo.com"
   ],
   "dependencies": {
+    "@devo/applications-data-library": "^1.0.2",
     "html2canvas": "^1.0.0-rc.5",
     "inherits": "^2.0.3",
     "moment": "^2.27.0",
-    "uuid": "^3.4.0",
-    "@devo/applications-data-library": "^1.0.1"
+    "uuid": "^3.4.0"
   },
   "keywords": [
     "widgets"
