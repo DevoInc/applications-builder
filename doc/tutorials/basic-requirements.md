@@ -1,6 +1,6 @@
-To start developing applications, simply have the [Devo Applications Builder Client](https://github.com/DevoInc/dab-cli) installed.
+To start developing applications, simply have the [Devo Applications Builder CLI](https://github.com/DevoInc/dab-cli) installed.
 
-The _Devo Applications Builder Client_ is a tool developed for building and testing applications on the Devo platform.
+The _Devo Applications Builder CLI_ is a tool developed for building and testing applications on the Devo platform.
 
 To install it, you must have pre-installed:
 

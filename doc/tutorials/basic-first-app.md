@@ -2,7 +2,7 @@ Before you start creating an application, make sure you have the
 [requirements](tutorial-basic-requirements.html) already installed.
 
 To create the application we will use the
-[_Devo Applications Builder Client_](https://github.com/DevoInc/dab-cli)
+[_Devo Applications Builder CLI_](https://github.com/DevoInc/dab-cli)
 which will generate an example application based on a default template.
 This application will have the directory structure described above,
 which we will edit below.

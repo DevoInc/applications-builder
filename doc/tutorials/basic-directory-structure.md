@@ -34,13 +34,13 @@ The root directory contains several files for the metadata of the application:
 
 Contains the file with the compiled application.
 This file is generated after executing the _build_ comand of the
-_Devo Applications Builder Client_.
+_Devo Applications Builder CLI_.
 
 ### _releases_ directory
 
 Contains the files with the compiled application in production mode.
 This file is generated after executing the _build_ comand (using _pro_ mode)
-of the _Devo Applications Builder Client_.
+of the _Devo Applications Builder CLI_.
 
 ### _src_ directory
 
