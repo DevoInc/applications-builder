@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Devo Applications Builder Directory structure</title>
+  <title>Devo Applications Builder Devo APIs</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -122,76 +122,38 @@
             <div class="content">
                 <header class="page-title">
                     <p>Tutorial</p>
-                    <h1>Directory structure</h1>
+                    <h1>Devo APIs</h1>
                 </header>
                 <section>
 
 <article>
-    <p>All applications developed from the basic template have the following
-directory structure:</p>
-<pre class="prettyprint source lang-bash"><code>my-application
-├── dist
-├── releases
-├── src
-│   └── helpers
-│   └── i18n
-│   └── resources
-│   └── tabs
-│   └── widgets
-│   └── app.html
-│   └── app.js
-│   └── app.scss
-│   └── config.js
-├── tmp
-├── LICENSE.txt
-├── package.js
-└── README.md
+    <p>You can use any public APIs or clients of Devo within the apps.</p>
+<p>In general, to authenticate with the available APIs or clients you will need the endpoint and the access token.
+This information can be obtained by importing the <em>user</em> object of this package, accessing the credentials object.</p>
+<pre class="prettyprint source lang-javascript"><code>import user from '@devo/applications-builder/libs/user';
 
+const credentials = user.getCredentials();
 </code></pre>
-<p>The root directory contains several files for the metadata of the application:</p>
-<ul>
-<li><strong>LICENSE.txt</strong>: File with the license of the application.</li>
-<li><strong>package.json</strong>: This files contains all the dependencies and versions
-need to install.</li>
-<li><strong>README.md:</strong> This is the description of the application in Markdown style.
-The owner of the application is in charge of editing it.</li>
-</ul>
-<h3><em>dist</em> directory</h3>
-<p>Contains the file with the compiled application.
-This file is generated after executing the <em>build</em> comand of the
-<em>Devo Applications Builder CLI</em>.</p>
-<h3><em>releases</em> directory</h3>
-<p>Contains the files with the compiled application in production mode.
-This file is generated after executing the <em>build</em> comand (using <em>pro</em> mode)
-of the <em>Devo Applications Builder CLI</em>.</p>
-<h3><em>src</em> directory</h3>
-<p>All the vertical application is contained in this folder.</p>
-<ul>
-<li><strong>helpers</strong> directory: this folder contains any logic of the application
-that will be used as helpers for some operations.
-For example, if you have a logic about certain names that are coded in
-the data and we want to use it in several tabs.
-In this case this is a piece of code that naturally comes to mind as Helper,
-so all the code related to this, must be placed here.</li>
-<li><strong>i18n</strong> directory: This folder contains the language files that will be
-used for translations.</li>
-<li><strong>resources</strong> directory: This folder contains several files as resources
-(e.g.the templates.js or requests.js files) to store the widgets templates.
-Each file represents a tab, and each tab contains information about the
-widgets included in it.</li>
-<li><strong>tabs</strong> directory: This directory contains the logic of the widgets
-contained in each tab.</li>
-<li><strong>widgets</strong> directory: This directory has the custom widgets developed for
-the application.</li>
-<li><strong>app.html</strong> file: This file contains the entire HTML structure of the
-application.</li>
-<li><strong>app.js</strong> file: This file contains the initial and functional logic of the
-application.</li>
-<li><strong>app.scss</strong> file: This file contains the styles applied in the application.</li>
-<li><strong>config.js</strong> file: This file basic information related to the application.</li>
-</ul>
-<h3><em>tmp</em> directory</h3>
-<p>Contains the files generated after compile the app.</p>
+<h2>Examples</h2>
+<h3>Alerts API</h3>
+<p>You can use de Alerts API client who use the Alerts API to manage alerts in Devo.</p>
+<pre class="prettyprint source lang-javascript"><code>import user from '@devo/applications-builder/libs/user';
+import { AlertsAPIClient } from '@devoinc/alerts-api-client';
+
+const alertsAPIClient = new AlertsAPIClient(
+  user.getCredentials().standAloneToken,
+  user.getCredentials().alertsURI
+);
+
+alertsAPIClient.alertDefinition
+  .get()
+  .then((resp) => {
+    console.log(resp);
+  })
+  .error((error) => {
+    console.log(error);
+  });
+</code></pre>
 </article>
 
 </section>

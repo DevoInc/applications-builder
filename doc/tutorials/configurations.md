@@ -15,3 +15,4 @@ In this section you will find advanced information for the realization and custo
   - [Datetime range picker](tutorial-configurations-fields-datetime-range.html)
   - [Datetime range picker presets](tutorial-configurations-fields-datetime-presets.html)
 - [Icons](tutorial-configurations-icons.html)
+- [Devo APIs](tutorial-configurations-devo-apis.html)

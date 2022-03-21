@@ -5,8 +5,8 @@ The _Devo Applications Builder CLI_ is a tool developed for building and testing
 To install it, you must have pre-installed:
 
 - Git
-- Node >= 8.0.0
-- npm >= 6.0.0
+- Node 14
+- npm 7
 - [Devo Runner](https://chrome.google.com/webstore/detail/devo-runner/apjjdfhcegcemhdhaeadkddbjhgfplmo) extension for Chrome
 
 Additionally, in order to test the applications on the Devo platform, you must have an account in our domain.

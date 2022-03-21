@@ -45,6 +45,9 @@
     },
     "configurations-icons": {
       "title": "Icons"
+    },
+    "configurations-devo-apis": {
+      "title": "Devo APIs"
     }
   }
 }

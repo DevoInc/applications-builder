@@ -3,9 +3,16 @@
  * @category Libs
  * @module user
  */
- import dependencies from '../data/dependencies';
- const userInfo = dependencies.require('userInfo');
- const user = {};
+import dependencies from '../data/dependencies';
+const userInfo = dependencies.require('userInfo');
+const user = {};
+
+/**
+ * Get credentials object
+ * @function getCredentials
+ * @return {Object} Credentials object
+ */
+user.getCredentials = () => userInfo.credentials;
 
 /**
  * Get user name
@@ -35,11 +42,11 @@ user.getLocale = () => userInfo.locale;
  */
 user.getApplications = () => userInfo.applications;
 
- /**
-  * Get the user timezone
-  * @function getTimezone
-  * @return {String} Timezone string
-  */
+/**
+ * Get the user timezone
+ * @function getTimezone
+ * @return {String} Timezone string
+ */
 user.getTimezone = () => userInfo.timezone;
 
 /**

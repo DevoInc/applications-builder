@@ -25,8 +25,8 @@ This package is contained and installed from the `deps` folder.
 
 To install and develop with _Devo Applications Builder_ you need:
 
-- Node >= 8.0.0
-- npm >= 6.0.0
+- Node 14
+- npm 7
 
 ## Install
 
@@ -63,7 +63,7 @@ npm run test
 
 ## Documentation
 
-To generate the documentation which is available in https://devoinc.github.io/applications-builder 
+To generate the documentation which is available in https://devoinc.github.io/applications-builder
 in a local directory, run:
 
 ```
@@ -73,7 +73,6 @@ npm run jsdoc
 This will generate a new directory in the root of the project called `docs`.
 You can view the documentation by opening the file `docs/index.html`
 
-
-> *Note:* This project uses double packages json files. 
-_Important_: do not touch the `src/package.json` file; only add new dependencies in the 
-`package.json` root file.
+> _Note:_ This project uses double packages json files.
+> _Important_: do not touch the `src/package.json` file; only add new dependencies in the
+> `package.json` root file.
