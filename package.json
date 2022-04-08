@@ -1,6 +1,6 @@
 {
   "name": "@devo/applications-builder",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Devo Applications Builder",
   "author": "Devo desa@devo.com",
   "license": "UNLICENSED",
@@ -11,7 +11,6 @@
     "npm": "*"
   },
   "bugs": {
-    "url": "",
     "email": "desa@devo.com"
   },
   "scripts": {
@@ -60,7 +59,7 @@
     "Desarrollo Devo desa@devo.com"
   ],
   "dependencies": {
-    "@devo/applications-data-library": "^1.0.2",
+    "@devo/applications-data-library": "^1.0.4",
     "html2canvas": "^1.0.0-rc.5",
     "inherits": "^2.0.3",
     "moment": "^2.27.0",

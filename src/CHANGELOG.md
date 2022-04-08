@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.4 (2022-04-08)
+
+### Patch
+
+- Updated internal packages
+
 ## 1.0.3 (2022-03-21)
 
 ### Patch
