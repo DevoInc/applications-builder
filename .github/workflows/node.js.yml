@@ -41,7 +41,7 @@ jobs:
 
       - name: Run test
         run: npm run test
-      - uses: actions/upload-artifact@v2 # upload test results
+      - uses: actions/upload-artifact@v2
         if: success() || failure() # run this step even if previous step failed
         with:
           name: test-results
@@ -52,5 +52,7 @@ jobs:
 
       - name: Commit and push doc files
         run: |
+          git config --global user.name 'Devo GitHub Action'
+          git config --global user.email 'desa@devo.com'
           git commit -m "Add changes" -a
           git push
