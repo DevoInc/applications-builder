@@ -6,7 +6,7 @@
  * @module dateRange
  */
 
-import user from '@devo/applications-builder/libs/user';
+import user from '@devoinc/applications-builder/libs/user';
 
 // Basic Generators
 // -----------------------------------------------------------------------------

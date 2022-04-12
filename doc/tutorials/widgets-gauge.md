@@ -5,9 +5,9 @@ The gauge meter widget illustrates the proportion of the indicated sets of value
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import gaugeWidget from '@devo/applications-builder/widgets/gauge';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import gaugeWidget from '@devoinc/applications-builder/widgets/gauge';
 
 let query = `from demo.ecommerce.data
 where clientIpAddress = 87.153.102.201

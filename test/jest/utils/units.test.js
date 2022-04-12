@@ -1,4 +1,4 @@
-import units from '@devo/applications-builder/utils/units';
+import units from '@devoinc/applications-builder/utils/units';
 
 describe('Units:', () => {
   test('Pass from bytes to the best unit for visualize', () => {

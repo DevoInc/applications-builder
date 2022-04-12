@@ -1,7 +1,7 @@
-import downloads from '@devo/applications-builder/libs/downloads';
-import { i18n } from '@devo/applications-builder/i18n';
-import widgetFactory from '@devo/applications-builder/widgetFactory';
-import objects from '@devo/applications-builder/utils/objects';
+import downloads from '@devoinc/applications-builder/libs/downloads';
+import { i18n } from '@devoinc/applications-builder/i18n';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
+import objects from '@devoinc/applications-builder/utils/objects';
 import { arrayRenderer, tooltipRenderer } from './helpers/renderers';
 
 /**

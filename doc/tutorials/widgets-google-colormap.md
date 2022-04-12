@@ -5,9 +5,9 @@ This chart displays information on a world map using country codes, representing
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import googleColormapWidget from '@devo/applications-builder/widgets/googleColorMap';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import googleColormapWidget from '@devoinc/applications-builder/widgets/googleColorMap';
 
 let query = `from demo.ecommerce.data
 where isnotnull(clientIpAddress)

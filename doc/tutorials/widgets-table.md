@@ -6,9 +6,9 @@ distributed in columns and rows.
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import dataTablesWidget from '@devo/applications-builder/widgets/dataTables';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import dataTablesWidget from '@devoinc/applications-builder/widgets/dataTables';
 
 let query = `from demo.ecommerce.data
 group  by method, str(clientIpAddress), statusCode

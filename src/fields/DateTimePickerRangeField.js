@@ -1,6 +1,6 @@
 import BaseField from './BaseField';
 import DateTimePickerField from './DateTimePickerField';
-import { __ } from '@devo/applications-builder/i18n';
+import { __ } from '@devoinc/applications-builder/i18n';
 import dateRange from '../utils/dateRange';
 
 /**

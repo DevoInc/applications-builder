@@ -28,8 +28,8 @@ Additional, we will use the `info` notification.
 We will edit the `app.js` file.
 
 ```javascript
-import CheckBoxField from '@devo/applications-builder/fields/CheckBoxField';
-import { info } from '@devo/applications-builder/libs/alerts';
+import CheckBoxField from '@devoinc/applications-builder/fields/CheckBoxField';
+import { info } from '@devoinc/applications-builder/libs/alerts';
 
 ...
 

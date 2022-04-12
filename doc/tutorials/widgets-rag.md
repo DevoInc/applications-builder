@@ -5,9 +5,9 @@ A RAG widget rate the data in its values.
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import ragWidget from '@devo/applications-builder/widgets/rag';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import ragWidget from '@devoinc/applications-builder/widgets/rag';
 
 let query = `from demo.ecommerce.data
 group by method, statusCode

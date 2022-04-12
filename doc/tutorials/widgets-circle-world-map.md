@@ -6,9 +6,9 @@ values for each area is represented by colored circles.
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import circleWorldMapWidget from '@devo/applications-builder/widgets/circleWorldMap';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import circleWorldMapWidget from '@devoinc/applications-builder/widgets/circleWorldMap';
 
 let query = `from demo.ecommerce.data
 where isnotnull(clientIpAddress) 

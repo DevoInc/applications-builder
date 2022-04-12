@@ -5,9 +5,9 @@ Punchcard widget let you visualize trends data in a period of time.
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import punchCardWidget from '@devo/applications-builder/widgets/punchCard';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import punchCardWidget from '@devoinc/applications-builder/widgets/punchCard';
 
 let query = `from demo.ecommerce.data
 group every 1h by statusCode

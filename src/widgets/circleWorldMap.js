@@ -1,5 +1,5 @@
-import processStructure from '@devo/applications-data-library/structures/googleMap';
-import widgetFactory from '@devo/applications-builder/widgetFactory';
+import processStructure from '@devoinc/applications-data-library/structures/googleMap';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
 import dependencies from '../data/dependencies';
 
 const CircleWorldMapWidget =
@@ -124,7 +124,7 @@ function mixin(self) {
      * @instance
      */
     setPresetStyles(str) {
-      const styles = require(`@devo/applications-builder/widgets/presets/googleMaps/${str}.json`);
+      const styles = require(`@devoinc/applications-builder/widgets/presets/googleMaps/${str}.json`);
       if (styles !== null) this.setStyles(styles);
     },
 

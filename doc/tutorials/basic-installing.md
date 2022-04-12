@@ -3,7 +3,7 @@ For the installation of _Devo Applications Builder CLI_ make sure you meet the [
 ### NPM
 
 ```bash
-  npm install -g @devo/applications-builder-cli
+  npm install -g @devoinc/applications-builder-cli
 ```
 
 ### GitHub
@@ -32,7 +32,7 @@ If you want to customize or extend some functionality of _Devo Applications Buil
 - Link the package in your application
   ```bash
   cd /path/to/your/application
-  npm link @devo/applications builder
+  npm link @devoinc/applications builder
   ```
 
 For more information about this library and how to link, visit [Devo Applications Builder](https://github.com/DevoInc/applications-builder).
@@ -52,7 +52,7 @@ Finally, if you want to customize or extend some functionality of _Devo Applicat
   ```
 - Link the package in your application and in the _Devo Applications Builder_.
   ```bash
-  npm link @devo/application-data-library
+  npm link @devoinc/application-data-library
   ```
 
 For more information about this library and how to link with your application, visit [Devo Applications Data Library](https://github.com/DevoInc/applications-data-library).

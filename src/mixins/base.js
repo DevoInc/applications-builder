@@ -1,5 +1,5 @@
-import DataNode from '@devo/applications-builder/data/DataNode';
-import * as dom from '@devo/applications-builder/libs/dom';
+import DataNode from '@devoinc/applications-builder/data/DataNode';
+import * as dom from '@devoinc/applications-builder/libs/dom';
 
 /**
  * Contains all methods related with the widget HTML container

@@ -1,5 +1,5 @@
-import processStructure from '@devo/applications-data-library/structures/rag';
-import widgetFactory from '@devo/applications-builder/widgetFactory';
+import processStructure from '@devoinc/applications-data-library/structures/rag';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
 import dependencies from '../data/dependencies';
 
 const RAGWidget = dependencies.require('widgets').RAGWidget;

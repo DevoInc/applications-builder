@@ -1,9 +1,9 @@
-import processStructure from '@devo/applications-data-library/structures/pie';
-import { set } from '@devo/applications-builder/utils/objects';
-import downloads from '@devo/applications-builder/libs/downloads';
+import processStructure from '@devoinc/applications-data-library/structures/pie';
+import { set } from '@devoinc/applications-builder/utils/objects';
+import downloads from '@devoinc/applications-builder/libs/downloads';
 import hcp from './helpers/exportDataSeries';
-import { __ } from '@devo/applications-builder/i18n';
-import widgetFactory from '@devo/applications-builder/widgetFactory';
+import { __ } from '@devoinc/applications-builder/i18n';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
 import dependencies from '../data/dependencies';
 
 const PieWidget = dependencies.require('widgets').PieWidget;

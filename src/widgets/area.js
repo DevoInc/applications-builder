@@ -1,6 +1,6 @@
 import { mixin } from './series';
-import { set } from '@devo/applications-builder/utils/objects';
-import widgetFactory from '@devo/applications-builder/widgetFactory';
+import { set } from '@devoinc/applications-builder/utils/objects';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
 
 /**
  * The area chart widget draws a line chart where the x-axis is always time.

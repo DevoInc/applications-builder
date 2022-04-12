@@ -5,9 +5,9 @@ A tree widget produces tidy node-link diagrams of trees using the Reingold–Til
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import voronoiWidget from '@devo/applications-builder/widgets/voronoi';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import voronoiWidget from '@devoinc/applications-builder/widgets/voronoi';
 
 let query = `from siem.logtrust.web.activity
   group every 30m by level, domain, srcHost, serverHost

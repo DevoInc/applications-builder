@@ -1,7 +1,7 @@
 import '@babel/polyfill';
 import sinon from 'sinon';
 import template from './template';
-import DataNode from '@devo/applications-builder/data/DataNode';
+import DataNode from '@devoinc/applications-builder/data/DataNode';
 
 beforeEach(() => {
   let $ = (window.jQuery = window.$ = require('jquery'));
@@ -17,13 +17,13 @@ afterEach(() => {
 
 describe('Global Section Tests: ', () => {
   test('should exist', () => {
-    const Section = require('@devo/applications-builder/Section');
+    const Section = require('@devoinc/applications-builder/Section');
     expect(Section).toBeDefined();
   });
 
   test(`Should create a new section with default settings when is called only
   with an HTML id selector`, () => {
-    const Section = require('@devo/applications-builder/Section').default;
+    const Section = require('@devoinc/applications-builder/Section').default;
     let section = new Section('section11');
     let data = new DataNode('section11');
     expect(Array.isArray(section.widgets)).toBeTruthy();
@@ -33,7 +33,7 @@ describe('Global Section Tests: ', () => {
   });
 
   test(`Should initialize the section when init is called`, () => {
-    const Section = require('@devo/applications-builder/Section').default;
+    const Section = require('@devoinc/applications-builder/Section').default;
     let id = 'section11';
     let section = new Section(id);
     let data = new DataNode(id);
@@ -57,7 +57,7 @@ describe('Global Section Tests: ', () => {
 
   // DISABLED FOR NOW
   test(`Should throw an error if section has been created with wrong id`, () => {
-    const Section = require('@devo/applications-builder/Section').default;
+    const Section = require('@devoinc/applications-builder/Section').default;
     let id = 's';
     let section = new Section(id);
 
@@ -71,7 +71,7 @@ describe('Global Section Tests: ', () => {
   });
 
   test('Should collapse when toggle is called and section is expanded', () => {
-    const Section = require('@devo/applications-builder/Section').default;
+    const Section = require('@devoinc/applications-builder/Section').default;
     let id = 'section11';
     let section = new Section(id);
     section.init();
@@ -82,7 +82,7 @@ describe('Global Section Tests: ', () => {
   });
 
   test('Should show section when show function es called', () => {
-    const Section = require('@devo/applications-builder/Section').default;
+    const Section = require('@devoinc/applications-builder/Section').default;
     let id = 'section11';
     let section = new Section(id);
     section.init();

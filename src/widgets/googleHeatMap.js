@@ -1,5 +1,5 @@
-import processStructure from '@devo/applications-data-library/structures/googleMap';
-import widgetFactory from '@devo/applications-builder/widgetFactory';
+import processStructure from '@devoinc/applications-data-library/structures/googleMap';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
 import dependencies from '../data/dependencies';
 
 const GoogleHeatMapWidget = dependencies.require('widgets').GoogleHeatMapWidget;

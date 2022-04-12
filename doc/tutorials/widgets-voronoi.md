@@ -5,9 +5,9 @@ A voronoi is a type of widget that represents one variable in several dimensions
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import voronoiWidget from '@devo/applications-builder/widgets/voronoi';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import voronoiWidget from '@devoinc/applications-builder/widgets/voronoi';
 
 let query = `from siem.logtrust.web.activity
   group every 30m by userAgent, locale, result

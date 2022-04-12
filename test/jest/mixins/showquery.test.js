@@ -20,12 +20,12 @@ afterEach(() => {
 });
 
 test('should exist', () => {
-  const showquery = require('@devo/applications-builder/mixins/showquery');
+  const showquery = require('@devoinc/applications-builder/mixins/showquery');
   expect(showquery).toBeDefined();
 });
 
 test('should return null if self.el is null', () => {
-  const showquery = require('@devo/applications-builder/mixins/showquery');
+  const showquery = require('@devoinc/applications-builder/mixins/showquery');
 
   let self = {
     el: null,
@@ -36,7 +36,7 @@ test('should return null if self.el is null', () => {
 });
 
 test('should initialize the mixin right', () => {
-  const showquery = require('@devo/applications-builder/mixins/showquery');
+  const showquery = require('@devoinc/applications-builder/mixins/showquery');
   let self = {
     el: document.querySelector('.lt-vapp-widget-options'),
   };
@@ -45,7 +45,7 @@ test('should initialize the mixin right', () => {
 });
 
 test('should open a modal when is clicked', () => {
-  const showquery = require('@devo/applications-builder/mixins/collapser');
+  const showquery = require('@devoinc/applications-builder/mixins/collapser');
   let self = {
     el: document.querySelector('.lt-vapp-widget-options'),
   };

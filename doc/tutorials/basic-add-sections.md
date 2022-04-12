@@ -14,8 +14,8 @@ in the [First application](tutorial-basic-first-app.html) section.
   This should look like the following.
 
   ```javascript
-  import Tab from '@devo/applications-builder/Tab';
-  import Section from '@devo/applications-builder/Section';
+  import Tab from '@devoinc/applications-builder/Tab';
+  import Section from '@devoinc/applications-builder/Section';
 
   export default () => {
     let tab = new Tab('main3');

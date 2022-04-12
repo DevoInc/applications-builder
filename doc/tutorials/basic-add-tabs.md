@@ -14,7 +14,7 @@ in the [First application](tutorial-basic-first-app.html) section.
   This should look like the following.
 
   ```javascript
-  import Tab from '@devo/applications-builder/Tab';
+  import Tab from '@devoinc/applications-builder/Tab';
 
   export default () => {
     let tab = new Tab('main3');
@@ -31,8 +31,8 @@ in the [First application](tutorial-basic-first-app.html) section.
 
   ```javascript
   import config from './config';
-  import App from '@devo/applications-builder/App';
-  import bootstrap from '@devo/applications-builder/bootstrap';
+  import App from '@devoinc/applications-builder/App';
+  import bootstrap from '@devoinc/applications-builder/bootstrap';
 
   bootstrap.langs({
     es_ES: require('./i18n/es_ES.json'),

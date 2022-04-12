@@ -11,7 +11,7 @@ import collapser from './mixins/collapser';
 import download from './mixins/download';
 import showquery from './mixins/showquery';
 
-import user from '@devo/applications-builder/libs/user';
+import user from '@devoinc/applications-builder/libs/user';
 
 // Widget Factory
 function widget(id, tpl, mixin) {

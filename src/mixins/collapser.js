@@ -1,4 +1,4 @@
-import events from '@devo/applications-builder/libs/events';
+import events from '@devoinc/applications-builder/libs/events';
 
 const BTN_CLASS = 'lt-vapp-widget-collapser';
 

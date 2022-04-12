@@ -1,9 +1,9 @@
-import Settings from '@devo/applications-builder/Settings';
-import SelectField from '@devo/applications-builder/fields/SelectField';
-import CheckBoxField from '@devo/applications-builder/fields/CheckBoxField';
-import DateTimePickerRangeField from '@devo/applications-builder/fields/DateTimePickerRangeField';
-import dataTree from '@devo/applications-builder/data/dataTree';
-import { __ } from '@devo/applications-builder/i18n';
+import Settings from '@devoinc/applications-builder/Settings';
+import SelectField from '@devoinc/applications-builder/fields/SelectField';
+import CheckBoxField from '@devoinc/applications-builder/fields/CheckBoxField';
+import DateTimePickerRangeField from '@devoinc/applications-builder/fields/DateTimePickerRangeField';
+import dataTree from '@devoinc/applications-builder/data/dataTree';
+import { __ } from '@devoinc/applications-builder/i18n';
 
 export default (conf) => {
   let settings = new Settings();

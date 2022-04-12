@@ -34,9 +34,9 @@ in the [First application](tutorial-basic-first-app.html) section.
   We will use a line graph as an example.
 
   ```javascript
-  import Tab from '@devo/applications-builder/Tab';
-  import Section from '@devo/applications-builder/Section';
-  import linesWidget from '@devo/applications-builder/widgets/lines';
+  import Tab from '@devoinc/applications-builder/Tab';
+  import Section from '@devoinc/applications-builder/Section';
+  import linesWidget from '@devoinc/applications-builder/widgets/lines';
 
   export default () => {
     let tab = new Tab('main3');

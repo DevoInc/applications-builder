@@ -1,5 +1,5 @@
-import processStructure from '@devo/applications-data-library/structures/bullet';
-import widgetFactory from '@devo/applications-builder/widgetFactory';
+import processStructure from '@devoinc/applications-data-library/structures/bullet';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
 
 /**
  * The bullet chart displays a single measure and compares that

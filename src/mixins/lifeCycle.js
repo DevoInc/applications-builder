@@ -1,4 +1,4 @@
-import dataconversor from '@devo/applications-data-library/utils/dataConversor';
+import dataconversor from '@devoinc/applications-data-library/utils/dataConversor';
 
 /**
  * Contains methods related to life cycle data of the widget.

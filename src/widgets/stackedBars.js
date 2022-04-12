@@ -1,6 +1,6 @@
 import { mixin } from './series';
-import { set } from '@devo/applications-builder/utils/objects';
-import widgetFactory from '@devo/applications-builder/widgetFactory';
+import { set } from '@devoinc/applications-builder/utils/objects';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
 
 /**
  * This widget is a variant of the Series chart widget.

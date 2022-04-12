@@ -1,5 +1,5 @@
-import processStructure from '@devo/applications-data-library/structures/funnel';
-import widgetFactory from '@devo/applications-builder/widgetFactory';
+import processStructure from '@devoinc/applications-data-library/structures/funnel';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
 import dependencies from '../data/dependencies';
 
 const FunnelWidget = dependencies.require('widgets').FunnelWidget;

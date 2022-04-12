@@ -7,9 +7,9 @@ are defined by two given fields in your query.
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import pieWidget from '@devo/applications-builder/widgets/pie';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import pieWidget from '@devoinc/applications-builder/widgets/pie';
 
 let query = `from demo.ecommerce.data
 group every 1h by method

@@ -1,7 +1,7 @@
 import BaseField from './BaseField';
-import { i18n } from '@devo/applications-builder/i18n';
-import user from '@devo/applications-builder/libs/user';
-import locales from '@devo/applications-builder/fields/DateTimePickerFieldLocales.json';
+import { i18n } from '@devoinc/applications-builder/i18n';
+import user from '@devoinc/applications-builder/libs/user';
+import locales from '@devoinc/applications-builder/fields/DateTimePickerFieldLocales.json';
 
 /**
  *

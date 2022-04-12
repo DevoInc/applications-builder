@@ -1,6 +1,6 @@
 {
-  "name": "@devo/applications-builder",
-  "version": "1.0.4",
+  "name": "@devoinc/applications-builder",
+  "version": "2.0.0",
   "description": "Devo Applications Builder",
   "author": "Devo desa@devo.com",
   "license": "UNLICENSED",
@@ -19,7 +19,7 @@
     "prepare": "npm run selflink",
     "test": "jest --coverage --config './jest.config.js'",
     "test-watch": " node_modules/.bin/jest",
-    "selflink": "cd node_modules && ln -snf ../../src @devo/applications-builder",
+    "selflink": "cd node_modules && ln -snf ../../src @devoinc/applications-builder",
     "eslint": "./node_modules/.bin/eslint src/**/*.js",
     "eslint-test": "./node_modules/.bin/eslint test/**/*.js",
     "jsdoc": "node_modules/.bin/jsdoc -c jsdoc.conf"
@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
+    "@babel/eslint-parser": "^7.17.0",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
     "@babel/plugin-transform-modules-commonjs": "^7.10.4",
@@ -44,7 +45,7 @@
     "better-docs": "^2.3.2",
     "css-element-queries": "^0.4.0",
     "d3": "^4.12.2",
-    "eslint": "^3.0.0",
+    "eslint": "^8.13.0",
     "generate-changelog": "^1.4.0",
     "iconv-lite": "^0.4.24",
     "install": "^0.12.2",
@@ -59,7 +60,7 @@
     "Desarrollo Devo desa@devo.com"
   ],
   "dependencies": {
-    "@devo/applications-data-library": "^1.0.4",
+    "@devoinc/applications-data-library": "^2.0.1",
     "html2canvas": "^1.0.0-rc.5",
     "inherits": "^2.0.3",
     "moment": "^2.27.0",

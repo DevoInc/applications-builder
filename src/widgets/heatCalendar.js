@@ -1,6 +1,6 @@
-import processStructure from '@devo/applications-data-library/structures/heatCalendar';
-import downloads from '@devo/applications-builder/libs/downloads';
-import widgetFactory from '@devo/applications-builder/widgetFactory';
+import processStructure from '@devoinc/applications-data-library/structures/heatCalendar';
+import downloads from '@devoinc/applications-builder/libs/downloads';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
 import dependencies from '../data/dependencies';
 
 const HeatCalendarWidget = dependencies.require('widgets').HeatCalendarWidget;

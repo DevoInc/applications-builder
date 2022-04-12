@@ -8,9 +8,9 @@ is proportional to the value of the third parameter.
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import bubblesWidget from '@devo/applications-builder/widgets/bubbles';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import bubblesWidget from '@devoinc/applications-builder/widgets/bubbles';
 
 let query = `from siem.logtrust.web.activity
 group every 5m by contentLength, responseLength, responseTime, city

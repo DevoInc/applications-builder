@@ -1,5 +1,5 @@
-import BaseField from '@devo/applications-builder/fields/BaseField';
-import { __ } from '@devo/applications-builder/i18n';
+import BaseField from '@devoinc/applications-builder/fields/BaseField';
+import { __ } from '@devoinc/applications-builder/i18n';
 
 /**
  * @category Fields

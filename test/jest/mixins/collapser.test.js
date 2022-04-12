@@ -20,12 +20,12 @@ afterEach(() => {
 });
 
 test('should exist', () => {
-  const collapser = require('@devo/applications-builder/mixins/collapser');
+  const collapser = require('@devoinc/applications-builder/mixins/collapser');
   expect(collapser).toBeDefined();
 });
 
 test('should return null if self.el is null', () => {
-  const collapser = require('@devo/applications-builder/mixins/collapser');
+  const collapser = require('@devoinc/applications-builder/mixins/collapser');
   let self = {
     el: null,
   };
@@ -35,7 +35,7 @@ test('should return null if self.el is null', () => {
 });
 
 test('should initialize the mixin right', () => {
-  const collapser = require('@devo/applications-builder/mixins/collapser');
+  const collapser = require('@devoinc/applications-builder/mixins/collapser');
   let self = {
     el: document.querySelector('.lt-vapp-widget-options'),
   };
@@ -47,7 +47,7 @@ test('should initialize the mixin right', () => {
 });
 
 test('should change the collapsed status when button is clicked', () => {
-  const collapser = require('@devo/applications-builder/mixins/collapser');
+  const collapser = require('@devoinc/applications-builder/mixins/collapser');
   let self = {
     el: document.querySelector('.lt-vapp-widget-options'),
   };
@@ -60,7 +60,7 @@ test('should change the collapsed status when button is clicked', () => {
 });
 
 test('should call collapse function when button is clicked and element is expanded', () => {
-  const collapser = require('@devo/applications-builder/mixins/collapser');
+  const collapser = require('@devoinc/applications-builder/mixins/collapser');
   let self = {
     el: document.querySelector('.lt-vapp-widget-options'),
   };
@@ -72,7 +72,7 @@ test('should call collapse function when button is clicked and element is expand
 });
 
 test('should call collapse function when button is clicked and element is expanded', () => {
-  const collapser = require('@devo/applications-builder/mixins/collapser');
+  const collapser = require('@devoinc/applications-builder/mixins/collapser');
   let self = {
     el: document.querySelector('.lt-vapp-widget-options'),
   };
@@ -84,7 +84,7 @@ test('should call collapse function when button is clicked and element is expand
 });
 
 test('should call expand function when button is clicked and element is expanded', () => {
-  const collapser = require('@devo/applications-builder/mixins/collapser');
+  const collapser = require('@devoinc/applications-builder/mixins/collapser');
   let self = {
     el: document.querySelector('.lt-vapp-widget-options'),
   };

@@ -11,9 +11,9 @@ over time, or to compare the evolution of similar groups over time.
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import areaWidget from '@devo/applications-builder/widgets/area';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import areaWidget from '@devoinc/applications-builder/widgets/area';
 
 let query = `from demo.ecommerce.data
 where clientIpAddress = 87.153.102.201 or 

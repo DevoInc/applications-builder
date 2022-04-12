@@ -1,4 +1,4 @@
-import Button from '@devo/applications-builder/fields/Button';
+import Button from '@devoinc/applications-builder/fields/Button';
 
 /**
  * @category Utils

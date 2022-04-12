@@ -6,7 +6,7 @@ It is just an empty widget that displays a message that there is no data.
 ### Example
 
 ```javascript
-import emptyWidget from '@devo/applications-builder/widgets/empty';
+import emptyWidget from '@devoinc/applications-builder/widgets/empty';
 
 let widget;
 widget = emptyWidget('empty-example');
