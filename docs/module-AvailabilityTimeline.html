@@ -1,0 +1,7168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devo Applications Builder AvailabilityTimeline</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Devo Applications Builder</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                <div class="dropdown is-hoverable is-right">
+                    <a class="dropdown-trigger link">
+                        Tutorials
+                        <i class="fas fa-chevron-down fa-xs"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                        
+                            <a class="dropdown-item" href="tutorial-basics.html">
+                                Getting started
+                            </a>
+                        
+                            <a class="dropdown-item" href="tutorial-configurations.html">
+                                Advanced
+                            </a>
+                        
+                            <a class="dropdown-item" href="tutorial-widgets.html">
+                                Widgets
+                            </a>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/DevoInc/applications-builder"
+                        >
+                            Github
+                        </a>
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/DevoInc/applications-builder-template"
+                        >
+                            Example Application
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Classes</h3><ul><li><a href="App.html">App</a></li><li><a href="I18n.html">I18n</a></li><li><a href="Section.html">Section</a></li><li><a href="Settings.html">Settings</a></li><li><a href="Tab.html">Tab</a></li><li><a href="TabsBar.html">TabsBar</a></li></ul></div><div class="category"><h2>Data</h2><h3>Classes</h3><ul><li><a href="DataNode.html">DataNode</a></li><li><a href="DataTree.html">DataTree</a></li><li><a href="Dependencies.html">Dependencies</a></li><li><a href="Requests.html">Requests</a></li></ul></div><div class="category"><h2>Fields</h2><h3>Classes</h3><ul><li><a href="BaseField.html">BaseField</a></li><li><a href="Button.html">Button</a></li><li><a href="CheckBoxField.html">CheckBoxField</a></li><li><a href="ChoicePickerField.html">ChoicePickerField</a></li><li><a href="DateTimePickerField.html">DateTimePickerField</a></li><li><a href="DateTimePickerRangeField.html">DateTimePickerRangeField</a></li><li><a href="DateTimePickerRangeFieldPresets.html">DateTimePickerRangeFieldPresets</a></li><li><a href="InputField.html">InputField</a></li><li><a href="Select2Field.html">Select2Field</a></li><li><a href="SelectField.html">SelectField</a></li></ul><h3>Global</h3><ul><li><a href="global.html#matchElement">matchElement</a></li></ul></div><div class="category"><h2>Libs</h2><h3>Modules</h3><ul><li><a href="module-alerts.html">alerts</a></li><li><a href="module-D3Bullet.html">D3Bullet</a></li><li><a href="module-dom.html">dom</a></li><li><a href="module-downloads.html">downloads</a></li><li><a href="module-events.html">events</a></li><li><a href="module-user.html">user</a></li><li><a href="module-zoomChart.html">zoomChart</a></li></ul><h3>Classes</h3><ul><li><a href="ScreenShot.html">ScreenShot</a></li></ul><h3>Global</h3><ul><li><a href="global.html#takeElementScreenShot">takeElementScreenShot</a></li></ul></div><div class="category"><h2>Utils</h2><h3>Modules / Bootstrap</h3><ul><li><a href="module-bootstrap.html">bootstrap</a></li></ul><h3>Modules / Global</h3><ul><li><a href="module-casting.html">casting</a></li><li><a href="module-dateRange.html">dateRange</a></li><li><a href="module-dates.html">dates</a></li><li><a href="module-intervals.html">intervals</a></li><li><a href="module-objects.html">objects</a></li><li><a href="module-order.html">order</a></li><li><a href="module-Query%2520Utils.html">Query Utils</a></li><li><a href="module-scroll.html">scroll</a></li><li><a href="module-units.html">units</a></li></ul><h3>Modules / Helpers</h3><ul><li><a href="module-Helper%2520Highcharts.html">Helper Highcharts</a></li><li><a href="module-Helper%2520Renderers.html">Helper Renderers</a></li></ul><h3>Classes / Bootstrap</h3><ul><li><a href="FullScreenShotBtn.html">FullScreenShotBtn</a></li><li><a href="TvBtn.html">TvBtn</a></li></ul><h3>Classes / Helpers</h3><ul><li><a href="Monitoring.html">Monitoring</a></li></ul></div><div class="category"><h2>Widgets</h2><h3>Modules</h3><ul><li><a href="module-AnimatedHeatmap.html">AnimatedHeatmap</a></li><li><a href="module-Area.html">Area</a></li><li><a href="module-AvailabilityTimeline.html">AvailabilityTimeline</a></li><li><a href="module-Bichord.html">Bichord</a></li><li><a href="module-Bubbles.html">Bubbles</a></li><li><a href="module-Bullet.html">Bullet</a></li><li><a href="module-CircleWorldMap.html">CircleWorldMap</a></li><li><a href="module-Column.html">Column</a></li><li><a href="module-Empty.html">Empty</a></li><li><a href="module-Funnel.html">Funnel</a></li><li><a href="module-Gauge.html">Gauge</a></li><li><a href="module-GoogleColormap.html">GoogleColormap</a></li><li><a href="module-GoogleHeatmap.html">GoogleHeatmap</a></li><li><a href="module-Graph.html">Graph</a></li><li><a href="module-HeatCalendar.html">HeatCalendar</a></li><li><a href="module-Histogram.html">Histogram</a></li><li><a href="module-Lines.html">Lines</a></li><li><a href="module-Monitoring.html">Monitoring</a></li><li><a href="module-PewPewMap.html">PewPewMap</a></li><li><a href="module-Pie.html">Pie</a></li><li><a href="module-PieLayered.html">PieLayered</a></li><li><a href="module-Punchcard.html">Punchcard</a></li><li><a href="module-RAG.html">RAG</a></li><li><a href="module-Sankey.html">Sankey</a></li><li><a href="module-Series.html">Series</a></li><li><a href="module-StackedBars.html">StackedBars</a></li><li><a href="module-Table.html">Table</a></li><li><a href="module-TimeHeatmap.html">TimeHeatmap</a></li><li><a href="module-Tree.html">Tree</a></li><li><a href="module-Voronoi.html">Voronoi</a></li></ul><h3>Modules / Mixins</h3><ul><li><a href="module-base.html">base</a></li><li><a href="module-collapser.html">collapser</a></li><li><a href="module-dataSearch.html">dataSearch</a></li><li><a href="module-download.html">download</a></li><li><a href="module-info.html">info</a></li><li><a href="module-lifeCycle.html">lifeCycle</a></li><li><a href="module-listeners.html">listeners</a></li><li><a href="module-loading.html">loading</a></li><li><a href="module-menu.html">menu</a></li><li><a href="module-screenshot.html">screenshot</a></li><li><a href="module-showQuery.html">showQuery</a></li><li><a href="module-zoom.html">zoom</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Module</p>
+                    <h1>AvailabilityTimeline</h1>
+                </header>
+                
+
+
+
+
+<section>
+
+<header>
+    
+        
+            
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description"><p>The availability timeline widget displays events during specific
+intervals shown chronologically along a line, indicating the availability
+and unavailability periods for each data group.
+The widget is designed to provide a broad overview of a sequence of
+events in time.</p></div>
+        
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    <dt class="tag-tutorial">Tutorials:</dt>
+    <dd class="tag-tutorial">
+        <ul>
+            <li><a href="tutorial-widgets-availability-timeline.html">Availability Timeline</a></li>
+        </ul>
+    </dd>
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><p><a href="module-base.html">base</a></p></li>
+        
+            <li><p><a href="module-collapser.html">collapser</a></p></li>
+        
+            <li><p><a href="module-dataSearch.html">dataSearch</a></p></li>
+        
+            <li><p><a href="module-download.html">download</a></p></li>
+        
+            <li><p><a href="module-info.html">info</a></p></li>
+        
+            <li><p><a href="module-lifeCycle.html">lifeCycle</a></p></li>
+        
+            <li><p><a href="module-listeners.html">listeners</a></p></li>
+        
+            <li><p><a href="module-loading.html">loading</a></p></li>
+        
+            <li><p><a href="module-menu.html">menu</a></p></li>
+        
+            <li><p><a href="module-screenshot.html">screenshot</a></p></li>
+        
+            <li><p><a href="module-zoom.html">zoom</a></p></li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line8">line 8</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    </div>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class='vertical-section'>
+            <h1>Methods</h1>
+            <div class="members">
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setAxisClass">
+        <a class="href-link" href="#setAxisClass">#</a>
+        
+        <span class="code-name">
+            
+                setAxisClass<span class="signature">(className)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom class for the axis.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>className</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Class name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line181">line 181</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setDataFormatter">
+        <a class="href-link" href="#setDataFormatter">#</a>
+        
+        <span class="code-name">
+            
+                setDataFormatter<span class="signature">(formatter)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom function to format.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>formatter</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">function</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Callback JavaScript function.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line461">line 461</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setDataHeight">
+        <a class="href-link" href="#setDataHeight">#</a>
+        
+        <span class="code-name">
+            
+                setDataHeight<span class="signature">(height)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the height of the blocks.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>height</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Value in pixels.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>18</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line78">line 78</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setDatasetClass">
+        <a class="href-link" href="#setDatasetClass">#</a>
+        
+        <span class="code-name">
+            
+                setDatasetClass<span class="signature">(className)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom class for the dataset.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>className</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Class name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line199">line 199</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setDataThreshold">
+        <a class="href-link" href="#setDataThreshold">#</a>
+        
+        <span class="code-name">
+            
+                setDataThreshold<span class="signature">(threshold)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom data threshold.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>threshold</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Threshold value.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>1</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line254">line 254</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setDateFormatter">
+        <a class="href-link" href="#setDateFormatter">#</a>
+        
+        <span class="code-name">
+            
+                setDateFormatter<span class="signature">(formatter)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the default formatter for dates.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>formatter</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Formatter.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>"DD/MM/YYYY HH:mm:SS"</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line136">line 136</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setGAxisClass">
+        <a class="href-link" href="#setGAxisClass">#</a>
+        
+        <span class="code-name">
+            
+                setGAxisClass<span class="signature">(className)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom class for the grid axis.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>className</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Class name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line172">line 172</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setGDataClass">
+        <a class="href-link" href="#setGDataClass">#</a>
+        
+        <span class="code-name">
+            
+                setGDataClass<span class="signature">(className)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom class for the data.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>className</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Class name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line190">line 190</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setGrouping">
+        <a class="href-link" href="#setGrouping">#</a>
+        
+        <span class="code-name">
+            
+                setGrouping<span class="signature">(grouping)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the grouping interval.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>grouping</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Milliseconds.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line54">line 54</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setGTitleClass">
+        <a class="href-link" href="#setGTitleClass">#</a>
+        
+        <span class="code-name">
+            
+                setGTitleClass<span class="signature">(className)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom class for the title of the grid.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>className</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Class name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line163">line 163</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setHasDataClass">
+        <a class="href-link" href="#setHasDataClass">#</a>
+        
+        <span class="code-name">
+            
+                setHasDataClass<span class="signature">(className)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom class when has data.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>className</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Class name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line217">line 217</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setHasNoDataClass">
+        <a class="href-link" href="#setHasNoDataClass">#</a>
+        
+        <span class="code-name">
+            
+                setHasNoDataClass<span class="signature">(className)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom class when have no data.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>className</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Class name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line226">line 226</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setHorzGridClass">
+        <a class="href-link" href="#setHorzGridClass">#</a>
+        
+        <span class="code-name">
+            
+                setHorzGridClass<span class="signature">(className)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom class for the horizontal grid.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>className</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Class name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line154">line 154</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setIconCancel">
+        <a class="href-link" href="#setIconCancel">#</a>
+        
+        <span class="code-name">
+            
+                setIconCancel<span class="signature">(iconName)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set custom icon for when no data is available.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>iconName</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line290">line 290</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setIconOk">
+        <a class="href-link" href="#setIconOk">#</a>
+        
+        <span class="code-name">
+            
+                setIconOk<span class="signature">(iconName)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set custom icon for when data is available.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>iconName</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line281">line 281</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setKey">
+        <a class="href-link" href="#setKey">#</a>
+        
+        <span class="code-name">
+            
+                setKey<span class="signature">(key)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the column name to show.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>key</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Column name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line36">line 36</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setLegendClass">
+        <a class="href-link" href="#setLegendClass">#</a>
+        
+        <span class="code-name">
+            
+                setLegendClass<span class="signature">(className)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom class for the legend.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>className</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Class name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line443">line 443</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setLegendHeight">
+        <a class="href-link" href="#setLegendHeight">#</a>
+        
+        <span class="code-name">
+            
+                setLegendHeight<span class="signature">(height)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom height for the legend.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>height</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Value in pixels.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>15</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line406">line 406</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setLegendMarginH1">
+        <a class="href-link" href="#setLegendMarginH1">#</a>
+        
+        <span class="code-name">
+            
+                setLegendMarginH1<span class="signature">(margin)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom margin between the title and the content of the legend.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>margin</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Value in pixels.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>17</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line386">line 386</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setLegendMarginH2">
+        <a class="href-link" href="#setLegendMarginH2">#</a>
+        
+        <span class="code-name">
+            
+                setLegendMarginH2<span class="signature">(margin)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom margin between the subtitle and the content of the legend.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>margin</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Value in pixels.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>2</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line396">line 396</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setLegendMarginLeft">
+        <a class="href-link" href="#setLegendMarginLeft">#</a>
+        
+        <span class="code-name">
+            
+                setLegendMarginLeft<span class="signature">(margin)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom margin left for the legend.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>margin</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Value in pixels.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>20</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line366">line 366</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setLegendMarginTop">
+        <a class="href-link" href="#setLegendMarginTop">#</a>
+        
+        <span class="code-name">
+            
+                setLegendMarginTop<span class="signature">(margin)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom margin top for the legend.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>margin</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Value in pixels.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>8.5</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line376">line 376</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setLegendTop">
+        <a class="href-link" href="#setLegendTop">#</a>
+        
+        <span class="code-name">
+            
+                setLegendTop<span class="signature">(margin)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom margin top for the legend.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>margin</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Legend top.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>11</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line346">line 346</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setLegendUnits">
+        <a class="href-link" href="#setLegendUnits">#</a>
+        
+        <span class="code-name">
+            
+                setLegendUnits<span class="signature">(units)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom unit for the values.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>units</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Unit.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line452">line 452</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setLegendWidth">
+        <a class="href-link" href="#setLegendWidth">#</a>
+        
+        <span class="code-name">
+            
+                setLegendWidth<span class="signature">(width)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>et a custom width for the legend.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>width</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Value in pixels.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>15</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line416">line 416</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setLineSpacing">
+        <a class="href-link" href="#setLineSpacing">#</a>
+        
+        <span class="code-name">
+            
+                setLineSpacing<span class="signature">(spacing)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the spacing between of the blocks.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>spacing</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Value in pixels.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>14</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line88">line 88</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setMargin">
+        <a class="href-link" href="#setMargin">#</a>
+        
+        <span class="code-name">
+            
+                setMargin<span class="signature">(margin)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set all margins around the widget: top, bottom, left and right.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>margin</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">Object</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"></td>
+</tr>
+
+  
+  
+    
+<tr class="deep-level-1">
+  
+      <td class="name"><code>top</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Value in pixels.</p></td>
+</tr>
+
+  
+    
+<tr class="deep-level-1">
+  
+      <td class="name"><code>right</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Value in pixels.</p></td>
+</tr>
+
+  
+    
+<tr class="deep-level-1">
+  
+      <td class="name"><code>bottom</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Value in pixels.</p></td>
+</tr>
+
+  
+    
+<tr class="deep-level-1">
+  
+      <td class="name"><code>left</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Value in pixels.</p></td>
+</tr>
+
+  
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>{top: 100, right: 40, bottom: 20, left: 100}</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line68">line 68</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setPaddingBottom">
+        <a class="href-link" href="#setPaddingBottom">#</a>
+        
+        <span class="code-name">
+            
+                setPaddingBottom<span class="signature">(padding)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the padding bottom.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>padding</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Value in pixels.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>10</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line108">line 108</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setPaddingLeft">
+        <a class="href-link" href="#setPaddingLeft">#</a>
+        
+        <span class="code-name">
+            
+                setPaddingLeft<span class="signature">(padding)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the padding left.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>padding</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Value in pixels.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line117">line 117</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setPaddingTopHeading">
+        <a class="href-link" href="#setPaddingTopHeading">#</a>
+        
+        <span class="code-name">
+            
+                setPaddingTopHeading<span class="signature">(padding)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the padding top of the heading.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>padding</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Value in pixels.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>-50</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line98">line 98</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setSubheadingClass">
+        <a class="href-link" href="#setSubheadingClass">#</a>
+        
+        <span class="code-name">
+            
+                setSubheadingClass<span class="signature">(className)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom class for the subtitle.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>className</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Class name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line336">line 336</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setSubtitleDateFormat">
+        <a class="href-link" href="#setSubtitleDateFormat">#</a>
+        
+        <span class="code-name">
+            
+                setSubtitleDateFormat<span class="signature">(format)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the default formatter for the subtitle dates.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>format</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Formatter.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>"DD/MM/YYYY HH:mm:ss"</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line327">line 327</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setSubtitleTop">
+        <a class="href-link" href="#setSubtitleTop">#</a>
+        
+        <span class="code-name">
+            
+                setSubtitleTop<span class="signature">(margin)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom margin top for the subtitle.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>margin</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Value in pixels.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>17</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line356">line 356</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setTextHasData">
+        <a class="href-link" href="#setTextHasData">#</a>
+        
+        <span class="code-name">
+            
+                setTextHasData<span class="signature">(text)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>text</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Text when data is present</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line424">line 424</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setTextHasNotData">
+        <a class="href-link" href="#setTextHasNotData">#</a>
+        
+        <span class="code-name">
+            
+                setTextHasNotData<span class="signature">(text)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom text to show when no data.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>text</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Custom text.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>"No data available"</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line434">line 434</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setTimelineTitle">
+        <a class="href-link" href="#setTimelineTitle">#</a>
+        
+        <span class="code-name">
+            
+                setTimelineTitle<span class="signature">(title)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom title for the timeline.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>title</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Text of the title.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>"Data Availability Plot"</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line308">line 308</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setTitleClass">
+        <a class="href-link" href="#setTitleClass">#</a>
+        
+        <span class="code-name">
+            
+                setTitleClass<span class="signature">(className)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom class for the title.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>className</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Class name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line317">line 317</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setToolTipClass">
+        <a class="href-link" href="#setToolTipClass">#</a>
+        
+        <span class="code-name">
+            
+                setToolTipClass<span class="signature">(className)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom class for the tooltip.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>className</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Class name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line126">line 126</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setTooltipHasDataClass">
+        <a class="href-link" href="#setTooltipHasDataClass">#</a>
+        
+        <span class="code-name">
+            
+                setTooltipHasDataClass<span class="signature">(className)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom class for the tooltip when has data.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>className</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Class name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line263">line 263</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setTooltipHasNoDataClass">
+        <a class="href-link" href="#setTooltipHasNoDataClass">#</a>
+        
+        <span class="code-name">
+            
+                setTooltipHasNoDataClass<span class="signature">(className)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom class for the tooltip when have no data.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>className</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Class name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line272">line 272</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setTransitionDuration">
+        <a class="href-link" href="#setTransitionDuration">#</a>
+        
+        <span class="code-name">
+            
+                setTransitionDuration<span class="signature">(duration)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>duration</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line234">line 234</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setTransitionOpacity">
+        <a class="href-link" href="#setTransitionOpacity">#</a>
+        
+        <span class="code-name">
+            
+                setTransitionOpacity<span class="signature">(opacity)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom time for the opacity transition.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>opacity</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Time in milliseconds.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy">
+            <li>200</li>
+        </ul></dd>
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line244">line 244</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setValue">
+        <a class="href-link" href="#setValue">#</a>
+        
+        <span class="code-name">
+            
+                setValue<span class="signature">(key)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set the column with the value to show.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>key</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Column name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line45">line 45</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setVertGridClass">
+        <a class="href-link" href="#setVertGridClass">#</a>
+        
+        <span class="code-name">
+            
+                setVertGridClass<span class="signature">(className)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom class for the vertical grid.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>className</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Class name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line145">line 145</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="setYTitleClass">
+        <a class="href-link" href="#setYTitleClass">#</a>
+        
+        <span class="code-name">
+            
+                setYTitleClass<span class="signature">(className)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Set a custom class for the Y axis title.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>className</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">string</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Class name.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="widgets_availabilityTimeline.js.html" class="button">View Source</a>
+            <span>
+                <a href="widgets_availabilityTimeline.js.html">widgets/availabilityTimeline.js</a>, <a href="widgets_availabilityTimeline.js.html#line208">line 208</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+            </div>
+        </div>
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devo Applications Builder Sankey</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Devo Applications Builder</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                <div class="dropdown is-hoverable is-right">
+                    <a class="dropdown-trigger link">
+                        Tutorials
+                        <i class="fas fa-chevron-down fa-xs"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                        
+                            <a class="dropdown-item" href="tutorial-basics.html">
+                                Getting started
+                            </a>
+                        
+                            <a class="dropdown-item" href="tutorial-configurations.html">
+                                Advanced
+                            </a>
+                        
+                            <a class="dropdown-item" href="tutorial-widgets.html">
+                                Widgets
+                            </a>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/DevoInc/applications-builder"
+                        >
+                            Github
+                        </a>
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/DevoInc/applications-builder-template"
+                        >
+                            Example Application
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar tutorials"
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <div class="category"><h3>Tutorials</h3><ul><li><a href="tutorial-basics.html">Getting started</a><ul><li><a href="tutorial-basic-requirements.html">Requirements</a></li><li><a href="tutorial-basic-installing.html">Installation</a></li><li><a href="tutorial-basic-overview.html">Overview</a></li><li><a href="tutorial-basic-first-app.html">First application</a></li><li><a href="tutorial-basic-add-tabs.html"> - Adding tabs</a></li><li><a href="tutorial-basic-add-sections.html"> - Adding sections</a></li><li><a href="tutorial-basic-add-widgets.html"> - Adding widgets</a></li><li><a href="tutorial-basic-directory-structure.html">Directory structure</a></li></ul></li><li><a href="tutorial-configurations.html">Advanced</a><ul><li><a href="tutorial-configurations-init.html">Initial configuration</a></li><li><a href="tutorial-configurations-requests.html">Requests</a></li><li><a href="tutorial-configurations-translations.html">Translations</a></li><li><a href="tutorial-configurations-template.html">Template</a></li><li><a href="tutorial-configurations-actions.html">Widget actions</a></li><li><a href="tutorial-configurations-fields.html">Fields</a></li><li><a href="tutorial-configurations-fields-input.html"> - Input text</a></li><li><a href="tutorial-configurations-fields-button.html"> - Button</a></li><li><a href="tutorial-configurations-fields-checkbox.html"> - Checkbox</a></li><li><a href="tutorial-configurations-fields-select.html"> - Select</a></li><li><a href="tutorial-configurations-fields-choice-picker.html"> - Choice picker</a></li><li><a href="tutorial-configurations-fields-datetime.html"> - Datetime picker</a></li><li><a href="tutorial-configurations-fields-datetime-range.html"> - Datetime range picker</a></li><li><a href="tutorial-configurations-fields-datetime-presets.html"> - Datetime range picker presets</a></li><li><a href="tutorial-configurations-icons.html">Icons</a></li><li><a href="tutorial-configurations-devo-apis.html">Devo APIs</a></li></ul></li><li><a href="tutorial-widgets.html">Widgets</a><ul><li><a href="tutorial-widgets-animated-heatmap.html">Animated Heatmap</a></li><li><a href="tutorial-widgets-area.html">Area</a></li><li><a href="tutorial-widgets-availability-timeline.html">Availability Timeline</a></li><li><a href="tutorial-widgets-bichord.html">Bichord</a></li><li><a href="tutorial-widgets-bubbles.html">Bubbles</a></li><li><a href="tutorial-widgets-bullet.html">Bullet</a></li><li><a href="tutorial-widgets-circle-world-map.html">Circle World Map</a></li><li><a href="tutorial-widgets-column.html">Column</a></li><li><a href="tutorial-widgets-empty.html">Empty</a></li><li><a href="tutorial-widgets-funnel.html">Funnel</a></li><li><a href="tutorial-widgets-gauge.html">Gauge</a></li><li><a href="tutorial-widgets-google-colormap.html">Google Colormap</a></li><li><a href="tutorial-widgets-google-heatmap.html">Google Heatmap</a></li><li><a href="tutorial-widgets-graph.html">Graph</a></li><li><a href="tutorial-widgets-heat-calendar.html">Heat Calendar</a></li><li><a href="tutorial-widgets-histogram.html">Histogram</a></li><li><a href="tutorial-widgets-lines.html">Lines</a></li><li><a href="tutorial-widgets-monitoring.html">Monitoring</a></li><li><a href="tutorial-widgets-pew-pew-map.html">Pew Pew Map</a></li><li><a href="tutorial-widgets-pie.html">Pie</a></li><li><a href="tutorial-widgets-pie-layered.html">Pie Layered</a></li><li><a href="tutorial-widgets-punchcard.html">Punchcard</a></li><li><a href="tutorial-widgets-rag.html">RAG</a></li><li><a href="tutorial-widgets-sankey.html">Sankey</a></li><li><a href="tutorial-widgets-stacked-bars.html">Stacked Bars</a></li><li><a href="tutorial-widgets-table.html">Table</a></li><li><a href="tutorial-widgets-time-head-map.html">Time Heatmap</a></li><li><a href="tutorial-widgets-tree.html">Tree</a></li><li><a href="tutorial-widgets-voronoi.html">Voronoi</a></li></ul></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Tutorial</p>
+                    <h1>Sankey</h1>
+                </header>
+                <section>
+
+<article>
+    <p>This is a flow diagram from source to target where the width of the arrows is proportional to the flow quantity.</p>
+<img src="widgets/sankey.png" alt="Sankey" style="width: 100%;"/>
+<h3>Example</h3>
+<pre class="prettyprint source lang-javascript"><code>import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import sankeyWidget from '@devoinc/applications-builder/widgets/sankey';
+
+let query = `from demo.ecommerce.data
+from demo.ecommerce.data
+where isnotnull(method)
+where isnotnull(statusCode)
+select str(statusCode) as strStatusCode
+group by method, strStatusCode
+select sum(bytesTransferred) as count
+`;
+
+let request = new RequestApi({
+  query: query,
+  dates: dateRange.fromNow(1, 'day'),
+});
+
+let widget;
+widget = sankeyWidget('sankey-example');
+widget.setRequests([request]);
+widget.setSourceKey('method');
+widget.setTargetKey('strStatusCode');
+widget.setValKey('count');
+</code></pre>
+<hr>
+<blockquote>
+<p><a href="module-Sankey.html">See API</a></p>
+</blockquote>
+</article>
+
+</section>
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+
+</body>
+</html>

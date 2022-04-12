@@ -1,0 +1,327 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devo Applications Builder widgets/helpers/monitoring.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Devo Applications Builder</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                <div class="dropdown is-hoverable is-right">
+                    <a class="dropdown-trigger link">
+                        Tutorials
+                        <i class="fas fa-chevron-down fa-xs"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                        
+                            <a class="dropdown-item" href="tutorial-basics.html">
+                                Getting started
+                            </a>
+                        
+                            <a class="dropdown-item" href="tutorial-configurations.html">
+                                Advanced
+                            </a>
+                        
+                            <a class="dropdown-item" href="tutorial-widgets.html">
+                                Widgets
+                            </a>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/DevoInc/applications-builder"
+                        >
+                            Github
+                        </a>
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/DevoInc/applications-builder-template"
+                        >
+                            Example Application
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Classes</h3><ul><li><a href="App.html">App</a></li><li><a href="I18n.html">I18n</a></li><li><a href="Section.html">Section</a></li><li><a href="Settings.html">Settings</a></li><li><a href="Tab.html">Tab</a></li><li><a href="TabsBar.html">TabsBar</a></li></ul></div><div class="category"><h2>Data</h2><h3>Classes</h3><ul><li><a href="DataNode.html">DataNode</a></li><li><a href="DataTree.html">DataTree</a></li><li><a href="Dependencies.html">Dependencies</a></li><li><a href="Requests.html">Requests</a></li></ul></div><div class="category"><h2>Fields</h2><h3>Classes</h3><ul><li><a href="BaseField.html">BaseField</a></li><li><a href="Button.html">Button</a></li><li><a href="CheckBoxField.html">CheckBoxField</a></li><li><a href="ChoicePickerField.html">ChoicePickerField</a></li><li><a href="DateTimePickerField.html">DateTimePickerField</a></li><li><a href="DateTimePickerRangeField.html">DateTimePickerRangeField</a></li><li><a href="DateTimePickerRangeFieldPresets.html">DateTimePickerRangeFieldPresets</a></li><li><a href="InputField.html">InputField</a></li><li><a href="Select2Field.html">Select2Field</a></li><li><a href="SelectField.html">SelectField</a></li></ul><h3>Global</h3><ul><li><a href="global.html#matchElement">matchElement</a></li></ul></div><div class="category"><h2>Libs</h2><h3>Modules</h3><ul><li><a href="module-alerts.html">alerts</a></li><li><a href="module-D3Bullet.html">D3Bullet</a></li><li><a href="module-dom.html">dom</a></li><li><a href="module-downloads.html">downloads</a></li><li><a href="module-events.html">events</a></li><li><a href="module-user.html">user</a></li><li><a href="module-zoomChart.html">zoomChart</a></li></ul><h3>Classes</h3><ul><li><a href="ScreenShot.html">ScreenShot</a></li></ul><h3>Global</h3><ul><li><a href="global.html#takeElementScreenShot">takeElementScreenShot</a></li></ul></div><div class="category"><h2>Utils</h2><h3>Modules / Bootstrap</h3><ul><li><a href="module-bootstrap.html">bootstrap</a></li></ul><h3>Modules / Global</h3><ul><li><a href="module-casting.html">casting</a></li><li><a href="module-dateRange.html">dateRange</a></li><li><a href="module-dates.html">dates</a></li><li><a href="module-intervals.html">intervals</a></li><li><a href="module-objects.html">objects</a></li><li><a href="module-order.html">order</a></li><li><a href="module-Query%2520Utils.html">Query Utils</a></li><li><a href="module-scroll.html">scroll</a></li><li><a href="module-units.html">units</a></li></ul><h3>Modules / Helpers</h3><ul><li><a href="module-Helper%2520Highcharts.html">Helper Highcharts</a></li><li><a href="module-Helper%2520Renderers.html">Helper Renderers</a></li></ul><h3>Classes / Bootstrap</h3><ul><li><a href="FullScreenShotBtn.html">FullScreenShotBtn</a></li><li><a href="TvBtn.html">TvBtn</a></li></ul><h3>Classes / Helpers</h3><ul><li><a href="Monitoring.html">Monitoring</a></li></ul></div><div class="category"><h2>Widgets</h2><h3>Modules</h3><ul><li><a href="module-AnimatedHeatmap.html">AnimatedHeatmap</a></li><li><a href="module-Area.html">Area</a></li><li><a href="module-AvailabilityTimeline.html">AvailabilityTimeline</a></li><li><a href="module-Bichord.html">Bichord</a></li><li><a href="module-Bubbles.html">Bubbles</a></li><li><a href="module-Bullet.html">Bullet</a></li><li><a href="module-CircleWorldMap.html">CircleWorldMap</a></li><li><a href="module-Column.html">Column</a></li><li><a href="module-Empty.html">Empty</a></li><li><a href="module-Funnel.html">Funnel</a></li><li><a href="module-Gauge.html">Gauge</a></li><li><a href="module-GoogleColormap.html">GoogleColormap</a></li><li><a href="module-GoogleHeatmap.html">GoogleHeatmap</a></li><li><a href="module-Graph.html">Graph</a></li><li><a href="module-HeatCalendar.html">HeatCalendar</a></li><li><a href="module-Histogram.html">Histogram</a></li><li><a href="module-Lines.html">Lines</a></li><li><a href="module-Monitoring.html">Monitoring</a></li><li><a href="module-PewPewMap.html">PewPewMap</a></li><li><a href="module-Pie.html">Pie</a></li><li><a href="module-PieLayered.html">PieLayered</a></li><li><a href="module-Punchcard.html">Punchcard</a></li><li><a href="module-RAG.html">RAG</a></li><li><a href="module-Sankey.html">Sankey</a></li><li><a href="module-Series.html">Series</a></li><li><a href="module-StackedBars.html">StackedBars</a></li><li><a href="module-Table.html">Table</a></li><li><a href="module-TimeHeatmap.html">TimeHeatmap</a></li><li><a href="module-Tree.html">Tree</a></li><li><a href="module-Voronoi.html">Voronoi</a></li></ul><h3>Modules / Mixins</h3><ul><li><a href="module-base.html">base</a></li><li><a href="module-collapser.html">collapser</a></li><li><a href="module-dataSearch.html">dataSearch</a></li><li><a href="module-download.html">download</a></li><li><a href="module-info.html">info</a></li><li><a href="module-lifeCycle.html">lifeCycle</a></li><li><a href="module-listeners.html">listeners</a></li><li><a href="module-loading.html">loading</a></li><li><a href="module-menu.html">menu</a></li><li><a href="module-screenshot.html">screenshot</a></li><li><a href="module-showQuery.html">showQuery</a></li><li><a href="module-zoom.html">zoom</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>widgets/helpers/monitoring.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @category Utils
+ * @subcategory Helpers
+ * @class Helper Monitoring
+ *
+ * This plugin only can represent three states. Those states can be configurated
+ * by parameters that adjust the color, the icon and the values.
+ * All params are required
+ *
+ * Params:
+ * - element: HTML element where the graph will be included
+ * - orig: object with two required vars: keys and dataMatrix. keys is an array
+ *          of objects with the names of values of dataMatrix inthe same order.
+ *          dataMatrix is an array of elements with the values to count and show.
+ * - options: is an object with the params to configure the graph.
+ *
+ *
+ * Settings object:
+ * - colors: Array with three elements. The first element represent success val,
+ *          the second element represent a middle value and the third element
+ *          represente the fail case. Each one of colors has to be in hexadecimal
+ *          representation. Default values: 'green', 'orange', 'red'
+ * - icons: Array with three elements. The first element represent success val,
+ *          the second element represent a middle value and the third element
+ *          represente the fail case. Each one of icons has to be a css class
+ *          representation of the image. Default values: 'icon-ok-sign',
+ *          'icon-minus-sign', 'icon-remove-sign'
+ * - heightdefault: Integer that represents the height of the indicators.
+ *          Default value: 200
+ * - itemsbyrow: Number of items to show by row. Default value: 4
+ * - rules: is an array with two objects. The first object define the roule for
+ *           success state and the second object define the roule for the fail
+ *           state. Each object must contain a operator and value.
+ *           The operator can be any logical operator (>,&lt;, ==, &lt;=, =>, !=).
+ *           The value must be the value to compare.
+ *           Default: [{operator: '>=', value: 66.66},{operator: '&lt;', value: 33.33}]
+ *
+ * - keyToShow (REQUIRED): column name to count
+ * - valToShow (REQUIRED): val to show
+ * - is_percent: Indicate if the comparation of rules must be with percent.
+ *            Default true
+ */
+
+class Monitoring {
+  constructor(element, orig, options = {}) {
+
+    if (!element || !orig || !options) {
+      throw new Error('Must pass a element and min options');
+    }
+
+    if (options.rules &amp;&amp; options.rules.length != 2) {
+      throw new Error('rules option must be an array with two objects');
+    }
+
+    this.element = element;
+    this.settings = Object.assign({
+      colors: ['green', 'orange', 'red'],
+      icons: ['icon-ok-sign', 'icon-minus-sign', 'icon-remove-sign'],
+      rules: [
+        {operator: '>=', value: 66.66},
+        {operator: '&lt;', value: 33.33}],
+      heightdefault: 200,
+      itemsbyrow: 4,
+      keyToShow: null,
+      valToShow: null,
+      is_percent: true,
+    }, options);
+
+    this.settings.keyToShow = this.getKeyFromName(orig.keys, this.settings.keyToShow);
+    this.settings.valToShow = this.getKeyFromName(orig.keys, this.settings.valToShow);
+
+    if (!this.settings.keyToShow | !this.settings.valToShow) {
+      throw new Error('keyto show and valToShow must be passed into oprions object');
+    }
+
+    let data = this.getDataFormated(orig.dataMatrix);
+
+    let html = this.getHTML(data);
+
+    this.element.innerHTML = html;
+
+    return this;
+  };
+
+  /**
+   * return the element key value with the name atributte equal to value
+   * @param {Array} arr
+   * @param {string} value
+   * @returns {integer|null} item key match
+   */
+  getKeyFromName(arr, value){
+    for (let k in arr) {
+      if (arr[k].name == value) return k;
+    }
+    return null;
+  };
+
+  /**
+   * returns an array by summing the values (valToShow) and the total elements grouped by keyToShow
+   * @param {Array} data received from malote
+   * @returns {Array}
+   */
+  getDataFormated(data){
+    let arr = [];
+    for (let o in data) {
+      let item  = data[o];
+      if (typeof arr[item[this.settings.keyToShow]] === 'undefined') {
+        arr[item[this.settings.keyToShow]] = { sum : 0, total: 0, min: Number.MAX_SAFE_INTEGER, max: 0};
+      }
+
+      if (item[this.settings.valToShow] &lt;= arr[item[this.settings.keyToShow]]['min']) {
+        arr[item[this.settings.keyToShow]]['min'] = parseInt(item[this.settings.valToShow]);
+      }
+
+      if (item[this.settings.valToShow] > arr[item[this.settings.keyToShow]]['max']) {
+        arr[item[this.settings.keyToShow]]['max'] = parseInt(item[this.settings.valToShow]);
+      }
+
+      arr[item[this.settings.keyToShow]]['sum'] += parseInt(item[this.settings.valToShow]);
+      arr[item[this.settings.keyToShow]]['total'] += 1;
+    }
+    return arr;
+  };
+
+  /**
+   * return the html
+   * @param {Array} data
+   * @returns {string}
+   */
+  getHTML(data) {
+    let elements = Object.keys(data).length;
+    this.settings.itemsbyrow = (elements &lt; this.settings.itemsbyrow) ? elements : this.settings.itemsbyrow;
+    let _width = (this.settings.itemsbyrow == 1) ? 50 : 100 / this.settings.itemsbyrow;
+    let _html = '&lt;div class="lt-widget-status">';
+    let div = 0;
+    let color = '';
+    let icon = '';
+    let rule1 = `${this.settings.rules[0].operator} ${this.settings.rules[0].value}`;
+    let rule2 = `${this.settings.rules[1].operator} ${this.settings.rules[1].value}`;
+
+    for (let o in data) {
+      div = data[o]['sum'] / data[o]['total']; // average
+      div = (this.settings.is_percent) ? div * 100 / data[o]['max'] : div;
+
+      color = (eval(`${div} ${rule1}`)) ? this.settings.colors[0] : (eval(`${div} ${rule2}`)) ? this.settings.colors[2] : this.settings.colors[1];
+      icon = (eval(`${div} ${rule1}`)) ? this.settings.icons[0] : (eval(`${div} ${rule2}`)) ? this.settings.icons[2] : this.settings.icons[1];
+
+      _html += `&lt;div style="height: ${this.settings.heightdefault}px;display: inline-block;color: ${color};text-align: center;margin: 0 auto;width: ${_width}%;">`;
+      _html += `&lt;h1>${o}&lt;/h1>`;
+      _html += `&lt;div class="${icon}" style="width: 100%; line-height: ${this.settings.heightdefault}px; font-size: ${this.settings.heightdefault}px;">&lt;/div>`;
+      _html += `&lt;/div>`;
+    }
+    _html += '&lt;/div>';
+
+    return _html;
+  }
+
+}
+
+export default Monitoring;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+
+</body>
+</html>
