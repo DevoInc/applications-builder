@@ -6,9 +6,9 @@ heat points.
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import animatedHeatMapWidget from '@devo/applications-builder/widgets/animatedHeatMap';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import animatedHeatMapWidget from '@devoinc/applications-builder/widgets/animatedHeatMap';
 
 let query = `from demo.ecommerce.data
 where isnotnull(clientIpAddress) 

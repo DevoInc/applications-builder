@@ -22,8 +22,8 @@ component.
 We will do this in the `app.js` file.
 
 ```javascript
-import DateTimePickerRangeField from '@devo/applications-builder/fields/DateTimePickerRangeField';
-import dataTree from '@devo/applications-builder/data/dataTree';
+import DateTimePickerRangeField from '@devoinc/applications-builder/fields/DateTimePickerRangeField';
+import dataTree from '@devoinc/applications-builder/data/dataTree';
 
 ...
 
@@ -63,7 +63,7 @@ We will edit the `resources/requests.js` file to do this, but you can do it
 however you prefer.
 
 ```javascript
-import dataTree from '@devo/applications-builder/data/dataTree';
+import dataTree from '@devoinc/applications-builder/data/dataTree';
 
 ...
 
@@ -75,7 +75,7 @@ dataTree.root.subscribe('date', (range) => {
 Finally, the widget need to be updated as the following
 
 ```javascript
-import dataTree from '@devo/applications-builder/data/dataTree';
+import dataTree from '@devoinc/applications-builder/data/dataTree';
 
 ...
 

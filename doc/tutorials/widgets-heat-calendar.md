@@ -6,9 +6,9 @@ different colors.
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import heatCalendarWidget from '@devo/applications-builder/widgets/heatCalendar';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import heatCalendarWidget from '@devoinc/applications-builder/widgets/heatCalendar';
 
 let query = `from demo.ecommerce.data
 group every 1d 

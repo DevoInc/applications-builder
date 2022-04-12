@@ -28,8 +28,8 @@ You cand change some of those params, like the followinf example:
 
 ```javascript
 import config from './config';
-import bootstrap from '@devo/applications-builder/bootstrap';
-import App from '@devo/applications-builder/App';
+import bootstrap from '@devoinc/applications-builder/bootstrap';
+import App from '@devoinc/applications-builder/App';
 
 ...
 

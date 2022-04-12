@@ -5,9 +5,9 @@ The time heatmap widget represents the parameter values in a calendar, by day an
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import timeHeatmapWidget from '@devo/applications-builder/widgets/timeHeatmap';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import timeHeatmapWidget from '@devoinc/applications-builder/widgets/timeHeatmap';
 
 let query = `from siem.logtrust.web.activity 
 group every 1d by username

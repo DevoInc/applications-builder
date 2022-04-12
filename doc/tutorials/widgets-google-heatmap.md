@@ -7,9 +7,9 @@ Information can be clustered on the map by an optional additional value.
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import googleHeatmapWidget from '@devo/applications-builder/widgets/googleHeatMap';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import googleHeatmapWidget from '@devoinc/applications-builder/widgets/googleHeatMap';
 
 let query = `from demo.ecommerce.data
 where isnotnull(clientIpAddress) 

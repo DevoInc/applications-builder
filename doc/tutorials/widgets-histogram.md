@@ -6,9 +6,9 @@ proportional to the frequency of the variable.
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import histogramWidget from '@devo/applications-builder/widgets/histogram';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import histogramWidget from '@devoinc/applications-builder/widgets/histogram';
 
 let query = `from demo.ecommerce.data
 group every 1h by method, statusCode

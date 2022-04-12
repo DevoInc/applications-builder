@@ -1,5 +1,5 @@
-import processStructure from '@devo/applications-data-library/structures/chord';
-import widgetFactory from '@devo/applications-builder/widgetFactory';
+import processStructure from '@devoinc/applications-data-library/structures/chord';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
 import dependencies from '../data/dependencies';
 
 const BiChordWidget = dependencies.require('widgets').BiChordWidget;

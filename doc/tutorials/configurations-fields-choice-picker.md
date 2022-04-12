@@ -16,8 +16,8 @@ Now we need to attach this input with the _ChoicePickerField_ component.
 Edit the `app.js` file.
 
 ```javascript
-import ChoicePickerField from '@devo/applications-builder/fields/ChoicePickerField';
-import dataTree from '@devo/applications-builder/data/dataTree';
+import ChoicePickerField from '@devoinc/applications-builder/fields/ChoicePickerField';
+import dataTree from '@devoinc/applications-builder/data/dataTree';
 
 ...
 
@@ -63,7 +63,7 @@ We will edit the `resources/requests.js` file to do this, but you can do it
 however you prefer.
 
 ```javascript
-import dataTree from '@devo/applications-builder/data/dataTree';
+import dataTree from '@devoinc/applications-builder/data/dataTree';
 
 ...
 
@@ -75,7 +75,7 @@ dataTree.root.subscribe('method', (value) => {
 Finally, the widget need to be updated as the following
 
 ```javascript
-import dataTree from '@devo/applications-builder/data/dataTree';
+import dataTree from '@devoinc/applications-builder/data/dataTree';
 
 ...
 

@@ -5,9 +5,9 @@ This is a flow diagram from source to target where the width of the arrows is pr
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import sankeyWidget from '@devo/applications-builder/widgets/sankey';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import sankeyWidget from '@devoinc/applications-builder/widgets/sankey';
 
 let query = `from demo.ecommerce.data
 from demo.ecommerce.data

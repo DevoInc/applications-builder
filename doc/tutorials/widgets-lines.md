@@ -6,9 +6,9 @@ together with a line, showing the values through time.
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import linesWidget from '@devo/applications-builder/widgets/lines';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import linesWidget from '@devoinc/applications-builder/widgets/lines';
 
 let query = `from siem.logtrust.web.activity 
 group every 5m by method

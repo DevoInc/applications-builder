@@ -7,9 +7,9 @@ The widget is designed to provide a broad overview of a sequence of events in ti
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import availabilityTimelineWidget from '@devo/applications-builder/widgets/availabilityTimeline';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import availabilityTimelineWidget from '@devoinc/applications-builder/widgets/availabilityTimeline';
 
 let query = `from demo.ecommerce.data
 where clientIpAddress = 87.153.102.201 or 

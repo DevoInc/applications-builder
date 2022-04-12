@@ -1,9 +1,9 @@
-import loading from '@devo/applications-builder/mixins/loading';
-import base from '@devo/applications-builder/mixins/base';
-import lifeCycle from '@devo/applications-builder/mixins/lifeCycle';
+import loading from '@devoinc/applications-builder/mixins/loading';
+import base from '@devoinc/applications-builder/mixins/base';
+import lifeCycle from '@devoinc/applications-builder/mixins/lifeCycle';
 
-import user from '@devo/applications-builder/libs/user';
-jest.mock('@devo/applications-builder/libs/user');
+import user from '@devoinc/applications-builder/libs/user';
+jest.mock('@devoinc/applications-builder/libs/user');
 
 // Widget Factory
 function widget(id, tpl, mixin) {

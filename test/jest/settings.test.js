@@ -1,7 +1,7 @@
 import '@babel/polyfill';
 import sinon from 'sinon';
 import template from './template';
-import DataTree from '@devo/applications-builder/data/dataTree';
+import DataTree from '@devoinc/applications-builder/data/dataTree';
 import requesito from './requesito';
 
 beforeEach(() => {
@@ -9,7 +9,7 @@ beforeEach(() => {
   document.body.innerHTML = template;
   global.stub = sinon.stub(console, 'error');
   global.requesito = requesito;
-  global.Settings = require('@devo/applications-builder/Settings').default;
+  global.Settings = require('@devoinc/applications-builder/Settings').default;
 });
 afterEach(() => {
   window.jQuery = undefined;

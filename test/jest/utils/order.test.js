@@ -1,4 +1,4 @@
-import order from '@devo/applications-builder/utils/order';
+import order from '@devoinc/applications-builder/utils/order';
 
 let items = [
   { key: 'test1', value: 8 },

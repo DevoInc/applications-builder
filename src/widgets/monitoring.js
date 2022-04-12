@@ -1,5 +1,5 @@
-import { i18n } from '@devo/applications-builder/i18n';
-import widgetFactory from '@devo/applications-builder/widgetFactory';
+import { i18n } from '@devoinc/applications-builder/i18n';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
 import LTstatus from './helpers/monitoring';
 
 /**

@@ -1,16 +1,16 @@
 import '@babel/polyfill';
 import sinon from 'sinon';
 import template from '../template';
-const series = require('@devo/applications-builder/widgets/series');
-jest.mock('@devo/applications-builder/widgets/series');
-jest.mock('@devo/applications-builder/widgets/helpers/exportDataSeries.js');
-import processStructure from '@devo/applications-data-library/structures/series';
-import { __ } from '@devo/applications-builder/i18n';
-import widgetFactory from '@devo/applications-builder/widgetFactory';
-jest.mock('@devo/applications-data-library/structures/series');
-jest.mock('@devo/applications-builder/widgetFactory');
-jest.mock('@devo/applications-builder/i18n');
-jest.mock('@devo/applications-data-library/structures/series');
+const series = require('@devoinc/applications-builder/widgets/series');
+jest.mock('@devoinc/applications-builder/widgets/series');
+jest.mock('@devoinc/applications-builder/widgets/helpers/exportDataSeries.js');
+import processStructure from '@devoinc/applications-data-library/structures/series';
+import { __ } from '@devoinc/applications-builder/i18n';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
+jest.mock('@devoinc/applications-data-library/structures/series');
+jest.mock('@devoinc/applications-builder/widgetFactory');
+jest.mock('@devoinc/applications-builder/i18n');
+jest.mock('@devoinc/applications-data-library/structures/series');
 
 beforeEach(() => {
   let $ = (window.jQuery = window.$ = require('jquery'));

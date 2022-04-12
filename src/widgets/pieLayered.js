@@ -1,7 +1,7 @@
-import processStructure from '@devo/applications-data-library/structures/pieLayered';
-import downloads from '@devo/applications-builder/libs/downloads';
+import processStructure from '@devoinc/applications-data-library/structures/pieLayered';
+import downloads from '@devoinc/applications-builder/libs/downloads';
 import HCP from './helpers/exportDataSeries';
-import widgetFactory from '@devo/applications-builder/widgetFactory';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
 import dependencies from '../data/dependencies';
 
 const PieLayeredWidget = dependencies.require('widgets').PieLayeredWidget;

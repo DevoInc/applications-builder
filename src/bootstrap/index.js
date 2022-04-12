@@ -4,10 +4,10 @@
  * @module bootstrap */
 
 import createDefaultSettings from './settings';
-import { i18n } from '@devo/applications-builder/i18n'; // Need to be used from index for Singleton
+import { i18n } from '@devoinc/applications-builder/i18n'; // Need to be used from index for Singleton
 import FullScreenShotBtn from './FullScreenShotBtn';
 import TvBtn from './TvBtn';
-import dataTree from '@devo/applications-builder/data/dataTree';
+import dataTree from '@devoinc/applications-builder/data/dataTree';
 
 export default {
   /**

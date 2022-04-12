@@ -7,9 +7,9 @@ values in the specified fields.
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import pewPewMapWidget from '@devo/applications-builder/widgets/pewPewMap';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import pewPewMapWidget from '@devoinc/applications-builder/widgets/pewPewMap';
 
 let query = `from demo.ecommerce.data
 where isnotnull(clientIpAddress)

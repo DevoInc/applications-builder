@@ -1,4 +1,4 @@
-import objects from '@devo/applications-builder/utils/objects';
+import objects from '@devoinc/applications-builder/utils/objects';
 
 describe('Objects:', () => {
   test('Set a value to an object on path that not exists', () => {

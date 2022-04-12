@@ -1,6 +1,6 @@
 import { mixin } from './series';
-import objects from '@devo/applications-builder/utils/objects';
-import widgetFactory from '@devo/applications-builder/widgetFactory';
+import objects from '@devoinc/applications-builder/utils/objects';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
 
 /**
  * The column chart widget draws columns for categories along the x-axis

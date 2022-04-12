@@ -1,8 +1,8 @@
-import processStructure from '@devo/applications-data-library/structures/voronoi';
-import downloads from '@devo/applications-builder/libs/downloads';
-import { __ } from '@devo/applications-builder/i18n';
-import objects from '@devo/applications-builder/utils/objects';
-import widgetFactory from '@devo/applications-builder/widgetFactory';
+import processStructure from '@devoinc/applications-data-library/structures/voronoi';
+import downloads from '@devoinc/applications-builder/libs/downloads';
+import { __ } from '@devoinc/applications-builder/i18n';
+import objects from '@devoinc/applications-builder/utils/objects';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
 import dependencies from '../data/dependencies';
 
 const VoronoiWidget = dependencies.require('widgets').VoronoiWidget;

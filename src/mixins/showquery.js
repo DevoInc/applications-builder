@@ -1,4 +1,4 @@
-import dom from '@devo/applications-builder/libs/dom';
+import dom from '@devoinc/applications-builder/libs/dom';
 import dependencies from '../data/dependencies';
 const InlineMessage = dependencies.require('InlineMessage');
 

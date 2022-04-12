@@ -35,8 +35,8 @@ Visit the [Devo Applications Data Library](https://github.com/DevoInc/applicatio
 information.
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
 ..
 
 let request = new RequestApi({
@@ -53,8 +53,8 @@ You just have to declare an object with the _from_ and the _to_ timestamp
 values of the date period you want to make the request.
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
 ..
 
 let request = new RequestApi({
@@ -75,7 +75,7 @@ Instead of request to the API, you need to load a JSON object locally.
 To simulate a request, use the [RequestApiMock](https://github.com/DevoInc/applications-data-library/blob/master/doc/request/RequestApiMock.md) class.
 
 ```javascript
-import RequestApiMock from '@devo/applications-data-library/requests/RequestApiMock';
+import RequestApiMock from '@devoinc/applications-data-library/requests/RequestApiMock';
 
 let data = {
   m: {
@@ -111,9 +111,9 @@ The _RequestChain_ receives an array of a mix of functions and Request object
 that will be executed sequenctially.
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import RequestChain from '@devo/applications-data-library/requests/RequestChain';
-import dateRange from '@devo/applications-builder/utils/dateRange';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import RequestChain from '@devoinc/applications-data-library/requests/RequestChain';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
 ..
 
 let request = new RequestChain([
@@ -196,9 +196,9 @@ To reuse the requests between code of the application, _Devo Applications Data L
 So, in the `src/resources/requests.js` file each request must be added to the [Requests](Requests.html) class.
 
 ```javascript
-import requests from '@devo/applications-builder/data/requests';
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
+import requests from '@devoinc/applications-builder/data/requests';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
 
 requests.add(
   'requestKey',
@@ -212,7 +212,7 @@ requests.add(
 Then, you can use it in the widgets or in any other part of the application.
 
 ```javascript
-import requests from "@devo/applications-builder/data/requests";
+import requests from "@devoinc/applications-builder/data/requests";
 
 ...
 
@@ -239,7 +239,7 @@ The [RequestCustom](https://github.com/DevoInc/applications-data-library/blob/ma
 In this case you will need to create a function that adapts the data to the data structure supported by _Devo Applications Data Library_.
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestCustom';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestCustom';
 
 function apiCall(cb) {
   $.ajax({

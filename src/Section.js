@@ -1,5 +1,5 @@
-import events from '@devo/applications-builder/libs/events';
-import DataNode from '@devo/applications-builder/data/DataNode';
+import events from '@devoinc/applications-builder/libs/events';
+import DataNode from '@devoinc/applications-builder/data/DataNode';
 
 /**
  * @class

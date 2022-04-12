@@ -1,4 +1,4 @@
-import casting from '@devo/applications-builder/utils/casting';
+import casting from '@devoinc/applications-builder/utils/casting';
 
 var items = [
   { key: 'test1', value: 8 },

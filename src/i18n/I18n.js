@@ -1,6 +1,6 @@
 import template from 'lodash/template';
-import { get } from '@devo/applications-builder/utils/objects';
-import user from '@devo/applications-builder/libs/user';
+import { get } from '@devoinc/applications-builder/utils/objects';
+import user from '@devoinc/applications-builder/libs/user';
 
 const default_lang = 'en_US';
 /**

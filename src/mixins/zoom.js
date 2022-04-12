@@ -1,5 +1,5 @@
 import { toggleMenu } from './menu';
-import zoom from '@devo/applications-builder/libs/zoom';
+import zoom from '@devoinc/applications-builder/libs/zoom';
 const BTN_CLASS = 'lt-vapp-widget-action-zoom';
 
 function maximize(id, opts = {}) {

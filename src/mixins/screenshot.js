@@ -1,5 +1,5 @@
 import { closeAllMenus } from './menu';
-import screenshot from '@devo/applications-builder/libs/screenshot';
+import screenshot from '@devoinc/applications-builder/libs/screenshot';
 
 const BTN_CLASS = 'lt-vapp-widget-action-capture';
 

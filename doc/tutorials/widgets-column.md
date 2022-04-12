@@ -8,9 +8,9 @@ time—while the y-axis is a single metric, or measured value.
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import columnWidget from '@devo/applications-builder/widgets/column';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import columnWidget from '@devoinc/applications-builder/widgets/column';
 
 let query = `from demo.ecommerce.data
 where clientIpAddress = 87.153.102.201 

@@ -6,9 +6,9 @@ successive levels of data.
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import pieLayeredWidget from '@devo/applications-builder/widgets/pieLayered';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import pieLayeredWidget from '@devoinc/applications-builder/widgets/pieLayered';
 
 let query = `from demo.ecommerce.data
 group every 1h by method, statusCode

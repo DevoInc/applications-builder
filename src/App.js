@@ -1,7 +1,7 @@
 // This import is needed so that webpack adds datatables to the bundle
 import psdatatables from './thirdparty/datatables/datatables.min';
 require('./libs/bullet.js');
-import Request from '@devo/applications-data-library/requests/Request';
+import Request from '@devoinc/applications-data-library/requests/Request';
 
 import TabsBar from './TabsBar';
 import dataTree from './data/dataTree';

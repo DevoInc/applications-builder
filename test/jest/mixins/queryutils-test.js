@@ -1,4 +1,4 @@
-import { fixQueryForLoxcope } from '@devo/applications-builder/libs/queryutils';
+import { fixQueryForLoxcope } from '@devoinc/applications-builder/libs/queryutils';
 
 describe('Loxcope utilities: ', () => {
   test('Auto fix query for loxcope', () => {

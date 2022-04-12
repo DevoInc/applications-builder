@@ -1,11 +1,11 @@
-import processStructure from '@devo/applications-data-library/structures/series';
-import objects from '@devo/applications-builder/utils/objects';
-import highchartsHelper from '@devo/applications-builder/widgets/helpers/highchartsHelper';
-import downloads from '@devo/applications-builder/libs/downloads';
-import HCP from '@devo/applications-builder/widgets/helpers/exportDataSeries';
-import { __ } from '@devo/applications-builder/i18n';
+import processStructure from '@devoinc/applications-data-library/structures/series';
+import objects from '@devoinc/applications-builder/utils/objects';
+import highchartsHelper from '@devoinc/applications-builder/widgets/helpers/highchartsHelper';
+import downloads from '@devoinc/applications-builder/libs/downloads';
+import HCP from '@devoinc/applications-builder/widgets/helpers/exportDataSeries';
+import { __ } from '@devoinc/applications-builder/i18n';
 const LineWidget = () => {};
-import widgetFactory from '@devo/applications-builder/widgetFactory';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
 
 /**
  * @module widgets/series

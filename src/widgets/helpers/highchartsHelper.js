@@ -3,7 +3,7 @@
  * @subcategory Helpers
  * @module Helper Highcharts **/
 
-import units from '@devo/applications-builder/utils/units';
+import units from '@devoinc/applications-builder/utils/units';
 
 /**
  * Axis formater

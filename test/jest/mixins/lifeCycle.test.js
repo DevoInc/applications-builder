@@ -2,7 +2,7 @@ import { unwatchFile } from 'fs';
 
 /*
  * import should from 'should';
-import lifeCycle from '@devo/applications-builder/mixins/lifeCycle';
+import lifeCycle from '@devoinc/applications-builder/mixins/lifeCycle';
 
 let data = require('./data/lifeCycle.json');
 

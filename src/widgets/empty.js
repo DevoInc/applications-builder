@@ -1,4 +1,4 @@
-import widgetFactory from '@devo/applications-builder/widgetFactory';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
 
 /**
  * It does not show any graphs. It is just an empty widget.

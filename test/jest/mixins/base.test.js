@@ -15,12 +15,12 @@ afterEach(() => {
 });
 
 test('should exist', () => {
-  const base = require('@devo/applications-builder/mixins/base');
+  const base = require('@devoinc/applications-builder/mixins/base');
   expect(base).toBeDefined();
 });
 
 test('should initialize the widget structure', () => {
-  const base = require('@devo/applications-builder/mixins/base');
+  const base = require('@devoinc/applications-builder/mixins/base');
   let self = {
     id: 'base',
   };
@@ -39,7 +39,7 @@ test('should initialize the widget structure', () => {
 });
 
 test('should do nothing when resize is called', () => {
-  const base = require('@devo/applications-builder/mixins/base');
+  const base = require('@devoinc/applications-builder/mixins/base');
   let self = {
     id: 'base',
   };
@@ -50,7 +50,7 @@ test('should do nothing when resize is called', () => {
 });
 
 test('should do nothing when redraw is called', () => {
-  const base = require('@devo/applications-builder/mixins/base');
+  const base = require('@devoinc/applications-builder/mixins/base');
   let self = {
     id: 'base',
   };
@@ -61,7 +61,7 @@ test('should do nothing when redraw is called', () => {
 });
 
 test('should do nothing when init is called', () => {
-  const base = require('@devo/applications-builder/mixins/base');
+  const base = require('@devoinc/applications-builder/mixins/base');
   let self = {
     id: 'base',
   };
@@ -72,7 +72,7 @@ test('should do nothing when init is called', () => {
 });
 
 test('should return graphic value when getGraphicContainer is called', () => {
-  const base = require('@devo/applications-builder/mixins/base');
+  const base = require('@devoinc/applications-builder/mixins/base');
   let self = { id: 'base' };
   let baseMxi = base.default(self);
   let gr = baseMxi.getGraphicContainer();
@@ -80,7 +80,7 @@ test('should return graphic value when getGraphicContainer is called', () => {
 });
 
 test('should return widget value when getWidget is called', () => {
-  const base = require('@devo/applications-builder/mixins/base');
+  const base = require('@devoinc/applications-builder/mixins/base');
   let self = { id: 'base' };
   let baseMxi = base.default(self);
   let wid = baseMxi.getWidget();
@@ -88,7 +88,7 @@ test('should return widget value when getWidget is called', () => {
 });
 
 test('should return visible value is when isVisible is called', () => {
-  const base = require('@devo/applications-builder/mixins/base');
+  const base = require('@devoinc/applications-builder/mixins/base');
   let self = { id: 'base' };
   let baseMxi = base.default(self);
   let isVisible = baseMxi.isVisible();
@@ -96,7 +96,7 @@ test('should return visible value is when isVisible is called', () => {
 });
 
 test('should return visible value is when isVisible is called', () => {
-  const base = require('@devo/applications-builder/mixins/base');
+  const base = require('@devoinc/applications-builder/mixins/base');
   let self = { id: 'base' };
   let baseMxi = base.default(self);
   let isVisible = baseMxi.isVisible();
@@ -104,7 +104,7 @@ test('should return visible value is when isVisible is called', () => {
 });
 
 test('should show widget when show is called', () => {
-  const base = require('@devo/applications-builder/mixins/base');
+  const base = require('@devoinc/applications-builder/mixins/base');
   let self = { id: 'base' };
   let baseMxi = base.default(self);
   self.graphic = {
@@ -121,7 +121,7 @@ test('should show widget when show is called', () => {
 });
 
 test('should hide widget when hide is called', () => {
-  const base = require('@devo/applications-builder/mixins/base');
+  const base = require('@devoinc/applications-builder/mixins/base');
   let self = { id: 'base' };
   let baseMxi = base.default(self);
   self.graphic = {
@@ -140,7 +140,7 @@ test('should hide widget when hide is called', () => {
 
 test('should draw error without message when drawError is called without \
 params', () => {
-  const base = require('@devo/applications-builder/mixins/base');
+  const base = require('@devoinc/applications-builder/mixins/base');
   let self = {
     id: 'stackedBarWidget',
     el: $('#stackedBarWidget'),
@@ -162,7 +162,7 @@ params', () => {
 });
 
 test('should draw error with message when drawError is called without params', () => {
-  const base = require('@devo/applications-builder/mixins/base');
+  const base = require('@devoinc/applications-builder/mixins/base');
   let self = {
     id: 'stackedBarWidget',
     el: $('#stackedBarWidget'),
@@ -185,7 +185,7 @@ test('should draw error with message when drawError is called without params', (
 
 test('should log warn to console and call drawError with the default message, \
 and hideLoading when debugError is called without params', () => {
-  const base = require('@devo/applications-builder/mixins/base');
+  const base = require('@devoinc/applications-builder/mixins/base');
   let self = {
     id: 'stackedBarWidget',
     el: $('#stackedBarWidget'),
@@ -215,7 +215,7 @@ and hideLoading when debugError is called without params', () => {
 
 test('should log warn to console and call drawError with the message, and \
 hideLoading when debugError is called with params', () => {
-  const base = require('@devo/applications-builder/mixins/base');
+  const base = require('@devoinc/applications-builder/mixins/base');
 
   let self = {
     id: 'stackedBarWidget',

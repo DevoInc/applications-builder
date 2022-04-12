@@ -1,6 +1,6 @@
-import processStructure from '@devo/applications-data-library/structures/gauge';
-import widgetFactory from '@devo/applications-builder/widgetFactory';
-import downloads from '@devo/applications-builder/libs/downloads';
+import processStructure from '@devoinc/applications-data-library/structures/gauge';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
+import downloads from '@devoinc/applications-builder/libs/downloads';
 import dependencies from '../data/dependencies';
 
 const GaugeWidget = dependencies.require('widgets').GaugeWidget;

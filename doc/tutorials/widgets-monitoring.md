@@ -6,9 +6,9 @@ coloring the background depending on its value and settings.
 ### Example
 
 ```javascript
-import RequestApi from '@devo/applications-data-library/requests/RequestApi';
-import dateRange from '@devo/applications-builder/utils/dateRange';
-import monitoringWidget from '@devo/applications-builder/widgets/monitoring';
+import RequestApi from '@devoinc/applications-data-library/requests/RequestApi';
+import dateRange from '@devoinc/applications-builder/utils/dateRange';
+import monitoringWidget from '@devoinc/applications-builder/widgets/monitoring';
 
 let query = `from demo.ecommerce.data
 group every 1h by method

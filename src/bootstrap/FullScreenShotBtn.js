@@ -1,5 +1,5 @@
-import screenshot from '@devo/applications-builder/libs/screenshot';
-import Button from '@devo/applications-builder/fields/Button';
+import screenshot from '@devoinc/applications-builder/libs/screenshot';
+import Button from '@devoinc/applications-builder/fields/Button';
 
 /**
  * @category Utils

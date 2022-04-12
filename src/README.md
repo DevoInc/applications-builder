@@ -48,7 +48,7 @@ npm link
 Into yout folder project linked it
 
 ```
-npm @devo/applications-builder
+npm @devoinc/applications-builder
 ```
 
 > Do this only if you need to modify this library for your application.

@@ -23,8 +23,8 @@ You can create a new file to add all the inputs used, or added in the
 `app.js` file.
 
 ```javascript
-import InputField from '@devo/applications-builder/fields/InputField';
-import dataTree from '@devo/applications-builder/data/dataTree';
+import InputField from '@devoinc/applications-builder/fields/InputField';
+import dataTree from '@devoinc/applications-builder/data/dataTree';
 
 ...
 
@@ -70,7 +70,7 @@ We will edit the `resources/requests.js` file to do this, but you can do it
 however you prefer.
 
 ```javascript
-import dataTree from '@devo/applications-builder/data/dataTree';
+import dataTree from '@devoinc/applications-builder/data/dataTree';
 
 ...
 
@@ -82,7 +82,7 @@ dataTree.root.subscribe('method', (value) => {
 Finally, the widget need to be updated as the following
 
 ```javascript
-import dataTree from '@devo/applications-builder/data/dataTree';
+import dataTree from '@devoinc/applications-builder/data/dataTree';
 
 ...
 

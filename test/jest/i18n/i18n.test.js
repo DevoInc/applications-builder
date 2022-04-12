@@ -1,7 +1,7 @@
 describe('I18n:', () => {
   global.requesito = require('../requesito').default;
 
-  let i18n = require('@devo/applications-builder/i18n').i18n;
+  let i18n = require('@devoinc/applications-builder/i18n').i18n;
 
   test('Translate default string to Spanish as global forced language', () => {
     i18n.setLang('es_ES');

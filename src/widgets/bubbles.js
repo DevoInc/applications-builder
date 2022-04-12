@@ -1,6 +1,6 @@
-import processStructure from '@devo/applications-data-library/structures/bubble';
-import { set } from '@devo/applications-builder/utils/objects';
-import widgetFactory from '@devo/applications-builder/widgetFactory';
+import processStructure from '@devoinc/applications-data-library/structures/bubble';
+import { set } from '@devoinc/applications-builder/utils/objects';
+import widgetFactory from '@devoinc/applications-builder/widgetFactory';
 import dependencies from '../data/dependencies';
 
 const BubbleWidget = dependencies.require('widgets').BubbleWidget;
