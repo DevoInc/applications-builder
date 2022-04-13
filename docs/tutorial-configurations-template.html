@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devo Applications Builder Template</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Devo Applications Builder</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                <div class="dropdown is-hoverable is-right">
+                    <a class="dropdown-trigger link">
+                        Tutorials
+                        <i class="fas fa-chevron-down fa-xs"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                        
+                            <a class="dropdown-item" href="tutorial-basics.html">
+                                Getting started
+                            </a>
+                        
+                            <a class="dropdown-item" href="tutorial-configurations.html">
+                                Advanced
+                            </a>
+                        
+                            <a class="dropdown-item" href="tutorial-widgets.html">
+                                Widgets
+                            </a>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/DevoInc/applications-builder"
+                        >
+                            Github
+                        </a>
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/DevoInc/applications-builder-template"
+                        >
+                            Example Application
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar tutorials"
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <div class="category"><h3>Tutorials</h3><ul><li><a href="tutorial-basics.html">Getting started</a><ul><li><a href="tutorial-basic-requirements.html">Requirements</a></li><li><a href="tutorial-basic-installing.html">Installation</a></li><li><a href="tutorial-basic-overview.html">Overview</a></li><li><a href="tutorial-basic-first-app.html">First application</a></li><li><a href="tutorial-basic-add-tabs.html"> - Adding tabs</a></li><li><a href="tutorial-basic-add-sections.html"> - Adding sections</a></li><li><a href="tutorial-basic-add-widgets.html"> - Adding widgets</a></li><li><a href="tutorial-basic-directory-structure.html">Directory structure</a></li></ul></li><li><a href="tutorial-configurations.html">Advanced</a><ul><li><a href="tutorial-configurations-init.html">Initial configuration</a></li><li><a href="tutorial-configurations-requests.html">Requests</a></li><li><a href="tutorial-configurations-translations.html">Translations</a></li><li><a href="tutorial-configurations-template.html">Template</a></li><li><a href="tutorial-configurations-actions.html">Widget actions</a></li><li><a href="tutorial-configurations-fields.html">Fields</a></li><li><a href="tutorial-configurations-fields-input.html"> - Input text</a></li><li><a href="tutorial-configurations-fields-button.html"> - Button</a></li><li><a href="tutorial-configurations-fields-checkbox.html"> - Checkbox</a></li><li><a href="tutorial-configurations-fields-select.html"> - Select</a></li><li><a href="tutorial-configurations-fields-choice-picker.html"> - Choice picker</a></li><li><a href="tutorial-configurations-fields-datetime.html"> - Datetime picker</a></li><li><a href="tutorial-configurations-fields-datetime-range.html"> - Datetime range picker</a></li><li><a href="tutorial-configurations-fields-datetime-presets.html"> - Datetime range picker presets</a></li><li><a href="tutorial-configurations-icons.html">Icons</a></li><li><a href="tutorial-configurations-devo-apis.html">Devo APIs</a></li></ul></li><li><a href="tutorial-widgets.html">Widgets</a><ul><li><a href="tutorial-widgets-animated-heatmap.html">Animated Heatmap</a></li><li><a href="tutorial-widgets-area.html">Area</a></li><li><a href="tutorial-widgets-availability-timeline.html">Availability Timeline</a></li><li><a href="tutorial-widgets-bichord.html">Bichord</a></li><li><a href="tutorial-widgets-bubbles.html">Bubbles</a></li><li><a href="tutorial-widgets-bullet.html">Bullet</a></li><li><a href="tutorial-widgets-circle-world-map.html">Circle World Map</a></li><li><a href="tutorial-widgets-column.html">Column</a></li><li><a href="tutorial-widgets-empty.html">Empty</a></li><li><a href="tutorial-widgets-funnel.html">Funnel</a></li><li><a href="tutorial-widgets-gauge.html">Gauge</a></li><li><a href="tutorial-widgets-google-colormap.html">Google Colormap</a></li><li><a href="tutorial-widgets-google-heatmap.html">Google Heatmap</a></li><li><a href="tutorial-widgets-graph.html">Graph</a></li><li><a href="tutorial-widgets-heat-calendar.html">Heat Calendar</a></li><li><a href="tutorial-widgets-histogram.html">Histogram</a></li><li><a href="tutorial-widgets-lines.html">Lines</a></li><li><a href="tutorial-widgets-monitoring.html">Monitoring</a></li><li><a href="tutorial-widgets-pew-pew-map.html">Pew Pew Map</a></li><li><a href="tutorial-widgets-pie.html">Pie</a></li><li><a href="tutorial-widgets-pie-layered.html">Pie Layered</a></li><li><a href="tutorial-widgets-punchcard.html">Punchcard</a></li><li><a href="tutorial-widgets-rag.html">RAG</a></li><li><a href="tutorial-widgets-sankey.html">Sankey</a></li><li><a href="tutorial-widgets-stacked-bars.html">Stacked Bars</a></li><li><a href="tutorial-widgets-table.html">Table</a></li><li><a href="tutorial-widgets-time-head-map.html">Time Heatmap</a></li><li><a href="tutorial-widgets-tree.html">Tree</a></li><li><a href="tutorial-widgets-voronoi.html">Voronoi</a></li></ul></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Tutorial</p>
+                    <h1>Template</h1>
+                </header>
+                <section>
+
+<article>
+    <p>All the layout structure of an application is inside the <code>src/app.html</code> file.
+The main features of the app style are controlled by the following elements
+and classes.</p>
+<h2>Container div</h2>
+<p>This element wraps the entire application.</p>
+<pre class="prettyprint source lang-javascript"><code>&lt;div class=&quot;lt-vapp&quot;>...&lt;/div>
+</code></pre>
+<p>Addtionally, the following classes can be added to this element.</p>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Theme</td>
+<td><code>theme-&lt;color&gt;</code></td>
+<td>Here you can add the theme for the application, although later it will be overwritten by the theme set in the properties. Later, the user can change the current theme from the settings panel.</td>
+</tr>
+<tr>
+<td>Collapsible</td>
+<td><code>collapsible</code></td>
+<td>It makes the sections and the widgets collapsibles.</td>
+</tr>
+<tr>
+<td>Compact Mode</td>
+<td><code>compact</code></td>
+<td>Remove margins from all elements. This makes the application more compact and without space between elements.</td>
+</tr>
+<tr>
+<td>Widget Menu</td>
+<td><code>expanded-widget-menu</code></td>
+<td>This class makes the menu items of each widget always visible rather than hidden in the icon menu.</td>
+</tr>
+<tr>
+<td>Titles Size</td>
+<td><code>big-headers</code> or <code>small-headers</code></td>
+<td>These two classes apply over the headers section and make them smaller or bigger.</td>
+</tr>
+<tr>
+<td>Section Border</td>
+<td><code>bordered</code></td>
+<td>Bordered sections.</td>
+</tr>
+<tr>
+<td>Widget Description</td>
+<td>hide-description</td>
+<td>Hides the header description of the widgets. The description must be wrapped in a <p> element.</td>
+</tr>
+</tbody>
+</table>
+<h2>Header</h2>
+<p>To create a header, we use the <code>lt-vapp-header</code> class.</p>
+<pre class="prettyprint source lang-javascript"><code>&lt;header class=&quot;lt-vapp-header&quot;>...&lt;/header>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td><code>lt-vapp-header</code></td>
+<td></td>
+</tr>
+<tr>
+<td>No header</td>
+<td><code>no-header </code></td>
+<td>Hide the header.</td>
+</tr>
+<tr>
+<td>Reduce header</td>
+<td><code>small</code> or <code>xsmall</code></td>
+<td>Reduces the height of the header.</td>
+</tr>
+<tr>
+<td>Logtrust watermark</td>
+<td><code>lt-vapp-logtrust-powered</code></td>
+<td>It is mandatory.</td>
+</tr>
+<tr>
+<td>Summary module</td>
+<td><code>lt-vapp-details</code></td>
+<td>This class is optional and it is used in an aside tag.</td>
+</tr>
+</tbody>
+</table>
+<h2>Menu Bar</h2>
+<p>The navigation menu is controlled by the class <code>lt-vapp-menu</code>.
+The list elements included inside the menu have to add a main tag and the first child must include the <code>active</code> class.</p>
+<pre class="prettyprint source lang-javascript"><code>&lt;nav class=&quot;lt-vapp-menu&quot;>
+  &lt;ul class=&quot;lt-vapp-menu-main&quot;>
+    &lt;li class=&quot;active&quot; main=&quot;main1&quot;>
+      ...
+    &lt;/li>
+  &lt;/ul>
+&lt;/nav>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tabs</td>
+<td><code>lt-vapp-menu-item-name</code></td>
+<td>The tab name is included in a <code>span</code> tag.</td>
+</tr>
+<tr>
+<td>Scroll in tabs</td>
+<td><code>lt-vapp-menu-scroll</code></td>
+<td>To include a dropdown in the tab.</td>
+</tr>
+<tr>
+<td>Title scroll</td>
+<td><code>lt-vapp-menu-scroll-titles</code></td>
+<td>The header of the tab dropdown.</td>
+</tr>
+<tr>
+<td>Preferences</td>
+<td><code>lt-vapp-menu-preferences</code></td>
+<td>To include the general configuration icon and capture button.</td>
+</tr>
+</tbody>
+</table>
+<pre class="prettyprint source lang-javascript"><code>&lt;nav class=&quot;lt-vapp-menu&quot;>
+  &lt;ul class=&quot;lt-vapp-menu-main&quot;>
+    &lt;li main=&quot;main1&quot;>
+      &lt;p class=&quot;lt-vapp-menu-item-name&quot;>
+        &lt;i class=&quot;lticon-analytics_presentation_statistics_graph&quot;>&lt;/i>
+        &lt;span>TAB 1&lt;/span>
+      &lt;/p>
+      &lt;nav class=&quot;lt-vapp-menu-scroll&quot;>
+        &lt;p class=&quot;lt-vapp-menu-scroll-titles&quot;>
+          &lt;strong>Quick access&lt;/strong>
+          &lt;span>Scroll to one of the sections&lt;/span>
+        &lt;/p>
+        &lt;ul>
+          &lt;li section=&quot;section11&quot;>Section 1&lt;/li>
+        &lt;/ul>
+      &lt;/nav>
+    &lt;/li>
+  &lt;/ul>
+  &lt;ul class=&quot;lt-vapp-menu-preferences&quot;>
+    &lt;li class=&quot;lt-vapp-tv-mode&quot; title=&quot;TV Mode&quot;>
+      &lt;span class=&quot;lticon-tv_televison_movie_news&quot;>&lt;/span>
+    &lt;/li>
+    &lt;li class=&quot;lt-vapp-capture-button&quot; title=&quot;Capture app&quot;>
+      &lt;span class=&quot;lticon-polaroid_picture_image_photo&quot;>&lt;/span>
+    &lt;/li>
+    &lt;li class=&quot;lt-vapp-options-button va-menu-trigger&quot; title=&quot;General settings&quot;>
+      &lt;span class=&quot;lticon-settings_gear_preferences&quot;>&lt;/span>
+    &lt;/li>
+  &lt;/ul>
+&lt;/nav>
+</code></pre>
+<h2>Configuration Panel</h2>
+<p>This element contains the visual settings of the application.
+It is optional, but it must go under the <code>header</code> when it is included.
+One click on the general settings button in menu bar let you access to
+configuration panel.
+This element is divided in a top bar, a container and a footer.</p>
+<pre class="prettyprint source lang-javascript"><code>&lt;nav class=&quot;lt-vapp-config&quot;>...&lt;/nav>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Configuration bar</td>
+<td><code>lt-vapp-config-bar</code></td>
+<td>This part contains the close button of the panel.</td>
+</tr>
+<tr>
+<td>Options</td>
+<td><code>lt-vapp-config-form-wrapper</code></td>
+<td>This part contains the settings.</td>
+</tr>
+<tr>
+<td>Footer</td>
+<td><code>lt-vapp-config-footer</code></td>
+<td>The submit and cancel buttons are here.</td>
+</tr>
+</tbody>
+</table>
+<pre class="prettyprint source lang-javascript"><code>&lt;nav class=&quot;lt-vapp-config&quot;>
+  &lt;p class=&quot;lt-vapp-config-bar&quot;>
+    &lt;i class=&quot;lt-vapp-config-close LtAppIcon-close2&quot;>&lt;/i>
+    &lt;span>Close settings&lt;/span>
+  &lt;/p>
+  &lt;h4>
+    &lt;i class=&quot;lticon-settings_gear_preferences&quot;>&lt;/i>
+    &lt;span>Settings&lt;/span>
+  &lt;/h4>
+  &lt;div class=&quot;lt-vapp-config-form-wrapper&quot;>&lt;/div>
+  &lt;div class=&quot;lt-vapp-config-footer&quot;>
+    &lt;button class=&quot;lt-vapp-config-close grey&quot;>Cancel&lt;/button>
+    &lt;button>Update&lt;/button>
+  &lt;/div>
+&lt;/nav>
+</code></pre>
+<h2>Tab contain</h2>
+<p>The content of the tab is wrapped in a <code>main</code> element.</p>
+<pre class="prettyprint source lang-javascript"><code>&lt;main class=&quot;lt-vapp-main&quot; id=&quot;main1&quot;>&lt;/main>
+</code></pre>
+<h2>Sections</h2>
+<p>Sections wrap widgets with the same theme.</p>
+<pre class="prettyprint source lang-javascript"><code>&lt;section class=&quot;lt-vapp-section&quot; id=&quot;section11&quot;>&lt;/section>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Background</td>
+<td><code>custom-background </code></td>
+<td>Adds a background image.</td>
+</tr>
+<tr>
+<td>Section title</td>
+<td><code>lt-vapp-section-title</code></td>
+<td>Adds the section title.</td>
+</tr>
+<tr>
+<td>Section collapsed</td>
+<td><code>lt-vapp-section-collapser</code></td>
+<td>Collapses the section.</td>
+</tr>
+</tbody>
+</table>
+<pre class="prettyprint source lang-javascript"><code>&lt;h3 class=&quot;lt-vapp-section-title&quot;>
+  &lt;i class=&quot;lticon-analytics_presentation_statistics_graph&quot;>&lt;/i>
+  &lt;span>Title 1&lt;/span>
+  &lt;span class=&quot;lt-vapp-section-collapser lticon-vapp_expand&quot;>&lt;/span>
+&lt;/h3>
+</code></pre>
+<h2>Widgets</h2>
+<p>Each widget is a graphical representation of the data.</p>
+<pre class="prettyprint source lang-javascript"><code>&lt;article class=&quot;lt-vapp-widget&quot; id=&quot;widget1&quot;>&lt;/article>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Widget header</td>
+<td><code>lt-vapp-widget-header</code></td>
+<td>Include the title of the widget.</td>
+</tr>
+<tr>
+<td>Options menu</td>
+<td><code>lt-vapp-widget-options</code></td>
+<td>Wrap differents actions: zoom, capture, download...</td>
+</tr>
+<tr>
+<td>Option</td>
+<td><code>lt-vapp-widget-action-&lt;action&gt;</code></td>
+<td>Actions available: <code>zoom</code>, <code>capture</code>, <code>download</code> and <code>gotosearch</code></td>
+</tr>
+<tr>
+<td>Widget container</td>
+<td><code>lt-vapp-widget-graphic</code></td>
+<td>Widget height is fixed to 400px.</td>
+</tr>
+<tr>
+<td>Widget filters</td>
+<td><code>lt-vapp-widget-filter</code></td>
+<td>We can add aditional filters inside a div with this class.</td>
+</tr>
+<tr>
+<td>Wiget collapser</td>
+<td><code>lt-vapp-widget-collpaser</code></td>
+<td>Collapser option.</td>
+</tr>
+</tbody>
+</table>
+<pre class="prettyprint source lang-javascript"><code>&lt;article class=&quot;lt-vapp-widget&quot; id=&quot;widget1&quot;>
+  &lt;header class=&quot;lt-vapp-widget-header&quot;>
+    &lt;h3>Widget title&lt;/h3>
+    &lt;p>Widget description&lt;/p>
+    &lt;nav class=&quot;lt-vapp-widget-options&quot;>
+      &lt;span class=&quot;lt-vapp-widget-collapser &quot;>&lt;/span>
+      &lt;span class=&quot;lt-vapp-widget-menu-launcher &quot;>&lt;/span>
+      &lt;ul>
+        &lt;li>
+          &lt;i class=&quot;lticon-polaroid_picture_image_photo&quot;>&lt;/i>
+          &lt;span>Screenshot&lt;/span>
+        &lt;/li>
+      &lt;/ul>
+    &lt;/nav>
+  &lt;/header>
+  &lt;div class=&quot;lt-vapp-widget-graphic inner-padding&quot;>&lt;/div>
+&lt;/article>
+</code></pre>
+<p>By default, the widgets take the max width of its container.
+However, you can add some class to to make it responsive.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>small (&gt;= 768px)</th>
+<th>medium (&gt;= 992px)</th>
+<th>large (&gt;= 1200px)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>16%</td>
+<td>.sm-2</td>
+<td>.md-2</td>
+<td>.lg-2</td>
+</tr>
+<tr>
+<td>24.2%</td>
+<td>.sm-3</td>
+<td>.md-3</td>
+<td>.lg-3</td>
+</tr>
+<tr>
+<td>32.72%</td>
+<td>.sm-4</td>
+<td>.md-4</td>
+<td>.lg-4</td>
+</tr>
+<tr>
+<td>41.14%</td>
+<td>.sm-5</td>
+<td>.md-5</td>
+<td>.lg-5</td>
+</tr>
+<tr>
+<td>49.55%</td>
+<td>.sm-6</td>
+<td>.md-6</td>
+<td>.lg-6</td>
+</tr>
+<tr>
+<td>66.4%</td>
+<td>.sm-8</td>
+<td>.md-8</td>
+<td>.lg-8</td>
+</tr>
+<tr>
+<td>100%</td>
+<td>.sm-12</td>
+<td>.md-12</td>
+<td>.lg-12</td>
+</tr>
+</tbody>
+</table>
+<p>You can add anyone in those classes (<code>.sm- *</code>, <code>.md- *</code> and <code>.lg- *</code>) to
+adjust the widths of the widgets. Add them next to the <code>lt-vapp-widget</code> class.</p>
+<h2>Highlights</h2>
+<p>If you want emphasize some data inside in the container, you can introduce a new article with the class lt-vapp-highlight.</p>
+<pre class="prettyprint source lang-javascript"><code>&lt;article class=&quot;lt-vapp-highlight&quot;>
+  &lt;div class=&quot;lt-vapp-highlight-item lg-4&quot;>
+    &lt;span class=&quot;lt-vapp-highlight-icon lticon-time_watch_clock_wall&quot;>&lt;/span>
+    &lt;div class=&quot;lt-vapp-highlight-info&quot;>
+      &lt;div class=&quot;lt-vapp-highlight-title&quot;>
+        &lt;h5>Num. of users.&lt;/h5>
+        &lt;span class=&quot;lt-vapp-highlight-details&quot;>&lt;/span>
+      &lt;/div>
+      &lt;h4 class=&quot;lt-vapp-highlight-data&quot;>
+        &lt;span class=&quot;lt-vapp-highlight-data-value&quot;>224.576&lt;/span>
+        &lt;span class=&quot;lt-vapp-highlight-data-unit&quot;>users&lt;/span>
+      &lt;/h4>
+    &lt;/div>
+  &lt;/div>
+&lt;/article>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Items</td>
+<td><code>lt-vapp-highlight-item</code></td>
+</tr>
+<tr>
+<td>Icon</td>
+<td><code>lt-vapp-highlight-icon</code></td>
+</tr>
+<tr>
+<td>Info</td>
+<td><code>lt-vapp-highlight-info</code></td>
+</tr>
+<tr>
+<td>Header</td>
+<td><code>lt-vapp-highlight-header</code></td>
+</tr>
+<tr>
+<td>Title</td>
+<td><code>lt-vapp-highlight-title</code></td>
+</tr>
+<tr>
+<td>Data</td>
+<td><code>lt-vapp-highlight-data</code></td>
+</tr>
+<tr>
+<td>Details</td>
+<td><code>lt-vapp-highlight-details</code></td>
+</tr>
+</tbody>
+</table>
+</article>
+
+</section>
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+
+</body>
+</html>
