@@ -53,11 +53,11 @@ jobs:
     if: github.ref == 'refs/heads/master'
     steps:
       - name: Generate doc
-        run: rm -rf docs && npm run jsdoc
+        run: ls && rm -rf docs && npm run jsdoc
 
       - name: Check diff in docs folder
         id: verify_diff
-        run: git diff --quiet  || echo "::set-output name=has_changes::true"
+        run: git diff --quiet || echo "::set-output name=has_changes::true"
 
       - name: Commit and push doc files
         if: steps.verify_diff.outputs.has_changes == 'true'
