@@ -1,13 +1,15 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Push Node.js CI
+name: Node.js CI
 
 on:
   push:
     branches:
       - master
       - 'chore/**'
+  pull_request:
+    branches: [master]
 
 jobs:
   build:
@@ -40,15 +42,25 @@ jobs:
       - name: Run test
         run: npm run test
       - uses: actions/upload-artifact@v2
-        if: success() || failure() # run this step even if previous step failed
+        if: success() || failure() # run this  step even if previous step failed
         with:
           name: test-results
           path: coverage/*
 
+  generate-doc:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+    steps:
       - name: Generate doc
         run: rm -rf docs && npm run jsdoc
 
+      - name: Check diff in docs folder
+        id: verify_diff
+        run: git diff --quiet  || echo "::set-output name=has_changes::true"
+
       - name: Commit and push doc files
+        if: steps.verify_diff.outputs.has_changes == 'true'
         run: |
           git config --global user.name 'Devo GitHub Action'
           git config --global user.email 'desa@devo.com'
