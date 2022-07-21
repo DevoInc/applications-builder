@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.0.1 (2022-07-21)
+
+updated dependencies to fixed vulnerabilities:
+
+- https://security.snyk.io/vuln/SNYK-JS-MOMENT-2944238 : updated moment from 2.29.2 to 2.29.4
+
 ## 2.0.0 (2022-04-12)
 
 - Move package scope from @devo to @devoinc
