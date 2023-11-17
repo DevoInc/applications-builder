@@ -66,6 +66,9 @@
     "moment": "^2.29.4",
     "uuid": "^3.4.0"
   },
+  "overrides": {
+    "crypto-js": "^4.2.0"
+  },
   "keywords": [
     "widgets"
   ]
