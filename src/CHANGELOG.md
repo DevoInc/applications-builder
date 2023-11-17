@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.0.2 (2023-11-17)
+
+updated dependencies to fixed vulnerabilities:
+
+- https://security.snyk.io/vuln/SNYK-JS-CRYPTOJS-6028119 : override crypto-js to 4.2.0
+
 ## 2.0.1 (2022-07-21)
 
 updated dependencies to fixed vulnerabilities:
