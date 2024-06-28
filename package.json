@@ -61,6 +61,7 @@
   ],
   "dependencies": {
     "@devoinc/applications-data-library": "^2.0.2",
+    "@google/markerclustererplus": "^5.1.3",
     "html2canvas": "^1.0.0-rc.5",
     "inherits": "^2.0.3",
     "moment": "^2.29.4",
