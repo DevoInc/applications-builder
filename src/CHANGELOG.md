@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.0.3 (2024-06-28)
+
+- Add library markerclustererplus to load it regardless the webapp hasn't it
+
 ## 2.0.2 (2023-11-17)
 
 updated dependencies to fixed vulnerabilities:
