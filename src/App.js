@@ -1,5 +1,6 @@
 // This import is needed so that webpack adds datatables to the bundle
 import psdatatables from './thirdparty/datatables/datatables.min';
+import MarkerClusterer from '@google/markerclustererplus';
 require('./libs/bullet.js');
 import Request from '@devoinc/applications-data-library/requests/Request';
 
@@ -37,6 +38,12 @@ class App {
     this.id = id;
     this.data = dataTree.root;
     this.el = document.querySelector('.lt-vapp');
+
+    // Init MarkerClusterer (required for circle map widget)
+    if(!window.MarkerClusterer) {
+      window.MarkerClusterer = MarkerClusterer;
+      window.MarkerClusterer.IMAGE_PATH = "static/assets/img/components/widgets/circleWorldMap/m"
+    }
 
     // Create global namespace for apps framework stuff
     if (!window.vapp_framework) {
